@@ -1,0 +1,17 @@
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Report.blg'
+[83] biber:340> INFO - === Tue Mar  4, 2025, 14:12:10
+[99] Biber.pm:419> INFO - Reading 'Report.bcf'
+[162] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[174] Biber.pm:4419> INFO - Processing section 0
+[184] Biber.pm:4610> INFO - Looking for bibtex file 'Library.bib' for section 0
+[189] bibtex.pm:1713> INFO - LaTeX decoding ...
+[259] bibtex.pm:1519> INFO - Found BibTeX data source 'Library.bib'
+[269] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[269] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[269] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[269] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[269] bbl.pm:660> INFO - Writing 'Report.bbl' with encoding 'UTF-8'
+[270] bbl.pm:763> INFO - Output to Report.bbl
+[270] Biber.pm:131> WARN - I didn't find a database entry for 'lsi' (section 0)
+[270] Biber.pm:133> INFO - WARNINGS: 1

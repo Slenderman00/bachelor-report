@@ -1,0 +1,124 @@
+% !TeX root = Report.tex
+\documentclass[12pt]{article}
+
+% Package imports (organized and deduplicated)
+\usepackage{biblatex}
+\usepackage{changepage}
+\usepackage{color}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{sectsty}
+\usepackage{xcolor}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{xurl}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usepackage[format=plain,
+            labelfont=it,
+            textfont=]{caption}
+\usetikzlibrary{shapes.geometric,positioning,fit,backgrounds}
+\usepackage{./timing-diagrams}
+\usetikzlibrary{calc}
+\setcounter{biburlnumpenalty}{100}
+\setcounter{biburlucpenalty}{100}
+\setcounter{biburllcpenalty}{100}
+
+\newcommand{\writersnote}[1]{\marginpar{\small{\textcolor{blue}{Writer's note:}} \scriptsize\textit{#1}}}
+
+% \usepackage{background}
+% \backgroundsetup{
+%   position=current page.north west,
+%   angle=0,
+%   nodeanchor=north west,
+%   vshift=-1cm,
+%   hshift=1cm,
+%   color=red,
+%   opacity=1,
+%   scale=1,
+%   contents={Preprint}
+% }
+
+\definecolor{darkblue}{RGB}{0, 0, 102} 
+\hypersetup{
+    colorlinks=true,
+    pdfborder={0 0 0},
+    linkbordercolor=white,
+    urlcolor=darkblue,
+    linkcolor=darkblue,
+    citecolor=darkblue,
+    filecolor=darkblue
+}
+
+% Make bibliography ragged right instead of justified
+\AtBeginDocument{
+  \renewcommand{\bibsetup}{\raggedright}
+}
+% Document configuration
+\restylefloat{table}
+\graphicspath{{./images/}}
+\addbibresource{Library.bib}
+\subsectionfont{\fontsize{12}{14}\selectfont}
+
+% Author information
+\author{
+    Group Number: 107\\
+    Joar Heimonen, Christian Vu, Naly Keli \\
+    \texttt{contact@joar.me}\\ 
+    \texttt{chvu002@student.kristiania.no}\\
+    \texttt{nake002@student.kristiania.no}
+}
+
+% Title configuration
+\title{
+  \textbf{Preliminary Title}\\
+  \large{Preliminary Description}
+}
+\date{\today}
+
+\newcommand{\license}{
+    \vspace{1em}
+    \noindent\small{© 2024 Joar Heimonen\\
+    This work is licensed under a \href{https://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons Attribution-Sharealike 4.0 International License}.}
+}
+\begin{document}
+\maketitle
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+
+\section{Introduction}
+There are many paradigms of commercial sensor management and monitoring. Organizations can use anything from 
+PLC (programmable Logic Controllers) to IoT devices to manage and monitor their sensors. For commercial use 
+some of these alternatives are more popular than others. There are also a large amount of different higher level protocols
+like MQTT, HTTP and SNMP that can be used to manage and monitor sensors. We propose using the NETCONF protocol 
+with YANG sensor models for management. This work will be done in collaboration with Lightside Instruments AS.
+
+This document will cover the following three topics:
+\begin{itemize}
+  \item \textbf{Work methodology:} An indept analysis of the knowledge base around work methods like Scrum, Kanban, and Waterfall. 
+  With a focus on how our work methodology differs from these.
+  \item \textbf{NETCONF and YANG sensor management}: A qualitative analysis of the NETCONF and YANG protocols and how they can be used to manage sensors.
+  \item \textbf{NETCONF Security}: A qualitative analysis of the security aspects of the NETCONF protocol.
+\end{itemize}
+
+\section{Lightside Instruments AS}
+Lightside Instruments is a company specializing in developing instruments with model based network management 
+for use in networking, network interconnect testing and telemetry. 
+They design their instruments with YANG (RFC7950) models and NETCONF (RFC6241) protocol. 
+The instruments are based on IETF standards and drafts, 
+and are implemented with software tools available in Debian, programmable 
+logic and open hardware. \cite{lsi}
+
+\section{Technical background}
+
+
+\pagebreak
+\addcontentsline{toc}{section}{References}
+\printbibliography
+\license
+\end{document}
