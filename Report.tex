@@ -18,7 +18,7 @@
 \usepackage[format=plain,
             labelfont=it,
             textfont=]{caption}
-\usetikzlibrary{shapes.geometric,positioning,fit,backgrounds}
+\usetikzlibrary{shapes.geometric, arrows, positioning, calc}
 \usepackage{./timing-diagrams}
 \usetikzlibrary{calc}
 \setcounter{biburlnumpenalty}{100}
@@ -127,6 +127,142 @@ consisting of the device state and parameters.
 Each data model has a set of constraints making them error correcting.
 
 \section{Work methodology}
+
+\subsection{Scoping Review}
+\subsubsection{Search strategy}
+The following is our search strategy for the scoping review.
+We will be searching for quantitative studies on the efficiency of the following work methodologies:
+\begin{itemize}
+  \item Scrum
+  \item Kanban
+  \item Waterfall
+  \item Extreme Programming
+  \item DevOps
+\end{itemize}
+We will be searching the following databases:
+\begin{itemize}
+  \item IEEE Xplore \cite{IEEEXplore}
+  \item ACM Digital Library \cite{ACMDigitalLibrary}
+  \item Google Scholar \cite{GoogleScholar} (Meta database)
+\end{itemize}
+We will also be searching the following industry websites:
+\begin{itemize}
+  \item Agile Alliance \cite{AgileAlliance2015}
+  \item Scrum.org \cite{HomeScrumorg}
+  \item DevOps Institute \cite{Organisations}
+  \item Scrum Alliance \cite{ScrumAllianceFind}
+\end{itemize}
+Our search will consists of a set of primary and secondary keywords.
+The primary keywords are:
+\begin{itemize}
+  \item Scrum
+  \item Kanban
+  \item Waterfall
+  \item Extreme Programming
+  \item DevOps
+\end{itemize}
+The secondary keywords are:
+\begin{itemize}
+  \item Effectiveness
+  \item Efficiency
+  \item Productivity
+  \item Performance
+  \item Success
+  \item Failure
+\end{itemize}
+The search will be done using the following search string:
+
+\begin{adjustwidth}{-4em}{0pt}
+\begin{verbatim}
+       (Scrum OR Kanban OR Waterfall OR "Extreme Programming" OR DevOps) 
+                                      AND
+(Effectiveness OR Efficiency OR Productivity OR Performance OR Success OR Failure)
+\end{verbatim}
+\end{adjustwidth}
+
+\subsubsection{PRISMA\cite{PRISMAStatement} flow diagram}
+
+\begin{figure}
+  \centering
+  \begin{adjustwidth}{-4em}{0pt}
+  \begin{tikzpicture}[
+      node distance = 1.5cm,
+      box/.style = {draw, rectangle, rounded corners, minimum width=12cm, minimum height=1.5cm, text width=11.5cm, align=center},
+      sidebox/.style = {draw, rectangle, rounded corners, minimum width=5cm, minimum height=1.5cm, text width=4.5cm, align=center},
+      line/.style = {draw, -stealth, thick}
+  ]
+  
+  % Identification box
+  \node[box] (identification) 
+      {\textbf{Identification} \\
+      Records identified through database searching:\\
+      IEEE Xplore (n = X)\\
+      ACM Digital Library (n = Y)\\
+      Google Scholar (n = Z)\\
+      Total (n = T)};
+  
+  % Screening boxes
+  \node[box, below=of identification] (screening1) 
+      {\textbf{Screening} \\
+      Records after duplicates removed\\
+      (n = A)};
+      
+  \node[box, below=of screening1] (screening2)
+      {Records screened by title and abstract\\
+      (n = B)};
+      
+  \node[sidebox, right=1.5cm of screening2] (excluded1)
+      {Records excluded\\
+      (n = C)};
+  
+  % Eligibility boxes
+  \node[box, below=of screening2] (eligibility)
+      {\textbf{Eligibility} \\
+      Full-text articles assessed for eligibility\\
+      (n = D)};
+      
+  \node[sidebox, right=1.5cm of eligibility] (excluded2)
+      {Full-text articles excluded, with reasons:\\
+      - Not focused on methodology (n = E1)\\
+      - Not software development (n = E2)\\
+      - Conference abstracts only (n = E3)\\
+      - Other (n = E4)};
+  
+  % Included box
+  \node[box, below=of eligibility] (included)
+      {\textbf{Included} \\
+      Studies included in meta analysis\\
+      (n = F)\\[0.3cm]
+      \begin{tabular}{ll}
+      Scrum & (n = F1)\\
+      Kanban & (n = F2)\\
+      Waterfall & (n = F3)\\
+      Extreme Programming & (n = F4)\\
+      DevOps & (n = F5)
+      \end{tabular}};
+  
+  % Arrows
+  \draw[line] (identification) -- (screening1);
+  \draw[line] (screening1) -- (screening2);
+  \draw[line] (screening2) -- (eligibility);
+  \draw[line] (eligibility) -- (included);
+  \draw[line] (screening2) -- (excluded1);
+  \draw[line] (eligibility) -- (excluded2);
+  
+  \end{tikzpicture}
+  \end{adjustwidth}
+  \caption{PRISMA flow diagram for scoping review of software development methodologies}
+  \label{fig:prisma}
+\end{figure}
+
+\subsection{Scrum}
+
+
+\subsection{Kanban}
+\subsection{Waterfall}
+\subsection{Extreme Programming}
+\subsection{DevOps}
+
 
 \section{NETCONF and YANG sensor management}
 
