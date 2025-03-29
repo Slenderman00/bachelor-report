@@ -210,7 +210,8 @@ The systematic review will include articles meeting the following criteria:
   \item Published after January 1, 2020
   \item Published in English
   \item Relevant to the research question
-  \item empirical evidence
+  \item Empirical evidence
+  \item On of the 20 first results from each database
   \item Evaluating the effectiveness of the following methodologies:
   \begin{itemize}
     \item Scrum
@@ -227,67 +228,67 @@ The PRISMA flow diagram is a standardized way of reporting the results of a scop
 
 \begin{figure}
   \centering
- \begin{adjustwidth}{-4em}{0pt}
- \begin{tikzpicture}[
-  node distance = 1.5cm,
-  box/.style = {draw, rectangle, rounded corners, minimum width=12cm, minimum height=1.5cm, text width=11.5cm, align=center},
-  sidebox/.style = {draw, rectangle, rounded corners, minimum width=5cm, minimum height=1.5cm, text width=4.5cm, align=center},
-  line/.style = {draw, -stealth, thick}
-  ]
- % Identification box
- \node[box] (identification)
-  {\textbf{Identification} \\
-  Records identified through database searching:\\
-  IEEE Xplore (n = 20)\\
-  ACM Digital Library (n = 20)\\
-  Google Scholar (n = 20)\\
-  Total (n = 60)};
- % Screening boxes
- \node[box, below=of identification] (screening1)
-  {\textbf{Screening} \\
-  Records after duplicates removed\\
-  (n = 54)};
- \node[box, below=of screening1] (screening2)
-  {Records screened by title and abstract\\
-  (n = 45)};
- \node[sidebox, right=1.5cm of screening2] (excluded1)
-  {Records excluded\\
-  (n = 9)};
- % Eligibility boxes
- \node[box, below=of screening2] (eligibility)
-  {\textbf{Eligibility} \\
-  Full-text articles assessed for eligibility\\
-  (n = 30)};
- \node[sidebox, right=1.5cm of eligibility] (excluded2)
-  {Full-text articles excluded, with reasons:\\
-  - Not focused on methodology (n = 8)\\
-  - Not software development (n = 3)\\
-  - Conference abstracts only (n = 2)\\
-  - Other (n = 2)};
- % Included box
- \node[box, below=of eligibility] (included)
-  {\textbf{Included} \\
-  Studies included in meta analysis\\
-  (n = 15)\\[0.3cm]
- \begin{tabular}{ll}
-  Scrum & (n = 6)\\
-  Kanban & (n = 2)\\
-  Waterfall & (n = 1)\\
-  Extreme Programming & (n = 1)\\
-  DevOps & (n = 5)
- \end{tabular}};
- % Arrows
- \draw[line] (identification) -- (screening1);
- \draw[line] (screening1) -- (screening2);
- \draw[line] (screening2) -- (eligibility);
- \draw[line] (eligibility) -- (included);
- \draw[line] (screening2) -- (excluded1);
- \draw[line] (eligibility) -- (excluded2);
- \end{tikzpicture}
- \end{adjustwidth}
- \caption{PRISMA \cite{PRISMAStatement} flow diagram for scoping review of software development methodologies}
- \label{fig:prisma}
- \end{figure}
+  \begin{adjustwidth}{-4em}{0pt}
+    \begin{tikzpicture}[
+      node distance = 1.5cm,
+      box/.style = {draw, rectangle, rounded corners, minimum width=12cm, minimum height=1.5cm, text width=11.5cm, align=center},
+      sidebox/.style = {draw, rectangle, rounded corners, minimum width=5cm, minimum height=1.5cm, text width=4.5cm, align=center},
+      line/.style = {draw, -stealth, thick}
+    ]
+      % Identification box
+      \node[box] (identification)
+        {\textbf{Identification} \\
+        Records identified through database searching:\\
+        IEEE Xplore (n = 20)\\
+        ACM Digital Library (n = 20)\\
+        Google Scholar (n = 20)\\
+        Total (n = 60)};
+      % Screening boxes
+      \node[box, below=of identification] (screening1)
+        {\textbf{Screening} \\
+        Records after duplicates removed\\
+        (n = 54)};
+      \node[box, below=of screening1] (screening2)
+        {Records screened by title and abstract\\
+        (n = 45)};
+      \node[sidebox, right=1.5cm of screening2] (excluded1)
+        {Records excluded\\
+        (n = 9)};
+      % Eligibility boxes
+      \node[box, below=of screening2] (eligibility)
+        {\textbf{Eligibility} \\
+        Full-text articles assessed for eligibility\\
+        (n = 30)};
+      \node[sidebox, right=1.5cm of eligibility] (excluded2)
+        {Full-text articles excluded, with reasons:\\
+        - Not focused on methodology (n = 8)\\
+        - Not software development (n = 3)\\
+        - Conference abstracts only (n = 2)\\
+        - Other (n = 2)};
+      % Included box
+      \node[box, below=of eligibility] (included)
+        {\textbf{Included} \\
+        Studies included in meta analysis\\
+        (n = 15)\\[0.3cm]
+      \begin{tabular}{ll}
+        Scrum & (n = 6)\\
+        Kanban & (n = 2)\\
+        Waterfall & (n = 1)\\
+        Extreme Programming & (n = 1)\\
+        DevOps & (n = 5)
+      \end{tabular}};
+      % Arrows
+      \draw[line] (identification) -- (screening1);
+      \draw[line] (screening1) -- (screening2);
+      \draw[line] (screening2) -- (eligibility);
+      \draw[line] (eligibility) -- (included);
+      \draw[line] (screening2) -- (excluded1);
+      \draw[line] (eligibility) -- (excluded2);
+    \end{tikzpicture}
+  \end{adjustwidth}
+  \caption{PRISMA \cite{PRISMAStatement} flow diagram for scoping review of software development methodologies}
+  \label{fig:prisma}
+\end{figure}
 
 \newpage
 
