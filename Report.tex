@@ -125,7 +125,7 @@ for use in networking, network interconnect testing and telemetry.
 They design their instruments with YANG (RFC7950) models and NETCONF (RFC6241) \cite{ennsNetworkConfigurationProtocol2011} protocol. 
 The instruments are based on IETF standards and drafts, 
 and are implemented with software tools available in Debian, programmable 
-logic and open hardware. \cite{LightsideInstrumentsYANG}
+logic and open hardware \cite{LightsideInstrumentsYANG}.
 
 \section{Technical background}
 
@@ -135,14 +135,24 @@ Each NETCONF device presents the aquiring device with a YANG \cite{bjorklundYANG
 consisting of the device state and parameters. 
 Each data model has a set of constraints making them error correcting.
 
+\subsection{Node-RED}
+Node-RED \cite{LowcodeProgrammingEventdriven} is an open source low code programming tool for event driven applications.
+It is developed by IBM and is based on Node.js \cite{NodejsRunJavaScript}.
+Node-RED is used to connect hardware devices and APIs through a visual programming interface.
+
+\subsection{Grafana}
+Grafana \cite{GrafanaOpenComposable} is an open source data visualization tool.
+It is used to visualize arbitrary data from different data sources.
+
+
 \section{Work methodology}
 
 \subsection{Research Question}
 This meta study examines the claims that Scrum, Kanban, Waterfall, Extreme Programming and DevOps 
 increases worker productivity substantiated by empirical evidence.
 
-
 \subsection{Scoping Review}
+
 \subsubsection{Search strategy}
 The following is our search strategy for the scoping review.
 We will be searching for quantitative studies on the efficiency of the following work methodologies:
@@ -195,9 +205,12 @@ The search will be done using the following search string:
 \end{adjustwidth}
 
 \subsubsection{Inclusion and Exclusion Criteria}
-The systematic review will include peer-reviewed articles meeting the following criteria:
+The systematic review will include articles meeting the following criteria:
 \begin{itemize}
   \item Published after January 1, 2020
+  \item Published in English
+  \item Relevant to the research question
+  \item empirical evidence
   \item Evaluating the effectiveness of the following methodologies:
   \begin{itemize}
     \item Scrum
@@ -208,8 +221,9 @@ The systematic review will include peer-reviewed articles meeting the following 
   \end{itemize}
 \end{itemize}
 
-
 \subsubsection{PRISMA flow diagram}
+\textit{Figure \ref{fig:prisma}} shows the PRISMA \cite{PRISMAStatement} flow diagram for the scoping review.
+The PRISMA flow diagram is a standardized way of reporting the results of a scoping review.
 
 \begin{figure}
   \centering
@@ -275,6 +289,7 @@ The systematic review will include peer-reviewed articles meeting the following 
  \label{fig:prisma}
  \end{figure}
 
+\newpage
 
 \subsection{Scrum}
 
@@ -287,9 +302,11 @@ The systematic review will include peer-reviewed articles meeting the following 
 
 \section{NETCONF and YANG sensor management}
 
-\subsection{Node RED}
+\subsection{Node-RED}
 \subsubsection{node-yuma123}
 \subsubsubsection{easyNetconf}
+
+\subsection{Grafana}
 
 \section{NETCONF Security}
 
