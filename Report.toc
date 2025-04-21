@@ -20,8 +20,9 @@
 \contentsline {subsection}{\numberline {5.1}YANG Model}{8}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}Node-RED}{10}{subsection.5.2}%
 \contentsline {subsubsection}{\numberline {5.2.1}Red-Netconf}{10}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}node-yuma123}{10}{subsubsection.5.2.2}%
-\contentsline {paragraph}{\numberline {5.2.2.1}easyNetconf}{10}{paragraph.5.2.2.1}%
-\contentsline {subsection}{\numberline {5.3}Grafana}{10}{subsection.5.3}%
-\contentsline {section}{\numberline {6}NETCONF Security}{10}{section.6}%
-\contentsline {section}{References}{11}{section.6}%
+\contentsline {paragraph}{\numberline {5.2.1.1}Temperature alert}{10}{paragraph.5.2.1.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}node-yuma123}{11}{subsubsection.5.2.2}%
+\contentsline {paragraph}{\numberline {5.2.2.1}easyNetconf}{11}{paragraph.5.2.2.1}%
+\contentsline {subsection}{\numberline {5.3}Grafana}{11}{subsection.5.3}%
+\contentsline {section}{\numberline {6}NETCONF Security}{11}{section.6}%
+\contentsline {section}{References}{12}{section.6}%

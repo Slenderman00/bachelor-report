@@ -322,11 +322,10 @@ The PRISMA flow diagram is a standardized way of reporting the results of a scop
 \subsection{Extreme Programming}
 \subsection{DevOps}
 
-
 \section{NETCONF and YANG sensor management}
 
-Sensor management is an essential part of administrating a larger network. Together with Lightside Instruments we have 
-developed open source tools for YANG and NETCONF aimed at sensor management.
+Hardware management is an essential part of administrating a larger network. Together with Lightside Instruments we have 
+developed open source tools for YANG and NETCONF aimed at hardware sensor management.
 
 
 \subsection{YANG Model}
@@ -377,6 +376,11 @@ describes the state of thermometers. See \textit{Figure \ref{fig:yang}} for the 
 \newpage
 
 \subsection{Node-RED}
+Node-RED is a low code programming tool for event driven applications.
+It makes it possible to create arbitrary flows that function as a compatibility layer
+between different systems and protocols. The low code nature of Node-RED makes arbitrary system
+integration accessible even for the lay person.
+
 \subsubsection{Red-Netconf}
 Red-Netconf \cite{LightsideinstrumentsRednetconf} is a Node-RED plugin that implements the following two 
 nodes:
@@ -385,6 +389,25 @@ nodes:
   \item \textbf{Netconf Yangcli}: This node is used to send NETCONF commands to a NETCONF device using yangcli commands.
 \end{itemize}
 Using these two nodes we are able to create Node-RED flows that can manage NETCONF devices.
+
+\subsubsubsection{Temperature alert}
+As an example of how the Red-Netconf nodes can be used we created
+a Node-RED reference flow that collects data from a thermometer and switches on an LED
+when the temperature is above 25 degrees Celsius, this can be seen in \textit{Figure \ref{fig:red-netconf}}.
+
+Imagine that we replace the LED with a NETCONF compatible cooling system and one can 
+
+\newpage
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{red-netconf.png}
+  \caption{Node-RED flow using Red-Netconf nodes that monitors a temperature sensor and 
+  switches on an LED when the temperature is above 25 degrees Celsius.}
+  \label{fig:red-netconf}
+\end{figure}
+
+
 
 \subsubsection{node-yuma123}
 \subsubsubsection{easyNetconf}

@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.3 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global/global}
-    \entry{LightsideinstrumentsRednetconf}{misc}{}{}
+  \datalist[entry]{nty/global//global/global}
+    \entry{LightsideinstrumentsRednetconf}{misc}{}
       \field{sortinit}{l}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labeltitlesource}{title}
@@ -35,7 +35,7 @@
       \verb /home/joar/Zotero/storage/DUVTTCHZ/red-netconf.html
       \endverb
     \endentry
-    \entry{ACMDigitalLibrary}{misc}{}{}
+    \entry{ACMDigitalLibrary}{misc}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labeltitlesource}{title}
@@ -52,7 +52,7 @@
       \verb /home/joar/Zotero/storage/KLGKH2AP/dl.acm.org.html
       \endverb
     \endentry
-    \entry{AgileAlliance2015}{misc}{}{}
+    \entry{AgileAlliance2015}{misc}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labeltitlesource}{title}
@@ -70,7 +70,7 @@
       \verb /home/joar/Zotero/storage/XTYC3RKA/www.agilealliance.org.html
       \endverb
     \endentry
-    \entry{bjorklundYANG11Data2016}{report}{}{}
+    \entry{bjorklundYANG11Data2016}{report}{}
       \name{author}{1}{}{%
         {{hash=c302f0039be29440191c4cd1d1f41068}{%
            family={Björklund},
@@ -83,12 +83,10 @@
       }
       \strng{namehash}{c302f0039be29440191c4cd1d1f41068}
       \strng{fullhash}{c302f0039be29440191c4cd1d1f41068}
-      \strng{fullhashraw}{c302f0039be29440191c4cd1d1f41068}
       \strng{bibnamehash}{c302f0039be29440191c4cd1d1f41068}
       \strng{authorbibnamehash}{c302f0039be29440191c4cd1d1f41068}
       \strng{authornamehash}{c302f0039be29440191c4cd1d1f41068}
       \strng{authorfullhash}{c302f0039be29440191c4cd1d1f41068}
-      \strng{authorfullhashraw}{c302f0039be29440191c4cd1d1f41068}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -110,7 +108,7 @@
       \verb /home/joar/Zotero/storage/ETXZSGR3/Björklund - 2016 - The YANG 1.1 Data Modeling Language.pdf
       \endverb
     \endentry
-    \entry{ennsNetworkConfigurationProtocol2011}{report}{}{}
+    \entry{ennsNetworkConfigurationProtocol2011}{report}{}
       \name{author}{4}{}{%
         {{hash=da36e0d45377c4622881ca0d8e96b0d5}{%
            family={Enns},
@@ -138,12 +136,10 @@
       }
       \strng{namehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
       \strng{fullhash}{8a755f33f1e50bb75d27e37baa15ccf7}
-      \strng{fullhashraw}{8a755f33f1e50bb75d27e37baa15ccf7}
       \strng{bibnamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
       \strng{authorbibnamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
       \strng{authornamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
       \strng{authorfullhash}{8a755f33f1e50bb75d27e37baa15ccf7}
-      \strng{authorfullhashraw}{8a755f33f1e50bb75d27e37baa15ccf7}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{labelnamesource}{author}
@@ -165,7 +161,7 @@
       \verb /home/joar/Zotero/storage/VI5ABVJG/Enns et al. - 2011 - Network Configuration Protocol (NETCONF).pdf
       \endverb
     \endentry
-    \entry{GoogleScholar}{misc}{}{}
+    \entry{GoogleScholar}{misc}{}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labeltitlesource}{title}
@@ -179,7 +175,7 @@
       \verb /home/joar/Zotero/storage/ZRJ975H7/scholar.google.com.html
       \endverb
     \endentry
-    \entry{GrafanaOpenComposable}{misc}{}{}
+    \entry{GrafanaOpenComposable}{misc}{}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labeltitlesource}{shorttitle}
@@ -197,7 +193,7 @@
       \verb /home/joar/Zotero/storage/8XFBBPH8/grafana.com.html
       \endverb
     \endentry
-    \entry{HomeScrumorg}{misc}{}{}
+    \entry{HomeScrumorg}{misc}{}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labeltitlesource}{title}
@@ -213,7 +209,7 @@
       \verb /home/joar/Zotero/storage/KJFCPC7U/www.scrum.org.html
       \endverb
     \endentry
-    \entry{IEEEXplore}{misc}{}{}
+    \entry{IEEEXplore}{misc}{}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
@@ -227,7 +223,7 @@
       \verb /home/joar/Zotero/storage/746DDI6Q/home.html
       \endverb
     \endentry
-    \entry{LightsideInstrumentsYANG}{misc}{}{}
+    \entry{LightsideInstrumentsYANG}{misc}{}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labeltitlesource}{title}
@@ -241,7 +237,7 @@
       \verb /home/joar/Zotero/storage/IIVUNR6V/lightside-instruments.com.html
       \endverb
     \endentry
-    \entry{LowcodeProgrammingEventdriven}{misc}{}{}
+    \entry{LowcodeProgrammingEventdriven}{misc}{}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labeltitlesource}{title}
@@ -255,7 +251,7 @@
       \verb /home/joar/Zotero/storage/CH9HWX7B/nodered.org.html
       \endverb
     \endentry
-    \entry{NodejsRunJavaScript}{misc}{}{}
+    \entry{NodejsRunJavaScript}{misc}{}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labeltitlesource}{title}
@@ -271,7 +267,7 @@
       \verb /home/joar/Zotero/storage/W44SCQFK/en.html
       \endverb
     \endentry
-    \entry{Organisations}{misc}{}{}
+    \entry{Organisations}{misc}{}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labeltitlesource}{title}
@@ -285,7 +281,7 @@
       \verb /home/joar/Zotero/storage/BJSQYW99/Organisations.html
       \endverb
     \endentry
-    \entry{PRISMAStatement}{misc}{}{}
+    \entry{PRISMAStatement}{misc}{}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labeltitlesource}{title}
@@ -301,7 +297,7 @@
       \verb /home/joar/Zotero/storage/GTJ9UN7Y/www.prisma-statement.org.html
       \endverb
     \endentry
-    \entry{ScrumAllianceFind}{misc}{}{}
+    \entry{ScrumAllianceFind}{misc}{}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labeltitlesource}{title}
