@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -16,5 +16,308 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{LightsideinstrumentsRednetconf}{misc}{}{}
+      \field{sortinit}{l}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Netconf nodes}
+      \field{howpublished}{http://flows.nodered.org/node/@lightside-instruments/red-netconf}
+      \field{langid}{english}
+      \field{title}{@lightside-Instruments/Red-Netconf}
+      \field{urlday}{21}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/DUVTTCHZ/red-netconf.html
+      \endverb
+    \endentry
+    \entry{ACMDigitalLibrary}{misc}{}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{abstract}{ACM Digital Library Home page}
+      \field{howpublished}{https://dl.acm.org/}
+      \field{journaltitle}{ACM Digital Library}
+      \field{langid}{english}
+      \field{title}{{{ACM Digital Library}}}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/KLGKH2AP/dl.acm.org.html
+      \endverb
+    \endentry
+    \entry{AgileAlliance2015}{misc}{}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Agile Alliance is a global nonprofit membership organization dedicated to people and organizations that apply the values and principles of the Agile Manifesto.}
+      \field{howpublished}{https://www.agilealliance.org/}
+      \field{langid}{american}
+      \field{month}{6}
+      \field{title}{Agile {{Alliance}}}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2015}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/XTYC3RKA/www.agilealliance.org.html
+      \endverb
+    \endentry
+    \entry{bjorklundYANG11Data2016}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=c302f0039be29440191c4cd1d1f41068}{%
+           family={Björklund},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{fullhash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{fullhashraw}{c302f0039be29440191c4cd1d1f41068}
+      \strng{bibnamehash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{authorbibnamehash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{authornamehash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{authorfullhash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{authorfullhashraw}{c302f0039be29440191c4cd1d1f41068}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{YANG is a data modeling language used to model configuration data, state data, Remote Procedure Calls, and notifications for network management protocols. This document describes the syntax and semantics of version 1.1 of the YANG language. YANG version 1.1 is a maintenance release of the YANG language, addressing ambiguities and defects in the original specification. There are a small number of backward incompatibilities from YANG version 1. This document also specifies the YANG mappings to the Network Configuration Protocol (NETCONF).}
+      \field{month}{8}
+      \field{number}{RFC 7950}
+      \field{title}{The {{YANG}} 1.1 {{Data Modeling Language}}}
+      \field{type}{Request for {{Comments}}}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC7950
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/ETXZSGR3/Björklund - 2016 - The YANG 1.1 Data Modeling Language.pdf
+      \endverb
+    \endentry
+    \entry{ennsNetworkConfigurationProtocol2011}{report}{}{}
+      \name{author}{4}{}{%
+        {{hash=da36e0d45377c4622881ca0d8e96b0d5}{%
+           family={Enns},
+           familyi={E\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=c302f0039be29440191c4cd1d1f41068}{%
+           family={Björklund},
+           familyi={B\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+        {{hash=49997ddeb464bd92dc3c6e9f70600468}{%
+           family={Bierman},
+           familyi={B\bibinitperiod},
+           given={Andy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bad6a638af87ad83706ef8ae8b7a1947}{%
+           family={Schönwälder},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
+      \strng{fullhash}{8a755f33f1e50bb75d27e37baa15ccf7}
+      \strng{fullhashraw}{8a755f33f1e50bb75d27e37baa15ccf7}
+      \strng{bibnamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
+      \strng{authorbibnamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
+      \strng{authornamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
+      \strng{authorfullhash}{8a755f33f1e50bb75d27e37baa15ccf7}
+      \strng{authorfullhashraw}{8a755f33f1e50bb75d27e37baa15ccf7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Network Configuration Protocol (NETCONF) defined in this document provides mechanisms to install, manipulate, and delete the configuration of network devices. It uses an Extensible Markup Language (XML)-based data encoding for the configuration data as well as the protocol messages. The NETCONF protocol operations are realized as remote procedure calls (RPCs). This document obsoletes RFC 4741. [STANDARDS-TRACK]}
+      \field{month}{6}
+      \field{number}{RFC 6241}
+      \field{title}{Network {{Configuration Protocol}} ({{NETCONF}})}
+      \field{type}{Request for {{Comments}}}
+      \field{urlday}{12}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{year}{2011}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC6241
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/VI5ABVJG/Enns et al. - 2011 - Network Configuration Protocol (NETCONF).pdf
+      \endverb
+    \endentry
+    \entry{GoogleScholar}{misc}{}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://scholar.google.com/}
+      \field{title}{Google {{Scholar}}}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/ZRJ975H7/scholar.google.com.html
+      \endverb
+    \endentry
+    \entry{GrafanaOpenComposable}{misc}{}{}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Grafana is the open source analytics \& monitoring solution for every database.}
+      \field{howpublished}{https://grafana.com/}
+      \field{journaltitle}{Grafana Labs}
+      \field{langid}{english}
+      \field{shorttitle}{Grafana}
+      \field{title}{Grafana: {{The}} Open and Composable Observability Platform}
+      \field{urlday}{20}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/8XFBBPH8/grafana.com.html
+      \endverb
+    \endentry
+    \entry{HomeScrumorg}{misc}{}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Welcome to the Home of Scrum!™}
+      \field{howpublished}{https://www.scrum.org/index}
+      \field{langid}{english}
+      \field{title}{Home {|} {{Scrum}}.Org}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/KJFCPC7U/www.scrum.org.html
+      \endverb
+    \endentry
+    \entry{IEEEXplore}{misc}{}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://ieeexplore.ieee.org/Xplore/home.jsp}
+      \field{title}{{{IEEE Xplore}}}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/746DDI6Q/home.html
+      \endverb
+    \endentry
+    \entry{LightsideInstrumentsYANG}{misc}{}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{langid}{american}
+      \field{title}{Lightside {{Instruments AS}} -- {{YANG}} Model Network Managed Instruments}
+      \field{urlday}{20}
+      \field{urlmonth}{1}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/IIVUNR6V/lightside-instruments.com.html
+      \endverb
+    \endentry
+    \entry{LowcodeProgrammingEventdriven}{misc}{}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://nodered.org/}
+      \field{title}{Low-Code Programming for Event-Driven Applications : {{Node-RED}}}
+      \field{urlday}{29}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/CH9HWX7B/nodered.org.html
+      \endverb
+    \endentry
+    \entry{NodejsRunJavaScript}{misc}{}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Node.js{®} is a JavaScript runtime built on Chrome's V8 JavaScript engine.}
+      \field{howpublished}{https://nodejs.org/en}
+      \field{langid}{british}
+      \field{title}{Node.Js --- {{Run JavaScript Everywhere}}}
+      \field{urlday}{29}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/W44SCQFK/en.html
+      \endverb
+    \endentry
+    \entry{Organisations}{misc}{}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.peoplecert.org/Organisations}
+      \field{title}{Organisations-}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/BJSQYW99/Organisations.html
+      \endverb
+    \endentry
+    \entry{PRISMAStatement}{misc}{}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.prisma-statement.org}
+      \field{journaltitle}{PRISMA statement}
+      \field{langid}{american}
+      \field{title}{{{PRISMA}} Statement}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/GTJ9UN7Y/www.prisma-statement.org.html
+      \endverb
+    \endentry
+    \entry{ScrumAllianceFind}{misc}{}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Become agile-certified with Scrum Alliance. Upskill, deliver results, and join a diverse community of 1.5 million professionals worldwide.}
+      \field{howpublished}{https://www.scrumalliance.org}
+      \field{langid}{english}
+      \field{title}{Scrum {{Alliance}} - {{Find Courses}} for {{Scrum}} and {{Agile Certifications}}}
+      \field{urlday}{28}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/6FD7YJBM/www.scrumalliance.org.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

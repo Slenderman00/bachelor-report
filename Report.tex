@@ -325,7 +325,67 @@ The PRISMA flow diagram is a standardized way of reporting the results of a scop
 
 \section{NETCONF and YANG sensor management}
 
+Sensor management is an essential part of administrating a larger network. Together with Lightside Instruments we have 
+developed open source tools for YANG and NETCONF aimed at sensor management.
+
+
+\subsection{YANG Model}
+The YANG model is a model used to describe the state and actions of a NETCONF device.
+The Internet Engineering Task Force (IETF) has developed a set of standard YANG models for NETCONF devices.
+For the purposes of this project we will not be using the standard YANG models,
+but instead we will be using a custom YANG model developed by Lightside Instruments AS that only 
+describes the state of thermometers. See \textit{Figure \ref{fig:yang}} for the YANG model.
+\begin{figure}
+  \begin{verbatim}
+    module lsi-thermometers {
+      yang-version 1.1;
+      namespace "urn:lsi:params:xml:ns:yang:thermometers";
+      prefix thermometers;
+
+      organization  "Lightside Instruments AS";
+
+      description
+        "Thermometers monitoring module.";
+
+      revision 2022-07-25 {
+        description
+          "Initial version.";
+      }
+
+      container thermometers {
+        config false;
+        list thermometer {
+          key "name";
+          leaf name {
+            type string;
+          }
+          leaf value {
+            description
+              "Temperature in degrees Celsius multiplied by 100.";
+            type int32 {
+              range "-27315..max";
+            }
+          }
+        }
+      }
+    }
+  \end{verbatim}
+  \caption{YANG model for thermometer management}
+  \label{fig:yang}
+\end{figure}
+
+\newpage
+
 \subsection{Node-RED}
+\subsubsection{Red-Netconf}
+Red-Netconf \cite{LightsideinstrumentsRednetconf} is a Node-RED plugin that implements the following two 
+nodes:
+\begin{itemize}
+  \item \textbf{Netconf Session}: This node is used to create a NETCONF session with a NETCONF device.
+  \item \textbf{Netconf Yangcli}: This node is used to send NETCONF commands to a NETCONF device using yangcli commands.
+\end{itemize}
+Using these two nodes we are able to create Node-RED flows that can manage NETCONF devices.
+
 \subsubsection{node-yuma123}
 \subsubsubsection{easyNetconf}
 
