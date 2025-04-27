@@ -144,6 +144,17 @@ Node-RED is used to connect hardware devices and APIs through a visual programmi
 Grafana \cite{GrafanaOpenComposable} is an open source data visualization tool.
 It is used to visualize arbitrary data from different data sources.
 
+\subsection{Scrum}
+Scrum \cite{HomeScrumorg} is a framework for agile \cite{AgileSoftwareDevelopment2025} software development.
+
+\subsection{Kanban}
+Kanban \cite{Kanban2025} is a framework for agile software development.
+
+\subsection{Waterfall}
+Waterfall \cite{WaterfallModel2025} is a framework for software development.
+
+\subsection{Extreme Programming}
+Extreme Programming \cite{ExtremeProgramming2025} is a framework for agile software development.
 
 \section{Work Methodology}
 
@@ -258,16 +269,16 @@ The PRISMA flow diagram is a standardized way of reporting the results of a scop
   \node[box, below=of identification] (duplicates)
    {\textbf{Duplicate Removal} \\
    Records after duplicates removed\\
-   (n = 56)};
+   (n = 55)};
   \node[sidebox, right=1.5cm of duplicates] (excluded0)
    {Duplicates removed\\
-   (n = 4)};
+   (n = 5)};
   
   % Screening boxes
   \node[box, below=of duplicates] (screening)
    {\textbf{Screening} \\
    Records screened by title and abstract\\
-   (n = 56)};
+   (n = 55)};
   \node[sidebox, right=1.5cm of screening] (excluded1)
    {Records excluded\\
    (n = 12)};
@@ -276,24 +287,25 @@ The PRISMA flow diagram is a standardized way of reporting the results of a scop
   \node[box, below=2.5cm of screening] (eligibility)
    {\textbf{Eligibility} \\
    Full-text articles assessed for eligibility\\
-   (n = 44)};
+   (n = 43)};
   \node[sidebox, right=1.5cm of eligibility] (excluded2)
    {Full-text articles excluded, with reasons:\\
    - No evaluation of methodology effectiveness\\
    - Insufficient empirical evidence\\
    - Theoretical papers without implementation\\
-   (n = 33)};
+   - Industry Bias\\
+   (n = 39)};
   
   % Included box
   \node[box, below=of eligibility] (included)
    {\textbf{Included} \\
    Studies included in review\\
-   (n = 11)\\[0.3cm]
+   (n = 4)\\[0.3cm]
   \begin{tabular}{ll}
-   Scrum & (n = 5)\\
-   DevOps & (n = 4)\\
-   Kanban & (n = 1)\\
-   Waterfall & (n = 1)\\
+   Scrum & (n = 1)\\
+   DevOps & (n = 3)\\
+   Kanban & (n = 0)\\
+   Waterfall & (n = 0)\\
    XP & (n = 0)
   \end{tabular}};
   
@@ -315,7 +327,49 @@ The PRISMA flow diagram is a standardized way of reporting the results of a scop
 \newpage
 
 \subsection{Scrum}
+Scrum is a framework for agile software development. The term Scrum is derived 
+from the game of rugby, where a scrum is a way of restarting play after a minor infringement \cite{ScrumRugbyUnion2025}.
+The use of the term Scrum in software development was first introduced by Takeuchi and Nonaka in 1986 in a paper titled 
+"The New New Product Development Game" \cite{NewNewProduct}.
+In the paper, the authors argue for a new approach to product development where the different stages of development are 
+overlapped, rather than sequentially executed in a "pass the baton" fashion. This differs from 
+the then popular NASA type PPP (Phased Project Planning model) \cite{PhasedProjectPlanning1968}.
+\\
+\\
+Modern Scrum development consists of a set of sprints, these sprints consists of a pre-defined set of tasks
+that are to be completed in the pre-defined sprint time frame. Each task or "story" is assigned an arbitrary number of points
+that represents the complexity of the task. 
+There are many modern flavors of Scrum, like Accenture's \cite{AccentureLetThere} Autoscrum
+which is a scrum framework that was first introduced in the talk "AGILE TRANSFORMATION?
+FOR COMPLEX SYSTEMS?
+...NO WAY!" by Brehm \cite{brehmAGILETRANSFORMATIONCOMPLEX2025} as can be seen in \textit{Figure \ref{fig:autoscrum}}.
+Or the scaled agile framework (SAFe) \cite{Framework} which is a framework developed by Scaled Agile Incorporated  which introduces 
+SAFe Scrum see \textit{Figure \ref{fig:sAFE}}.
+Or the Deloitte's \cite{DeloitteAuditConsulting} "The Agile Landscape v3" that consists 
+of all the different frameworks and methods used for project management. See the Scrum section in \textit{Figure \ref{fig:the_agile_landscape}}.
 
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{autoscrum.png}
+  \caption{Excerpt from the presentation "AGILE TRANSFORMATION? FOR COMPLEX SYSTEMS? ...NO WAY!" by Brehm \cite{brehmAGILETRANSFORMATIONCOMPLEX2025} showing the Autoscrum framework.}
+  \label{fig:autoscrum}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{sAFE.png}
+  \caption{The Scaled Agile Framework (SAFe) \cite{Framework}.}
+  \label{fig:sAFE}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{the_agile_landscape.png}
+  \caption{The Agile Landscape v3 \cite{DeloitteAuditConsulting} showing the different frameworks and methods used for project management.}
+  \label{fig:the_agile_landscape}
+\end{figure}
+
+\newpage
 
 \subsection{Kanban}
 \subsection{Waterfall}
@@ -395,8 +449,6 @@ As an example of how the Red-Netconf nodes can be used we created
 a Node-RED reference flow that collects data from a thermometer and switches on an LED
 when the temperature is above 25 degrees Celsius, this can be seen in \textit{Figure \ref{fig:red-netconf}}.
 
-Imagine that we replace the LED with a NETCONF compatible cooling system and one can 
-
 \newpage
 
 \begin{figure}
@@ -408,8 +460,10 @@ Imagine that we replace the LED with a NETCONF compatible cooling system and one
 \end{figure}
 
 
+\subsubsection{Node-Yuma123}
+Node-Yuma123 \cite{Nodeyuma1232025} is a NodeJS package that implements a set of Yuma123 bindings.
 
-\subsubsection{node-yuma123}
+
 \subsubsubsection{easyNetconf}
 
 \subsection{Grafana}

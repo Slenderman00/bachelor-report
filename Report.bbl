@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.2 $
+% $ biblatex bbl format version 3.3 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -18,8 +18,8 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
-    \entry{LightsideinstrumentsRednetconf}{misc}{}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{LightsideinstrumentsRednetconf}{misc}{}{}
       \field{sortinit}{l}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labeltitlesource}{title}
@@ -35,7 +35,23 @@
       \verb /home/joar/Zotero/storage/DUVTTCHZ/red-netconf.html
       \endverb
     \endentry
-    \entry{ACMDigitalLibrary}{misc}{}
+    \entry{AccentureLetThere}{misc}{}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Across industries and around the world, we're creating better experiences for people using emerging technologies and human ingenuity. Together, we can reinvent anything.}
+      \field{howpublished}{https://www.accenture.com/no-en}
+      \field{langid}{english}
+      \field{title}{Accenture {|} {{Let}} There Be Change}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/PLZ3Y297/no-en.html
+      \endverb
+    \endentry
+    \entry{ACMDigitalLibrary}{misc}{}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labeltitlesource}{title}
@@ -52,7 +68,7 @@
       \verb /home/joar/Zotero/storage/KLGKH2AP/dl.acm.org.html
       \endverb
     \endentry
-    \entry{AgileAlliance2015}{misc}{}
+    \entry{AgileAlliance2015}{misc}{}{}
       \field{sortinit}{A}
       \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
       \field{labeltitlesource}{title}
@@ -70,7 +86,26 @@
       \verb /home/joar/Zotero/storage/XTYC3RKA/www.agilealliance.org.html
       \endverb
     \endentry
-    \entry{bjorklundYANG11Data2016}{report}{}
+    \entry{AgileSoftwareDevelopment2025}{article}{}{}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Agile software development is an umbrella term for approaches to developing software that reflect the values and principles agreed upon by The Agile Alliance, a group of 17 software practitioners, in 2001. As documented in their Manifesto for Agile Software Development the practitioners value: Individuals and interactions over processes and tools Working software over comprehensive documentation Customer collaboration over contract negotiation Responding to change over following a plan The practitioners cite inspiration from new practices at the time including extreme programming, scrum, dynamic systems development method, adaptive software development and being sympathetic to the need for an alternative to documentation driven, heavyweight software development processes. Many software development practices emerged from the agile mindset. These agile-based practices, sometimes called Agile (with a capital A) include requirements, discovery and solutions improvement through the collaborative effort of self-organizing and cross-functional teams with their customer(s)/end user(s). While there is much anecdotal evidence that the agile mindset and agile-based practices improve the software development process, the empirical evidence is limited and less than conclusive.}
+      \field{annotation}{Page Version ID: 1285458108}
+      \field{journaltitle}{Wikipedia}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Agile Software Development}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/GX2BUWPU/Agile_software_development.html
+      \endverb
+    \endentry
+    \entry{bjorklundYANG11Data2016}{report}{}{}
       \name{author}{1}{}{%
         {{hash=c302f0039be29440191c4cd1d1f41068}{%
            family={Björklund},
@@ -83,10 +118,12 @@
       }
       \strng{namehash}{c302f0039be29440191c4cd1d1f41068}
       \strng{fullhash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{fullhashraw}{c302f0039be29440191c4cd1d1f41068}
       \strng{bibnamehash}{c302f0039be29440191c4cd1d1f41068}
       \strng{authorbibnamehash}{c302f0039be29440191c4cd1d1f41068}
       \strng{authornamehash}{c302f0039be29440191c4cd1d1f41068}
       \strng{authorfullhash}{c302f0039be29440191c4cd1d1f41068}
+      \strng{authorfullhashraw}{c302f0039be29440191c4cd1d1f41068}
       \field{sortinit}{B}
       \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
       \field{labelnamesource}{author}
@@ -108,7 +145,51 @@
       \verb /home/joar/Zotero/storage/ETXZSGR3/Björklund - 2016 - The YANG 1.1 Data Modeling Language.pdf
       \endverb
     \endentry
-    \entry{ennsNetworkConfigurationProtocol2011}{report}{}
+    \entry{brehmAGILETRANSFORMATIONCOMPLEX2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=49f3e0a8d421e30d9a7523d5ca733c51}{%
+           family={Brehm},
+           familyi={B\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{49f3e0a8d421e30d9a7523d5ca733c51}
+      \strng{fullhash}{49f3e0a8d421e30d9a7523d5ca733c51}
+      \strng{fullhashraw}{49f3e0a8d421e30d9a7523d5ca733c51}
+      \strng{bibnamehash}{49f3e0a8d421e30d9a7523d5ca733c51}
+      \strng{authorbibnamehash}{49f3e0a8d421e30d9a7523d5ca733c51}
+      \strng{authornamehash}{49f3e0a8d421e30d9a7523d5ca733c51}
+      \strng{authorfullhash}{49f3e0a8d421e30d9a7523d5ca733c51}
+      \strng{authorfullhashraw}{49f3e0a8d421e30d9a7523d5ca733c51}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{10}
+      \field{title}{{{AGILE TRANSFORMATION}}? {{FOR COMPLEX SYSTEMS}}? ...{{NO WAY}}!}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{DeloitteAuditConsulting}{misc}{}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Industry insights and audit, consulting, financial advisory, risk management, and tax services from Deloitte's global network of member firms.}
+      \field{howpublished}{https://www.deloitte.com/global/en.html}
+      \field{langid}{english}
+      \field{title}{Deloitte {|} {{Audit}}, {{Consulting}}, {{Financial}}, {{Risk Management}}, {{Tax Services}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/44AS9LZ9/en.html
+      \endverb
+    \endentry
+    \entry{ennsNetworkConfigurationProtocol2011}{report}{}{}
       \name{author}{4}{}{%
         {{hash=da36e0d45377c4622881ca0d8e96b0d5}{%
            family={Enns},
@@ -136,10 +217,12 @@
       }
       \strng{namehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
       \strng{fullhash}{8a755f33f1e50bb75d27e37baa15ccf7}
+      \strng{fullhashraw}{8a755f33f1e50bb75d27e37baa15ccf7}
       \strng{bibnamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
       \strng{authorbibnamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
       \strng{authornamehash}{26a1ea6d36d3e0556e0ee9d52cf2a7e5}
       \strng{authorfullhash}{8a755f33f1e50bb75d27e37baa15ccf7}
+      \strng{authorfullhashraw}{8a755f33f1e50bb75d27e37baa15ccf7}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
       \field{labelnamesource}{author}
@@ -161,7 +244,43 @@
       \verb /home/joar/Zotero/storage/VI5ABVJG/Enns et al. - 2011 - Network Configuration Protocol (NETCONF).pdf
       \endverb
     \endentry
-    \entry{GoogleScholar}{misc}{}
+    \entry{ExtremeProgramming2025}{article}{}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Extreme programming (XP) is a software development methodology intended to improve software quality and responsiveness to changing customer requirements. As a type of agile software development, it advocates frequent releases in short development cycles, intended to improve productivity and introduce checkpoints at which new customer requirements can be adopted. Other elements of extreme programming include programming in pairs or doing extensive code review, unit testing of all code, not programming features until they are actually needed, a flat management structure, code simplicity and clarity, expecting changes in the customer's requirements as time passes and the problem is better understood, and frequent communication with the customer and among programmers. The methodology takes its name from the idea that the beneficial elements of traditional software engineering practices are taken to "extreme" levels. As an example, code reviews are considered a beneficial practice; taken to the extreme, code can be reviewed continuously (i.e. the practice of pair programming).}
+      \field{annotation}{Page Version ID: 1285948593}
+      \field{journaltitle}{Wikipedia}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Extreme Programming}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/T63BV9X7/Extreme_programming.html
+      \endverb
+    \endentry
+    \entry{Framework}{misc}{}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labeltitlesource}{title}
+      \field{abstract}{SAFe 6 is an update to the SAFe Framework to help organizations become Lean Enterprise and achieve Business Agility. Learn more and see FAQs about 6.}
+      \field{howpublished}{https://framework.scaledagile.com/}
+      \field{journaltitle}{Scaled Agile Framework}
+      \field{langid}{american}
+      \field{title}{Framework}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/MHSUDZAY/framework.scaledagile.com.html
+      \endverb
+    \endentry
+    \entry{GoogleScholar}{misc}{}{}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labeltitlesource}{title}
@@ -175,7 +294,7 @@
       \verb /home/joar/Zotero/storage/ZRJ975H7/scholar.google.com.html
       \endverb
     \endentry
-    \entry{GrafanaOpenComposable}{misc}{}
+    \entry{GrafanaOpenComposable}{misc}{}{}
       \field{sortinit}{G}
       \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labeltitlesource}{shorttitle}
@@ -193,7 +312,7 @@
       \verb /home/joar/Zotero/storage/8XFBBPH8/grafana.com.html
       \endverb
     \endentry
-    \entry{HomeScrumorg}{misc}{}
+    \entry{HomeScrumorg}{misc}{}{}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
       \field{labeltitlesource}{title}
@@ -209,7 +328,7 @@
       \verb /home/joar/Zotero/storage/KJFCPC7U/www.scrum.org.html
       \endverb
     \endentry
-    \entry{IEEEXplore}{misc}{}
+    \entry{IEEEXplore}{misc}{}{}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
       \field{labeltitlesource}{title}
@@ -223,7 +342,26 @@
       \verb /home/joar/Zotero/storage/746DDI6Q/home.html
       \endverb
     \endentry
-    \entry{LightsideInstrumentsYANG}{misc}{}
+    \entry{Kanban2025}{article}{}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Kanban (Japanese: 看板 [kambaɴ] meaning signboard) is a scheduling system for lean manufacturing (also called just-in-time manufacturing, abbreviated JIT). Taiichi Ohno, an industrial engineer at Toyota, developed kanban to improve manufacturing efficiency. The system takes its name from the cards that track production within a factory. Kanban is also known as the Toyota nameplate system in the automotive industry. A goal of the kanban system is to limit the buildup of excess inventory at any point in production. Limits on the number of items waiting at supply points are established and then reduced as inefficiencies are identified and removed. Whenever a limit is exceeded, this points to an inefficiency that should be addressed. In kanban, problem areas are highlighted by measuring lead time and cycle time of the full process and process steps. One of the main benefits of kanban is to establish an upper limit to work in process (commonly referred as "WIP") inventory to avoid overcapacity. Other systems with similar effect exist, for example CONWIP. A systematic study of various configurations of kanban systems, such as generalized kanban or production authorization card (PAC) and extended kanban, of which CONWIP is an important special case, can be found in Tayur (1993), and more recently Liberopoulos and Dallery (2000), among other papers.}
+      \field{annotation}{Page Version ID: 1285475692}
+      \field{journaltitle}{Wikipedia}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Kanban}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/WYCJ2UWR/Kanban.html
+      \endverb
+    \endentry
+    \entry{LightsideInstrumentsYANG}{misc}{}{}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labeltitlesource}{title}
@@ -237,7 +375,7 @@
       \verb /home/joar/Zotero/storage/IIVUNR6V/lightside-instruments.com.html
       \endverb
     \endentry
-    \entry{LowcodeProgrammingEventdriven}{misc}{}
+    \entry{LowcodeProgrammingEventdriven}{misc}{}{}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
       \field{labeltitlesource}{title}
@@ -251,7 +389,26 @@
       \verb /home/joar/Zotero/storage/CH9HWX7B/nodered.org.html
       \endverb
     \endentry
-    \entry{NodejsRunJavaScript}{misc}{}
+    \entry{Nodeyuma1232025}{misc}{}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Node.js bindings for the Yuma123 library. Latest version: 0.3.1, last published: 3 days ago. Start using node-yuma123 in your project by running `npm i node-yuma123`. There is 1 other project in the npm registry using node-yuma123.}
+      \field{howpublished}{https://www.npmjs.com/package/node-yuma123}
+      \field{journaltitle}{npm}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Node-Yuma123}
+      \field{urlday}{22}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/6VKUJBKC/node-yuma123.html
+      \endverb
+    \endentry
+    \entry{NodejsRunJavaScript}{misc}{}{}
       \field{sortinit}{N}
       \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
       \field{labeltitlesource}{title}
@@ -267,7 +424,7 @@
       \verb /home/joar/Zotero/storage/W44SCQFK/en.html
       \endverb
     \endentry
-    \entry{Organisations}{misc}{}
+    \entry{Organisations}{misc}{}{}
       \field{sortinit}{O}
       \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
       \field{labeltitlesource}{title}
@@ -281,7 +438,25 @@
       \verb /home/joar/Zotero/storage/BJSQYW99/Organisations.html
       \endverb
     \endentry
-    \entry{PRISMAStatement}{misc}{}
+    \entry{PhasedProjectPlanning1968}{misc}{}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{abstract}{NHB 7121.2 is the initial publication of the guidelines for implementation of the Phased Project Planning (PPP) concept prescribed by NPD 7121,1A. These guidelines are applicable to the planning and approval activities which lead to the implementation of major new research and development projects as defined in NPD 7121.1A as well as to major modifications or extensions of approved projects. They should, therefore, be reflected in the Project Approval Documents which serve as the basic documentation for project definition, guidance and control throughout NASA. The purpose of PPP is to provide, through defined phases, an adequate basis for management decisions on the extent to which project activities can be properly undertaken and commitments made. However, these guidelines do not prescribe detailed format and content of plans and other documents and reports used to apply the PPP concept. Similarly, the work content of phases and the information requirements described herein are not checklists. They are included to assist in understanding the intent of the PPP concept and should not be viewed as rigid or inflexible. PPP, as a concept for orderly planning and definition of new major R\&D undertakings, must be adapted to the peculiarities of each individual case. However, the flexibility permitted for adaptation should not be considered as a license for major variation which would compromise the objectives that underlie the concept. Cognizant NASA officials are expected to pursue their project planning and definition activities in reasonable conformance with these guidelines and to request only those exceptions or deviations which are clearly necessary and justified. These guidelines will be modified as determined necessary on the basis of experience. Comments or suggestions for changes should be directed to the Office of Organization and Management.}
+      \field{annotation}{NTRS Report/Patent Number: NHB-7121.2\\ NTRS Document ID: 19720064044\\ NTRS Research Center: Headquarters (HQ)}
+      \field{month}{8}
+      \field{title}{Phased {{Project Planning Guidelines}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{1968}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/XPRAKJVV/19720064044.html
+      \endverb
+      \keyw{Fluid Mechanics And Thermodynamics}
+    \endentry
+    \entry{PRISMAStatement}{misc}{}{}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
       \field{labeltitlesource}{title}
@@ -297,7 +472,26 @@
       \verb /home/joar/Zotero/storage/GTJ9UN7Y/www.prisma-statement.org.html
       \endverb
     \endentry
-    \entry{ScrumAllianceFind}{misc}{}
+    \entry{ScrumRugbyUnion2025}{article}{}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In rugby union, a scrum is a means of restarting play after a minor infringement. It involves up to eight players from each team, known as the pack or forward pack, binding together in three rows and interlocking with the three opposing teams front row. At this point the ball is fed into the gap between the two forward packs and they both compete for the ball to win possession. Teams can be penalised for intentionally causing the scrum to collapse, and for not putting the ball into the scrum correctly. A scrum is most commonly awarded when the ball is knocked forward, or passed forward, or when a ball becomes trapped in a ruck or maul. Because of the physical nature of scrums, injuries can occur, especially in the front row.}
+      \field{annotation}{Page Version ID: 1286755832}
+      \field{journaltitle}{Wikipedia}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{title}{Scrum (Rugby Union)}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/DS3S6KND/Scrum_(rugby_union).html
+      \endverb
+    \endentry
+    \entry{ScrumAllianceFind}{misc}{}{}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
       \field{labeltitlesource}{title}
@@ -311,6 +505,41 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /home/joar/Zotero/storage/6FD7YJBM/www.scrumalliance.org.html
+      \endverb
+    \endentry
+    \entry{NewNewProduct}{article}{}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labeltitlesource}{title}
+      \field{issn}{0017-8012}
+      \field{journaltitle}{Harvard Business Review}
+      \field{langid}{english}
+      \field{title}{The {{New New Product Development Game}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/D3KSMI37/the-new-new-product-development-game.html
+      \endverb
+    \endentry
+    \entry{WaterfallModel2025}{article}{}{}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The waterfall model is a breakdown of developmental activities into linear sequential phases, meaning that each phase is passed down onto each other, where each phase depends on the deliverables of the previous one and corresponds to a specialization of tasks. This approach is typical for certain areas of engineering design. In software development, it tends to be among the less iterative and flexible approaches, as progress flows in largely one direction (downwards like a waterfall) through the phases of conception, initiation, analysis, design, construction, testing, deployment, and maintenance. The waterfall model is the earliest Systems Development Life Cycle (SDLC) approach used in software development. When it was first adopted, there were no recognized alternatives for knowledge-based creative work.}
+      \field{annotation}{Page Version ID: 1275499744}
+      \field{journaltitle}{Wikipedia}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{title}{Waterfall Model}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/MV9DNTGP/Waterfall_model.html
       \endverb
     \endentry
   \enddatalist
