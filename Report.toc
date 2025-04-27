@@ -16,17 +16,23 @@
 \contentsline {subsubsection}{\numberline {4.2.3}Result}{8}{subsubsection.4.2.3}%
 \contentsline {paragraph}{\numberline {4.2.3.1}PRISMA flow diagram}{8}{paragraph.4.2.3.1}%
 \contentsline {subsection}{\numberline {4.3}Scrum}{10}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Evidentiary foundation}{14}{subsubsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.4}Kanban}{14}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Evidentiary foundation}{14}{subsubsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.5}Waterfall}{14}{subsection.4.5}%
-\contentsline {subsection}{\numberline {4.6}Extreme Programming}{14}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}DevOps}{14}{subsection.4.7}%
-\contentsline {section}{\numberline {5}NETCONF and YANG sensor management}{14}{section.5}%
-\contentsline {subsection}{\numberline {5.1}YANG Model}{14}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Node-RED}{16}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Red-Netconf}{16}{subsubsection.5.2.1}%
-\contentsline {paragraph}{\numberline {5.2.1.1}Temperature alert}{16}{paragraph.5.2.1.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Node-Yuma123}{17}{subsubsection.5.2.2}%
-\contentsline {paragraph}{\numberline {5.2.2.1}easyNetconf}{17}{paragraph.5.2.2.1}%
-\contentsline {subsection}{\numberline {5.3}Grafana}{17}{subsection.5.3}%
-\contentsline {section}{\numberline {6}NETCONF Security}{17}{section.6}%
-\contentsline {section}{References}{18}{section.6}%
+\contentsline {subsubsection}{\numberline {4.5.1}Evidentiary foundation}{15}{subsubsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.6}Extreme Programming}{15}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Evidentiary foundation}{15}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}DevOps}{15}{subsection.4.8}%
+\contentsline {subsubsection}{\numberline {4.8.1}Evidentiary foundation}{15}{subsubsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.9}Conclusion}{16}{subsection.4.9}%
+\contentsline {section}{\numberline {5}NETCONF and YANG sensor management}{16}{section.5}%
+\contentsline {subsection}{\numberline {5.1}YANG Model}{16}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Node-RED}{18}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Red-Netconf}{18}{subsubsection.5.2.1}%
+\contentsline {paragraph}{\numberline {5.2.1.1}Temperature alert}{18}{paragraph.5.2.1.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Node-Yuma123}{19}{subsubsection.5.2.2}%
+\contentsline {paragraph}{\numberline {5.2.2.1}easyNetconf}{19}{paragraph.5.2.2.1}%
+\contentsline {subsection}{\numberline {5.3}Grafana}{19}{subsection.5.3}%
+\contentsline {section}{\numberline {6}NETCONF Security}{19}{section.6}%
+\contentsline {section}{References}{20}{section.6}%

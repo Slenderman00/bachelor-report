@@ -361,6 +361,25 @@
       \verb /home/joar/Zotero/storage/WYCJ2UWR/Kanban.html
       \endverb
     \endentry
+    \entry{KanbanDevelopment2025}{article}{}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Kanban (Japanese: 看板, meaning signboard or billboard) is a lean method to manage and improve work across human systems. This approach aims to manage work by balancing demands with available capacity, and by improving the handling of system-level bottlenecks. Work items are visualized to give participants a view of progress and process, from start to finish---usually via a kanban board. Work is pulled as capacity permits, rather than work being pushed into the process when requested. In knowledge work and in software development, the aim is to provide a visual process management system which aids decision-making about what, when, and how much to produce. The underlying kanban method originated in lean manufacturing, which was inspired by the Toyota Production System. It has its origin in the late 1940s when the Toyota automotive company implemented a production system called just-in-time, which had the objective of producing according to customer demand and identifying possible material shortages within the production line. But it was a team at Corbis that realized how this method devised by Toyota could become a process applicable to any type of organizational process. Kanban is commonly used in software development in combination with methods and frameworks such as Scrum.}
+      \field{annotation}{Page Version ID: 1282305703}
+      \field{journaltitle}{Wikipedia}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{title}{Kanban (Development)}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/ESADEZL3/Kanban_(development).html
+      \endverb
+    \endentry
     \entry{LightsideInstrumentsYANG}{misc}{}{}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
@@ -387,6 +406,20 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /home/joar/Zotero/storage/CH9HWX7B/nodered.org.html
+      \endverb
+    \endentry
+    \entry{ManifestoAgileSoftware}{misc}{}{}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{http://agilemanifesto.org/}
+      \field{title}{Manifesto for {{Agile Software Development}}}
+      \field{urlday}{2}
+      \field{urlmonth}{6}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/Z78NIIEU/agilemanifesto.org.html
       \endverb
     \endentry
     \entry{Nodeyuma1232025}{misc}{}{}
@@ -521,6 +554,53 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /home/joar/Zotero/storage/D3KSMI37/the-new-new-product-development-game.html
+      \endverb
+    \endentry
+    \entry{verwijsTheoryScrumTeam2023}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=1380906eb807dc470aafe764ef90ebed}{%
+           family={Verwijs},
+           familyi={V\bibinitperiod},
+           given={Christiaan},
+           giveni={C\bibinitperiod}}}%
+        {{hash=6cd1fc5cc33fef507f455f564944f1bc}{%
+           family={Russo},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{fullhash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{fullhashraw}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{bibnamehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authorbibnamehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authornamehash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authorfullhash}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \strng{authorfullhashraw}{6dc7413edab8f73fcbe5e2d6511b59ba}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Scrum teams are at the heart of the Scrum framework. Nevertheless, an integrated and systemic theory that can explain what makes some Scrum teams more effective than others is still missing. To address this gap, we performed a 7-year-long mixed-methods investigation composed of two main phases. First, we induced a theoretical model from 13 exploratory field studies. Our model proposes that the effectiveness of Scrum teams depends on five high-level factors (responsiveness, stakeholder concern, continuous improvement, team autonomy, and management support) and 13 lower-level factors. In the second phase of our study, we validated our model with a covariance-based structural equation modeling analysis using data from about 5,000 developers and 2,000 Scrum teams that we gathered with a custom-built survey. Results suggest a very good fit of the empirical data in our theoretical model ( CFI = 0.959, RMSEA = 0.038, SRMR = 0.035). Accordingly, this research allowed us to (1) propose and validate a generalizable theory for effective Scrum teams and (2) formulate clear recommendations for how organizations can better support Scrum teams.}
+      \field{issn}{1049-331X, 1557-7392}
+      \field{journaltitle}{ACM Transactions on Software Engineering and Methodology}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{3}
+      \field{title}{A {{Theory}} of {{Scrum Team Effectiveness}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{32}
+      \field{year}{2023}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 51}
+      \range{pages}{51}
+      \verb{doi}
+      \verb 10.1145/3571849
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/NS8JZJK6/Verwijs and Russo - 2023 - A Theory of Scrum Team Effectiveness.pdf
       \endverb
     \endentry
     \entry{WaterfallModel2025}{article}{}{}

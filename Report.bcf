@@ -2406,8 +2406,17 @@
     <bcf:citekey order="32" intorder="1">Framework</bcf:citekey>
     <bcf:citekey order="33" intorder="1">DeloitteAuditConsulting</bcf:citekey>
     <bcf:citekey order="34" intorder="1">DeloitteAuditConsulting</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">LightsideinstrumentsRednetconf</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">Nodeyuma1232025</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">verwijsTheoryScrumTeam2023</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">KanbanDevelopment2025</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">ManifestoAgileSoftware</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">WaterfallModel2025</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">PhasedProjectPlanning1968</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">ExtremeProgramming2025</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">PairProgramming2024</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">ContinuousDelivery2025</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">DORAGetBetter</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">LightsideinstrumentsRednetconf</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">Nodeyuma1232025</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
