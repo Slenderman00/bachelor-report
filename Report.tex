@@ -101,21 +101,20 @@
 
 
 \section{Introduction}
-There are many paradigms of commercial sensor management and monitoring. Organizations can use anything from 
-PLC (programmable Logic Controllers) to IoT devices to manage and monitor their sensors. For commercial use 
+There are many paradigms of commercial sensor management and monitoring. Organizations use among other things
+PLC (programmable Logic Controllers), IoT devices and SCADA (Supervisory Control and Data Acquisition) systems to 
+manage and monitor their sensors. For commercial use 
 some of these alternatives are more popular than others. There are also a large amount of different higher level protocols
 like MQTT, HTTP and SNMP that can be used to manage and monitor sensors. We propose using the NETCONF protocol 
 with YANG sensor models for management. This work will be done in collaboration with Lightside Instruments AS.
 
-\writersnote{
-  unprecise, replace: "can use anything from..." and all other vague statements.
-}
 
 This document will cover the following three topics:
 \begin{itemize}
   \item \textbf{Work Methodology:} An indept analysis of the knowledge base around work methods like Scrum, Kanban, and Waterfall. 
   With a focus on how our work methodology differs from these.
-  \item \textbf{NETCONF and YANG sensor management}: A qualitative analysis of the NETCONF and YANG protocols and how they can be used to manage sensors.
+  \item \textbf{NETCONF and YANG sensor management}: A qualitative analysis of the NETCONF and YANG protocols and how they can be used to manage sensors and 
+  a description of our work with Lightside Instruments AS on NETCONF and YANG sensor management.
   \item \textbf{NETCONF Security}: A qualitative analysis of the security aspects of the NETCONF protocol.
 \end{itemize}
 
@@ -135,6 +134,20 @@ Each NETCONF device presents the aquiring device with a YANG \cite{bjorklundYANG
 consisting of the device state and parameters. 
 Each data model has a set of constraints making them error correcting.
 
+\subsection{Yuma123}
+Yuma123 \cite{vassilevVlvassilevYuma1232025} is an open source NETCONF and YANG implementation.
+Yuma123 is available as a Debian package and is maintained by Lightside Instruments AS.
+
+\subsection{NodeJS}
+Node.js \cite{NodejsRunJavaScript} is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+It is used to build JavaScript applications that can run independently of a web browser.
+Node.js is popular for building server-side applications as it is relatively performant and 
+it allows developers to work with the same language on both the client and server side.
+
+\subsection{Node-Yuma123}
+Node-Yuma123 \cite{Nodeyuma1232025} is a NodeJS package that implements a set of Yuma123 bindings.
+It allows for efficient NETCONF and YANG development in NodeJS.
+
 \subsection{Node-RED}
 Node-RED \cite{LowcodeProgrammingEventdriven} is an open source low code programming tool for event driven applications.
 It is developed by IBM and is based on Node.js \cite{NodejsRunJavaScript}.
@@ -145,16 +158,20 @@ Grafana \cite{GrafanaOpenComposable} is an open source data visualization tool.
 It is used to visualize arbitrary data from different data sources.
 
 \subsection{Scrum}
-Scrum \cite{HomeScrumorg} is a framework for agile \cite{AgileSoftwareDevelopment2025} software development.
+Scrum \cite{HomeScrumorg} is a framework for agile \cite{AgileSoftwareDevelopment2025} software development. 
+The term Scrum is derived from the game of rugby, where a scrum is a way of restarting play after a minor infringement \cite{ScrumRugbyUnion2025}.
 
 \subsection{Kanban}
 Kanban \cite{Kanban2025} is a framework for agile software development.
+The term Kanban is derived from the Japanese word for "signboard" or "billboard" \cite{KanbanDevelopment2025}.
 
 \subsection{Waterfall}
 Waterfall \cite{WaterfallModel2025} is a framework for software development.
+The waterfall model is a linear and sequential approach to software development.
 
 \subsection{Extreme Programming}
 Extreme Programming \cite{ExtremeProgramming2025} is a framework for agile software development.
+Extreme Programming takes the best practices of software development and takes them to the extreme, hence the name.
 
 \section{Work Methodology}
 
@@ -187,9 +204,6 @@ We will also be searching the following industry websites:
   \item DevOps Institute \cite{Organisations}
   \item Scrum Alliance \cite{ScrumAllianceFind}
 \end{itemize}
-\writersnote{
-  This section becomes a bit monotone, consider fewer lists.
-}
 Our search will consists of a set of primary and secondary keywords.
 The primary keywords are:
 \begin{itemize}
@@ -405,7 +419,7 @@ Extreme Programming \cite{ExtremeProgramming2025} is a framework for agile softw
 the best practices of software development and takes them to the extreme, hence the name. A core part of Extreme Programming is the use of
 pair programming \cite{PairProgramming2024}, where two developers work together on the same code.
 
-\subsection{Evidentiary foundation}
+\subsubsection{Evidentiary foundation}
 With no articles found in the scoping review we can conclude that there is no empirical evidence that Extreme Programming increases worker productivity or efficiency.
 
 \subsection{DevOps}
@@ -425,11 +439,35 @@ The scoping review has made it clear that there is a lack of research into the e
 The industry seems focused on researching performance metrics for each methodology, rather than the 
 effectiveness of the methodology itself.
 
+\subsection{Our Work Methodology}
+At Lightside Instruments we work with both hardware and software in a small team. 
+This workflows lends a great deal of flexibility to our work.
+With most engineers doubling as both hardware and software engineers, we have found it cumbersome to use a strict work methodology like most agile frameworks.
+Due to the small size of our team we have adapted a DevOps like approach that is tailored for our needs. 
+We have a set of tasks that are defined in a git repository. After a task is completed a pull request is submitted and the task
+is marked as pending review. When the request is approved the task is marked as completed and the code is merged into the main branch.
+We not only use automated continues integration and continues deployment (CI/CD) systems for our software, but also for our hardware.
+We have developed a set of workflows that are used to automatically generate the production files for our hardware. 
+\\
+\\
+Whilst there is no empirical evidence or any research suggesting that our work methodology is more effective than any of the other methodologies, 
+we have found it to be a good fit for our needs. And we feel that it adheres close the principles set forth by the agile manifesto 
+\cite{ManifestoAgileSoftware}.
+
 \section{NETCONF and YANG sensor management}
 
 Hardware management is an essential part of administrating a larger network. Together with Lightside Instruments we have 
 developed open source tools for YANG and NETCONF aimed at hardware sensor management.
 
+\subsection{Project description}
+Our aim is to develop a set of open source tools for YANG and NETCONF aimed at the management and monitoring of hardware sensors.
+The goal is to produce a reference implementation of a NETCONF device that presents a sensor YANG model to the user.
+And a set of tools that can be used to manage and monitor the NETCONF devices. 
+\\
+\\
+We aim to develop a reference implementation of a decentralized monitoring and management system for NETCONF devices.
+This system will demonstrate the power and flexibility of NETCONF and YANG for hardware management and monitoring, an 
+illustration of this can be seen in \textit{Figure \ref{fig:decentralized-monitoring}}.
 
 \subsection{YANG Model}
 The YANG model is a model used to describe the state and actions of a NETCONF device.
@@ -516,6 +554,26 @@ Node-Yuma123 \cite{Nodeyuma1232025} is a NodeJS package that implements a set of
 \subsubsubsection{easyNetconf}
 
 \subsection{Grafana}
+
+\subsection{Decentralized monitoring}
+We believe that the power of NETCONF lies in its ability to be used in a decentralized manner.
+This means that multiple aggregators can be used to manage the same NETCONF devices. 
+The exampele in \textit{Figure \ref{fig:decentralized-monitoring}} shows two servers each containing a node-red instance, a NetconfAggregator 
+instance and a Grafana instance. The node-red instance and the NetconfAggregator functions completely independently of each other.
+Thus making the monitoring system completely separate from the management system. The example consists of a normal networking setup
+consisting of three NETCONF enabled switches, a NETCONF enabled temperature sensor and a NETCONF enabled alarm.
+This architecture allows for arbitrary control and monitoring of the NETCONF devices using the NetconfAggregator and Node-RED.
+
+\newpage
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{architecture1.png}
+  \caption{Decentralized monitoring of NETCONF devices using Grafana, NetconfAggregator and Node-RED.}
+  \label{fig:decentralized-monitoring}
+\end{figure}
+
+\newpage
 
 \section{NETCONF Security}
 

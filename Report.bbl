@@ -610,6 +610,35 @@
       \verb /home/joar/Zotero/storage/D3KSMI37/the-new-new-product-development-game.html
       \endverb
     \endentry
+    \entry{vassilevVlvassilevYuma1232025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=35d8aa0c66efa602a525b727719c87fc}{%
+           family={Vassilev},
+           familyi={V\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{fullhash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{fullhashraw}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{bibnamehash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{authorbibnamehash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{authornamehash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{authorfullhash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{authorfullhashraw}{35d8aa0c66efa602a525b727719c87fc}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The yuma123 repository}
+      \field{month}{3}
+      \field{title}{Vlvassilev/Yuma123}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+    \endentry
     \entry{verwijsTheoryScrumTeam2023}{article}{}{}
       \name{author}{2}{}{%
         {{hash=1380906eb807dc470aafe764ef90ebed}{%

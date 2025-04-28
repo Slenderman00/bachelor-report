@@ -173,6 +173,25 @@
       \field{year}{2025}
       \field{urldateera}{ce}
     \endentry
+    \entry{ContinuousDelivery2025}{article}{}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Continuous delivery (CD) is a software engineering approach in which teams produce software in short cycles, ensuring that the software can be reliably released at any time. It aims at building, testing, and releasing software with greater speed and frequency. The approach helps reduce the cost, time, and risk of delivering changes by allowing for more incremental updates to applications in production. A straightforward and repeatable deployment process is important for continuous delivery.}
+      \field{annotation}{Page Version ID: 1272005660}
+      \field{journaltitle}{Wikipedia}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{title}{Continuous Delivery}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/YW3N6D2M/Continuous_delivery.html
+      \endverb
+    \endentry
     \entry{DeloitteAuditConsulting}{misc}{}{}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
@@ -187,6 +206,22 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /home/joar/Zotero/storage/44AS9LZ9/en.html
+      \endverb
+    \endentry
+    \entry{DORAGetBetter}{misc}{}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labeltitlesource}{title}
+      \field{abstract}{DORA is a long running research program that seeks to understand the capabilities that drive software delivery and operations performance. DORA helps teams apply those capabilities, leading to better organizational performance.}
+      \field{howpublished}{https://dora.dev}
+      \field{langid}{english}
+      \field{title}{{{DORA}} {|} {{Get Better}} at {{Getting Better}}}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/VTLW4JQG/dora.dev.html
       \endverb
     \endentry
     \entry{ennsNetworkConfigurationProtocol2011}{report}{}{}
@@ -471,6 +506,25 @@
       \verb /home/joar/Zotero/storage/BJSQYW99/Organisations.html
       \endverb
     \endentry
+    \entry{PairProgramming2024}{article}{}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Pair programming is a software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently. While reviewing, the observer also considers the "strategic" direction of the work, coming up with ideas for improvements and likely future problems to address. This is intended to free the driver to focus all of their attention on the "tactical" aspects of completing the current task, using the observer as a safety net and guide.}
+      \field{annotation}{Page Version ID: 1260042755}
+      \field{journaltitle}{Wikipedia}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{title}{Pair Programming}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/IFT7EBLS/Pair_programming.html
+      \endverb
+    \endentry
     \entry{PhasedProjectPlanning1968}{misc}{}{}
       \field{sortinit}{P}
       \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
@@ -623,6 +677,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{Yuma123}
 \endrefsection
 \endinput
 
