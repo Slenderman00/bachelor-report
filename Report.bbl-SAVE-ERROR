@@ -347,6 +347,34 @@
       \verb /home/joar/Zotero/storage/8XFBBPH8/grafana.com.html
       \endverb
     \endentry
+    \entry{heimonenSlenderman00Netconfaggregator2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=6d975a8d6337c5d78bbffcd5535d1dbb}{%
+           family={Heimonen},
+           familyi={H\bibinitperiod},
+           given={Joar},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{fullhash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{fullhashraw}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{bibnamehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authorbibnamehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authornamehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authorfullhash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authorfullhashraw}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Slenderman00/Netconfaggregator}
+      \field{urlday}{7}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+    \endentry
     \entry{HomeScrumorg}{misc}{}{}
       \field{sortinit}{H}
       \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
@@ -610,6 +638,35 @@
       \verb /home/joar/Zotero/storage/D3KSMI37/the-new-new-product-development-game.html
       \endverb
     \endentry
+    \entry{vassilevVlvassilevYuma1232025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=35d8aa0c66efa602a525b727719c87fc}{%
+           family={Vassilev},
+           familyi={V\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{fullhash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{fullhashraw}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{bibnamehash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{authorbibnamehash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{authornamehash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{authorfullhash}{35d8aa0c66efa602a525b727719c87fc}
+      \strng{authorfullhashraw}{35d8aa0c66efa602a525b727719c87fc}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The yuma123 repository}
+      \field{month}{3}
+      \field{title}{Vlvassilev/Yuma123}
+      \field{urlday}{27}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+    \endentry
     \entry{verwijsTheoryScrumTeam2023}{article}{}{}
       \name{author}{2}{}{%
         {{hash=1380906eb807dc470aafe764ef90ebed}{%
@@ -677,7 +734,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{Yuma123}
 \endrefsection
 \endinput
 

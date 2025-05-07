@@ -279,6 +279,20 @@
       \verb /home/joar/Zotero/storage/VI5ABVJG/Enns et al. - 2011 - Network Configuration Protocol (NETCONF).pdf
       \endverb
     \endentry
+    \entry{ExtensibleMarkupLanguage}{misc}{}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.w3.org/XML/}
+      \field{title}{Extensible {{Markup Language}} ({{XML}})}
+      \field{urlday}{7}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/8SRRZ3VV/XML.html
+      \endverb
+    \endentry
     \entry{ExtremeProgramming2025}{article}{}{}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
@@ -346,6 +360,34 @@
       \verb{file}
       \verb /home/joar/Zotero/storage/8XFBBPH8/grafana.com.html
       \endverb
+    \endentry
+    \entry{heimonenSlenderman00Netconfaggregator2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=6d975a8d6337c5d78bbffcd5535d1dbb}{%
+           family={Heimonen},
+           familyi={H\bibinitperiod},
+           given={Joar},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{fullhash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{fullhashraw}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{bibnamehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authorbibnamehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authornamehash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authorfullhash}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \strng{authorfullhashraw}{6d975a8d6337c5d78bbffcd5535d1dbb}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Slenderman00/Netconfaggregator}
+      \field{urlday}{7}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
     \endentry
     \entry{HomeScrumorg}{misc}{}{}
       \field{sortinit}{H}
@@ -703,6 +745,20 @@
       \field{urldateera}{ce}
       \verb{file}
       \verb /home/joar/Zotero/storage/MV9DNTGP/Waterfall_model.html
+      \endverb
+    \endentry
+    \entry{XMLPathLanguage}{misc}{}{}
+      \field{sortinit}{X}
+      \field{sortinithash}{1965c258adceecf23ce3d67b05113442}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.w3.org/TR/xpath-31/}
+      \field{title}{{{XML Path Language}} ({{XPath}}) 3.1}
+      \field{urlday}{7}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/ZMI7WFN9/xpath-31.html
       \endverb
     \endentry
   \enddatalist

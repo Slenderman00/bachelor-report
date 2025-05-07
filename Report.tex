@@ -107,8 +107,8 @@ manage and monitor their sensors. For commercial use
 some of these alternatives are more popular than others. There are also a large amount of different higher level protocols
 like MQTT, HTTP and SNMP that can be used to manage and monitor sensors. We propose using the NETCONF protocol 
 with YANG sensor models for management. This work will be done in collaboration with Lightside Instruments AS.
-
-
+\\
+\\
 This document will cover the following three topics:
 \begin{itemize}
   \item \textbf{Work Methodology:} An indept analysis of the knowledge base around work methods like Scrum, Kanban, and Waterfall. 
@@ -142,7 +142,7 @@ Yuma123 is available as a Debian package and is maintained by Lightside Instrume
 Node.js \cite{NodejsRunJavaScript} is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 It is used to build JavaScript applications that can run independently of a web browser.
 Node.js is popular for building server-side applications as it is relatively performant and 
-it allows developers to work with the same language on both the client and server side.
+it allows developers to work with the same language on both the client and server.
 
 \subsection{Node-Yuma123}
 Node-Yuma123 \cite{Nodeyuma1232025} is a NodeJS package that implements a set of Yuma123 bindings.
@@ -156,6 +156,12 @@ Node-RED is used to connect hardware devices and APIs through a visual programmi
 \subsection{Grafana}
 Grafana \cite{GrafanaOpenComposable} is an open source data visualization tool.
 It is used to visualize arbitrary data from different data sources.
+
+\subsection{XML and XPATH}
+XML stands for Extensible Markup Language \cite{ExtensibleMarkupLanguage}. It is a
+markup language that is used to encode data in a format that is both human and machine readable.
+XPATH \cite{XMLPathLanguage} is a language for navigating XML documents.
+An XPATH expression allows for the selection of arbitrary nodes in an XML document.
 
 \subsection{Scrum}
 Scrum \cite{HomeScrumorg} is a framework for agile \cite{AgileSoftwareDevelopment2025} software development. 
@@ -387,7 +393,7 @@ of all the different frameworks and methods used for project management. See the
 
 \subsubsection{Evidentiary foundation}
 With only one article "A Theory of Scrum Team Effectiveness" by Verwijs and Russo \cite{verwijsTheoryScrumTeam2023} we can conclude that there
-is no empirical evidence that Scrum increases worker productivity or efficiency. Whilst the findings of the article seems promising, there simply is not 
+is no empirical evidence that Scrum increases worker productivity or efficiency. Whilst the findings of the article seems promising, and the article is thorough, there simply is not 
 enough research on the topic to comment on the evidentiary foundation of Scrum, this is something taken in too account by the authors of the article. 
 Only a handful of other articles have been published on the topic, but most of them fall outside the exclusion criteria of the scoping review as they
 have been published before 2020.
@@ -456,7 +462,7 @@ we have found it to be a good fit for our needs. And we feel that it adheres clo
 
 \section{NETCONF and YANG sensor management}
 
-Hardware management is an essential part of administrating a larger network. Together with Lightside Instruments we have 
+Hardware management is an essential part of administrating a larger network. Together with Lightside Instruments AS we have 
 developed open source tools for YANG and NETCONF aimed at hardware sensor management.
 
 \subsection{Project description}
@@ -554,11 +560,47 @@ Node-Yuma123 \cite{Nodeyuma1232025} is a NodeJS package that implements a set of
 \subsubsubsection{easyNetconf}
 
 \subsection{Grafana}
+Grafana is an open source data visualization tool. Since its inception ins 2014 it has become the industry standard
+for data visualization. It is used to visualize arbitrary data from different data sources.
+We have developed a solution for fetching and visualizing arbitrary NETCONF data using Grafana.
+We call this solution NetconfAggregator.
+
+\subsubsection{NetconfAggregator}
+NetconfAggregator is a NodeJS package that uses the easyNetconf Library \cite{heimonenSlenderman00Netconfaggregator2025} to aggregate NETCONF data and store 
+it in a postgresql database. The data is stored in the form of a time series consisting of an ID, a timestamp and the 
+raw XML data from the NETCONF device. This allows the data to be extracted and visualized using XPATH queries.
+An example of this can be seen in \textit{Figure \ref{fig:netconf-aggregator-memfree}}.
+This example shows how the query \textit{"//proc/meminfo/MemFree"} can be used to create a graph of the memory usage 
+on a raspberry pi trough the NetconfAggregator datasource plugin in Grafana.
+\\
+\\
+Figure \ref{fig:netconf-aggregator} shows the architecture of the NetconfAggregator, consisting
+of a PostgreSQL database, a NetconfAggregator instance and a Grafana instance running the NetconfAggregator datasource plugin.
+The NetconfAggregator gets the state of each NETCONF device using the YangCLI command \textit{"xget /"} which
+fetches the state of the device. The respone is then stored in the database.
+When the NetconfAggregator recieves a query from the datasource plugin it applies the specified XPATH to 
+the relevant data-range in the database and returns the result to the datasource plugin.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{memfree.png}
+  \caption{Querying the memory free data on a raspberry pi using XPATH and the NetconfAggregator plugin.}
+  \label{fig:netconf-aggregator-memfree}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{NetconfAggregator.png}
+  \caption{NetconfAggregator architecture.}
+  \label{fig:netconf-aggregator}
+\end{figure}
+
+\newpage
 
 \subsection{Decentralized monitoring}
 We believe that the power of NETCONF lies in its ability to be used in a decentralized manner.
 This means that multiple aggregators can be used to manage the same NETCONF devices. 
-The exampele in \textit{Figure \ref{fig:decentralized-monitoring}} shows two servers each containing a node-red instance, a NetconfAggregator 
+The exampel in \textit{Figure \ref{fig:decentralized-monitoring}} shows two servers each containing a node-red instance, a NetconfAggregator 
 instance and a Grafana instance. The node-red instance and the NetconfAggregator functions completely independently of each other.
 Thus making the monitoring system completely separate from the management system. The example consists of a normal networking setup
 consisting of three NETCONF enabled switches, a NETCONF enabled temperature sensor and a NETCONF enabled alarm.
