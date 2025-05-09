@@ -32,15 +32,15 @@
 \contentsline {subsection}{\numberline {4.8}Conclusion}{17}{subsection.4.8}%
 \contentsline {subsection}{\numberline {4.9}Our Work Methodology}{17}{subsection.4.9}%
 \contentsline {section}{\numberline {5}NETCONF and YANG sensor management}{17}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Project description}{18}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}YANG Model}{18}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Node-RED}{20}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Red-Netconf}{20}{subsubsection.5.3.1}%
-\contentsline {paragraph}{\numberline {5.3.1.1}Temperature alert}{20}{paragraph.5.3.1.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Node-Yuma123}{21}{subsubsection.5.3.2}%
-\contentsline {paragraph}{\numberline {5.3.2.1}easyNetconf}{21}{paragraph.5.3.2.1}%
-\contentsline {subsection}{\numberline {5.4}Grafana}{21}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}NetconfAggregator}{22}{subsubsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.5}Decentralized monitoring}{27}{subsection.5.5}%
-\contentsline {section}{\numberline {6}NETCONF Security}{28}{section.6}%
-\contentsline {section}{References}{29}{section.6}%
+\contentsline {subsection}{\numberline {5.1}Project description}{19}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}YANG Model}{19}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Node-RED}{21}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Red-Netconf}{21}{subsubsection.5.3.1}%
+\contentsline {paragraph}{\numberline {5.3.1.1}Temperature alert}{21}{paragraph.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Node-Yuma123}{22}{subsubsection.5.3.2}%
+\contentsline {paragraph}{\numberline {5.3.2.1}easyNetconf}{22}{paragraph.5.3.2.1}%
+\contentsline {subsection}{\numberline {5.4}Grafana}{23}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}NetconfAggregator}{23}{subsubsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.5}Decentralized monitoring}{28}{subsection.5.5}%
+\contentsline {section}{\numberline {6}NETCONF Security}{29}{section.6}%
+\contentsline {section}{References}{30}{section.6}%

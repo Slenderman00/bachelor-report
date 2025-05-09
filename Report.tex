@@ -462,8 +462,26 @@ we have found it to be a good fit for our needs. And we feel that it adheres clo
 
 \section{NETCONF and YANG sensor management}
 
-Hardware management is an essential part of administrating a larger network. Together with Lightside Instruments AS we have 
+Hardware management is an essential part of administrating a larger network. 
+Together with Lightside Instruments AS we have 
 developed open source tools for YANG and NETCONF aimed at hardware sensor management.
+We have built a reference implementation of a NETCONF system that tackles this issue.
+Our reference implementation consists two NETCONF temperature probes,
+a data aggregator, a data visualization tool and
+a tool for quick management of NETCONF devices.
+\\
+\\
+The following sections will describe the project and how each of the components are implemented.
+An illustration of the architecture of the project can be seen in \textit{Figure \ref{fig:architecture}}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{refimparch2.drawio.png}
+  \caption{Architecture of the NETCONF and YANG sensor management system.}
+  \label{fig:architecture}
+\end{figure}
+
+\newpage
 
 \subsection{Project description}
 Our aim is to develop a set of open source tools for YANG and NETCONF aimed at the management and monitoring of hardware sensors.
@@ -554,7 +572,22 @@ when the temperature is above 25 degrees Celsius, this can be seen in \textit{Fi
 
 
 \subsubsection{Node-Yuma123}
-Node-Yuma123 \cite{Nodeyuma1232025} is a NodeJS package that implements a set of Yuma123 bindings.
+Yuma123 is an implementation of the NETCONF standard that is written in C.
+It consists of a NETCONF server written in C, an RPC (Remote Procedure Call) client 
+and a YANGCLI interpreter. The YANGCLI interpreter is a command line tool that can be used to
+interact with NETCONF devices using YANG models and YANGCLI commands. YANGCLI
+translates the YANGCLI commands into NETCONF RPC calls and sends them to the NETCONF device.
+Yuma123 also presents an API that can be used to interact with the NETCONF server called 
+libyuma-dev.
+\\
+\\
+Node-Yuma123 is a set of NodeJS bindings for the Yuma123 API. It is written in C++ and created
+to resemble the original C API as closely as possible. Node-Yuma123 also implements some 
+new functions like asynchronous connections. Implementing this was quite a challenge as the 
+libyuma-dev API is not thread safe. Instead of running each connection in a new thread we
+stack the instructions using libuv \cite{libuv} and run them in the main thread. This 
+resolves most of our threading issues, but some issues still remain. 
+These issues are related to how libyuma-dev allocates memory.
 
 
 \subsubsubsection{easyNetconf}

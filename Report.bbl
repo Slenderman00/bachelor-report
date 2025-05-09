@@ -750,6 +750,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{libuv}
 \endrefsection
 \endinput
 
