@@ -597,9 +597,9 @@ the relevant data-range in the database and returns the result to the datasource
 
 \newpage
 
-We quickly discovered that processing XPATHS are very processor intensive. Especially when the data set is large.
+We quickly discovered that processing XPATHS is processor intensive. Especially when the data set is large.
 Grafana also has a tendency to send all the queries belonging to a dashboard at once therefore, we decided 
-to implement a caching system, where the results of the XPATH queries are cached in memory in a hash table.
+to implement a caching system, where the results of the XPATH queries are cached in memory, stored in a hash table.
 However, this did not work as expected, as the queries were arriving at the same time the responses did not 
 have time to reach the cache before the next identical query arrived.
 To solve this we implemented a queue system, we call it the event queue. 
