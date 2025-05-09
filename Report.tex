@@ -578,7 +578,7 @@ Figure \ref{fig:netconf-aggregator} shows the architecture of the NetconfAggrega
 of a PostgreSQL database, a NetconfAggregator instance and a Grafana instance running the NetconfAggregator datasource plugin.
 The NetconfAggregator gets the state of each NETCONF device using the YangCLI command \textit{"xget /"} which
 fetches the state of the device. The respone is then stored in the database.
-When the NetconfAggregator recieves a query from the datasource plugin it applies the specified XPATH to 
+When the NetconfAggregator receives a query from the datasource plugin it applies the specified XPATH to 
 the relevant data-range in the database and returns the result to the datasource plugin.
 
 \begin{figure}
@@ -594,6 +594,30 @@ the relevant data-range in the database and returns the result to the datasource
   \caption{NetconfAggregator architecture.}
   \label{fig:netconf-aggregator}
 \end{figure}
+
+\newpage
+
+We quickly discovered that processing XPATHS are very processor intensive. Especially when the data set is large.
+Grafana also has a tendency to send all the queries belonging to a dashboard at once therefore, we decided 
+to implement a caching system, where the results of the XPATH queries are cached in memory in a hash table.
+However, this did not work as expected, as the queries were arriving at the same time the responses did not 
+have time to reach the cache before the next identical query arrived.
+To solve this we implemented a queue system, we call it the event queue. 
+When a query goes to processing it is simultaneously added to the event queue.
+Future identical queries are delayed until the processing of the first query is completed.
+A delay is added to each request that the server receives. This delay is based 
+on the number of queries that are currently being processed, and thus makes
+sure that no two identical queries are processed at the same time.
+An illustration of how requests are processed can be seen in \textit{Figure \ref{fig:xpath-query}}.
+
+
+\begin{figure}
+  \centering
+  \includegraphics{xpathquery.drawio.png}
+  \caption{XPATH query processing.}
+  \label{fig:xpath-query}
+\end{figure}
+
 
 \newpage
 
