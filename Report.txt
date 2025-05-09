@@ -5,7 +5,7 @@ Joar Heimonen, Christian Vu, Naly Keli
 contact@joar.me
 chvu002@student.kristiania.no
 nake002@student.kristiania.no
-April 27, 2025
+May 9, 2025
 Abstract
 Preliminary Abstract
 
@@ -22,21 +22,29 @@ Preliminary Abstract
 
 3 Technical background
 3.1 NETCONF and YANG . . . . . . . . . . . . . . . . . . . . . .
-3.2 Node-RED . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-3.3 Grafana . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-3.4 Scrum . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-3.5 Kanban . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-3.6 Waterfall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-3.7 Extreme Programming . . . . . . . . . . . . . . . . . . . . . .
+3.2 Yuma123 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.3 NodeJS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.4 Node-Yuma123 . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.5 Node-RED . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.6 Grafana . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.7 XML and XPATH . . . . . . . . . . . . . . . . . . . . . . . .
+3.8 Scrum . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.9 Kanban . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.10 Waterfall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.11 Extreme Programming . . . . . . . . . . . . . . . . . . . . . .
 
-4
-4
 5
 5
 5
 5
 5
 5
+5
+6
+6
+6
+6
+6
 
 4 Work Methodology
 4.1 Research Question . . . . . . . . . . . . . . . . . . . . . . . .
@@ -52,61 +60,65 @@ Preliminary Abstract
 4.5 Waterfall . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 4.5.1 Evidentiary foundation . . . . . . . . . . . . . . . . . .
 4.6 Extreme Programming . . . . . . . . . . . . . . . . . . . . . .
-4.7 Evidentiary foundation . . . . . . . . . . . . . . . . . . . . . .
-4.8 DevOps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-4.8.1 Evidentiary foundation . . . . . . . . . . . . . . . . . .
-4.9 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.6.1 Evidentiary foundation . . . . . . . . . . . . . . . . . .
+4.7 DevOps . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.7.1 Evidentiary foundation . . . . . . . . . . . . . . . . . .
+4.8 Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+4.9 Our Work Methodology . . . . . . . . . . . . . . . . . . . . .
 
-5
-5
 6
 6
 7
+7
 8
-8
-10
-14
-14
-14
-14
-15
+9
+9
+11
 15
 15
 15
 15
 16
-
-5 NETCONF and YANG sensor management
-5.1 YANG Model . . . . . . . . . . . . . . . . . . . . . . . . . . .
-5.2 Node-RED . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-5.2.1 Red-Netconf . . . . . . . . . . . . . . . . . . . . . . . .
-
 16
 16
-18
-18
+16
+16
+17
+17
 
 2
 
-5.3
+5 NETCONF and YANG sensor management
+5.1 Project description . . . . . . . . . . . . . . . . . . . . . . . .
+5.2 YANG Model . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.3 Node-RED . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.3.1 Red-Netconf . . . . . . . . . . . . . . . . . . . . . . . .
+5.3.1.1 Temperature alert . . . . . . . . . . . . . . .
+5.3.2 Node-Yuma123 . . . . . . . . . . . . . . . . . . . . . .
+5.3.2.1 easyNetconf . . . . . . . . . . . . . . . . . . .
+5.4 Grafana . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.4.1 NetconfAggregator . . . . . . . . . . . . . . . . . . . .
+5.5 Decentralized monitoring . . . . . . . . . . . . . . . . . . . . .
 
-5.2.1.1 Temperature alert . . . . . . . . . . . . . . .
-5.2.2 Node-Yuma123 . . . . . . . . . . . . . . . . . . . . . .
-5.2.2.1 easyNetconf . . . . . . . . . . . . . . . . . . .
-Grafana . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
-
+17
 18
-19
-19
-19
+18
+20
+20
+20
+21
+21
+21
+22
+27
 
 6 NETCONF Security
 
-19
+28
 
 References
 
-20
+29
 
 3
 
@@ -114,26 +126,19 @@ References
 
 Introduction
 
-There are many paradigms of commercial sensor management and monitoring. Organizations can use anything from PLC (programmable Logic Controllers) to IoT devices to manage and monitor their sensors. For commercial
+There are many paradigms of commercial sensor management and monitoring. Organizations use among other things PLC (programmable Logic
+Controllers), IoT devices and SCADA (Supervisory Control and Data Acquisition) systems to manage and monitor their sensors. For commercial
 use some of these alternatives are more popular than others. There are also
 a large amount of different higher level protocols like MQTT, HTTP and
 SNMP that can be used to manage and monitor sensors. We propose using
 the NETCONF protocol with YANG sensor models for management. This
 work will be done in collaboration with Lightside Instruments AS.
-Writer’s
-note:
 This document will cover the following three topics:
-unprecise,
-replace:
-
-• Work Methodology: An indept analysis of the knowledge base around ”can use
-work methods like Scrum, Kanban, and Waterfall. With a focus on how anything
-from...”
+• Work Methodology: An indept analysis of the knowledge base around
+work methods like Scrum, Kanban, and Waterfall. With a focus on how
 our work methodology differs from these.
-and
-all
 • NETCONF and YANG sensor management: A qualitative analysis of the NETCONF and YANG protocols and how they can be used
-to manage sensors.
+to manage sensors and a description of our work with Lightside Instruments AS on NETCONF and YANG sensor management.
 • NETCONF Security: A qualitative analysis of the security aspects
 of the NETCONF protocol.
 
@@ -145,9 +150,11 @@ Lightside Instruments is a company specializing in developing instruments
 with model based network management for use in networking, network interconnect testing and telemetry. They design their instruments with YANG
 (RFC7950) [6] models and NETCONF (RFC6241) [11] protocol. The instruments are based on IETF standards and drafts, and are implemented with
 software tools available in Debian, programmable logic and open hardware
-[20].
+[22].
 
-3
+4
+
+3
 
 Technical background
 
@@ -157,47 +164,82 @@ NETCONF and YANG
 
 NETCONF [11] is a model based Network Configuration Protocol. Each
 NETCONF device presents the aquiring device with a YANG [6] data model
-4
-
-other vague
-statements.
-
-consisting of the device state and parameters. Each data model has a set of
+consisting of the device state and parameters. Each data model has a set of
 constraints making them error correcting.
 3.2
 
+Yuma123
+
+Yuma123 [34] is an open source NETCONF and YANG implementation.
+Yuma123 is available as a Debian package and is maintained by Lightside
+Instruments AS.
+3.3
+
+NodeJS
+
+Node.js [26] is a JavaScript runtime built on Chrome’s V8 JavaScript engine.
+It is used to build JavaScript applications that can run independently of
+a web browser. Node.js is popular for building server-side applications as
+it is relatively performant and it allows developers to work with the same
+language on both the client and server.
+3.4
+
+Node-Yuma123
+
+Node-Yuma123 [25] is a NodeJS package that implements a set of Yuma123
+bindings. It allows for efficient NETCONF and YANG development in
+NodeJS.
+3.5
+
 Node-RED
 
-Node-RED [21] is an open source low code programming tool for event driven
-applications. It is developed by IBM and is based on Node.js [24]. Node-RED
+Node-RED [23] is an open source low code programming tool for event driven
+applications. It is developed by IBM and is based on Node.js [26]. Node-RED
 is used to connect hardware devices and APIs through a visual programming
 interface.
-3.3
+3.6
 
 Grafana
 
-Grafana [15] is an open source data visualization tool. It is used to visualize
+Grafana [16] is an open source data visualization tool. It is used to visualize
 arbitrary data from different data sources.
-3.4
+5
+
+3.7
+
+XML and XPATH
+
+XML stands for Extensible Markup Language [12]. It is a markup language
+that is used to encode data in a format that is both human and machine
+readable. XPATH [37] is a language for navigating XML documents. An
+XPATH expression allows for the selection of arbitrary nodes in an XML
+document.
+3.8
 
 Scrum
 
-Scrum [16] is a framework for agile [5] software development.
-3.5
+Scrum [18] is a framework for agile [5] software development. The term Scrum
+is derived from the game of rugby, where a scrum is a way of restarting play
+after a minor infringement [31].
+3.9
 
 Kanban
 
-Kanban [18] is a framework for agile software development.
-3.6
+Kanban [20] is a framework for agile software development. The term Kanban
+is derived from the Japanese word for ”signboard” or ”billboard” [21].
+3.10
 
 Waterfall
 
-Waterfall [33] is a framework for software development.
-3.7
+Waterfall [36] is a framework for software development. The waterfall model
+is a linear and sequential approach to software development.
+3.11
 
 Extreme Programming
 
-Extreme Programming [12] is a framework for agile software development.
+Extreme Programming [13] is a framework for agile software development.
+Extreme Programming takes the best practices of software development and
+takes them to the extreme, hence the name.
 
 4
 
@@ -211,7 +253,7 @@ This review examines the claims that Scrum, Kanban, Waterfall, Extreme
 Programming and DevOps increases worker productivity substantiated by
 empirical evidence.
 
-5
+6
 
 4.2
 
@@ -228,28 +270,20 @@ The following is our search strategy for the scoping review. We will be searchin
 • Extreme Programming
 • DevOps
 We will be searching the following databases:
-• IEEE Xplore [17]
+• IEEE Xplore [19]
 • ACM Digital Library [3]
-• Google Scholar [14] (Meta database)
+• Google Scholar [15] (Meta database)
 We will also be searching the following industry websites:
 • Agile Alliance [4]
-• Scrum.org [16]
-• DevOps Institute [25]
-• Scrum Alliance [30]
-Writer’s
-
-Our search will consists of a set of primary and secondary keywords. The note:
-This
+• Scrum.org [18]
+• DevOps Institute [27]
+• Scrum Alliance [32]
+Our search will consists of a set of primary and secondary keywords. The
 primary keywords are:
-section becomes a bit
-monotone,
-consider
-fewer lists.
-
 • Scrum
 • Kanban
 • Waterfall
-6
+7
 
 • Extreme Programming
 • DevOps
@@ -281,7 +315,7 @@ The systematic review will include articles meeting the following criteria:
 – Waterfall
 – Extreme Programming
 – DevOps
-7
+8
 
 4.2.3
 
@@ -293,11 +327,11 @@ title and abstract, resulting in 12 articles being excluded. The 44 remaining
 articles were assessed for eligibility, resulting in 33 articles being excluded.
 The 11 remaining articles were included in the review.
 4.2.3.1 PRISMA flow diagram
-Figure 1 shows the PRISMA [28] flow diagram for the scoping review. The
+Figure 1 shows the PRISMA [30] flow diagram for the scoping review. The
 PRISMA flow diagram is a standardized way of reporting the results of a
 scoping review.
 
-8
+9
 
 Identification
 Records identified through database searching:
@@ -347,7 +381,7 @@ Waterfall (n = 0)
 XP
 (n = 0)
 
-9
+10
 Figure 1: PRISMA flow diagram for scoping review of software development
 methodologies
 
@@ -357,63 +391,64 @@ Scrum
 
 Scrum is a framework for agile software development. The term Scrum is
 derived from the game of rugby, where a scrum is a way of restarting play
-after a minor infringement [29]. The use of the term Scrum in software development was first introduced by Takeuchi and Nonaka in 1986 in a paper
-titled ”The New New Product Development Game” [31]. In the paper, the
+after a minor infringement [31]. The use of the term Scrum in software development was first introduced by Takeuchi and Nonaka in 1986 in a paper
+titled ”The New New Product Development Game” [33]. In the paper, the
 authors argue for a new approach to product development where the different
 stages of development are overlapped, rather than sequentially executed in
 a ”pass the baton” fashion. This differs from the then popular NASA type
-PPP (Phased Project Planning) model [27].
+PPP (Phased Project Planning) model [29].
 Modern Scrum development consists of a set of sprints, these sprints consists of a pre-defined set of tasks that are to be completed in the pre-defined
 sprint time frame. Each task or ”story” is assigned an arbitrary number of
 points that represents the complexity of the task. The sprint is the completed
 when there a no more points to be completed or the time frame is up. There
 are many modern flavors of Scrum, like Accenture’s [2] Autoscrum which is
 a scrum framework that was first introduced in the talk ”AGILE TRANSFORMATION? FOR COMPLEX SYSTEMS? ...NO WAY!” by Brehm [7] as
-can be seen in Figure 2. Or the scaled agile framework (SAFe) [13] which is
+can be seen in Figure 2. Or the scaled agile framework (SAFe) [14] which is
 a framework developed by Scaled Agile Incorporated which introduces SAFe
 Scrum see Figure 3. Or the Deloitte’s [9] ”The Agile Landscape v3” that
 consists of all the different frameworks and methods used for project management. See the Scrum section in Figure 4.
 
-10
+11
 
 Figure 2: Excerpt from the presentation ”AGILE TRANSFORMATION?
 FOR COMPLEX SYSTEMS? ...NO WAY!” by Brehm [7] showing the Autoscrum framework.
 
-11
-
-Figure 3: The Scaled Agile Framework (SAFe) [13].
-
 12
+
+Figure 3: The Scaled Agile Framework (SAFe) [14].
+
+13
 
 Figure 4: The Agile Landscape v3 [9] showing the different frameworks and
 methods used for project management.
 
-13
+14
 
 4.3.1
 
 Evidentiary foundation
 
 With only one article ”A Theory of Scrum Team Effectiveness” by Verwijs
-and Russo [32] we can conclude that there is no empirical evidence that
-Scrum increases worker productivity or efficiency. Whilst the findings of the
-article seems promising, there simply is not enough research on the topic to
-comment on the evidentiary foundation of Scrum, this is something taken in
-too account by the authors of the article. Only a handful of other articles
-have been published on the topic, but most of them fall outside the exclusion
-criteria of the scoping review as they have been published before 2020.
+and Russo [35] we can conclude that there is no empirical evidence that
+Scrum increases worker productivity or efficiency. Whilst the findings of
+the article seems promising, and the article is thorough, there simply is not
+enough research on the topic to comment on the evidentiary foundation of
+Scrum, this is something taken in too account by the authors of the article.
+Only a handful of other articles have been published on the topic, but most
+of them fall outside the exclusion criteria of the scoping review as they have
+been published before 2020.
 4.4
 
 Kanban
 
 Kanban is a framework for agile software development. The term Kanban is
-derived from the Japanese word for ”signboard” or ”billboard” [19]. A Kanban board is a visual representation of the tasks that need to be completed,
+derived from the Japanese word for ”signboard” or ”billboard” [21]. A Kanban board is a visual representation of the tasks that need to be completed,
 the board consists of multiple columns that represent the different stages of
 the development process. As a task is worked on it traverses the columns of
 the board until it is completed. This provides a visual representation of the
 state of the project and allows for easy identification of bottlenecks in the
 process. Kanban is a much more flexible and lean approach to project management than Scrum, as it follows closer to the agile manifesto’s principles
-of flexibility and adaptability [22].
+of flexibility and adaptability [24].
 4.4.1
 
 Evidentiary foundation
@@ -424,15 +459,16 @@ empirical evidence that Kanban increases worker productivity or efficiency.
 
 Waterfall
 
-The waterfall [33] is a linear and sequential approach to software development. Sets of tasks are grouped into phases, where each phase must be
+The waterfall [36] is a linear and sequential approach to software development. Sets of tasks are grouped into phases, where each phase must be
 completed before the next phase can begin. This is reminiscent of the NASA
-type PPP (Phased Project Planning) model [27]. The waterfall model mirrors the traditional problem solving process, of breaking a problem down
+type PPP (Phased Project Planning) model [29]. The waterfall model mirrors the traditional problem solving process, of breaking a problem down
 into a set of smaller problems, and solving each of the smaller problems in a
-sequential manner. This is something that is found at the core of all project
-management methodologies.
-14
 
-4.5.1
+15
+
+sequential manner. This is something that is found at the core of all project
+management methodologies.
+4.5.1
 
 Evidentiary foundation
 
@@ -442,18 +478,18 @@ empirical evidence that Waterfall increases worker productivity or efficiency.
 
 Extreme Programming
 
-Extreme Programming [12] is a framework for agile software development.
+Extreme Programming [13] is a framework for agile software development.
 Extreme Programming takes the best practices of software development and
-takes them to the extreme, hence the name. A core part of Extreme Programming is the use of pair programming [26], where two developers work
+takes them to the extreme, hence the name. A core part of Extreme Programming is the use of pair programming [28], where two developers work
 together on the same code.
-4.7
+4.6.1
 
 Evidentiary foundation
 
 With no articles found in the scoping review we can conclude that there is no
 empirical evidence that Extreme Programming increases worker productivity
 or efficiency.
-4.8
+4.7
 
 DevOps
 
@@ -462,19 +498,19 @@ of combining software development and IT operations. This keeps the developers c
 A result of developer operations is the use of automated continues integration and continues deployment (CI/CD) [8] systems as the responsibility of
 the deployment falls on the developers. This methodology fosters early error
 detection and correction.
-4.8.1
+4.7.1
 
 Evidentiary foundation
 
 DevOps and Research Assessment (DORA) [10] is a research department at
 Google that focuses on researching assessment methods for DevOps. They
 publish a yearly report on the state of DevOps. Other than DORA independent research into the topic is scarce and whilst research is being done there
-is currently not a strong enough evidentiary foundation to make any claims
+
+16
+
+is currently not a strong enough evidentiary foundation to make any claims
 about the effectiveness of DevOps.
-
-15
-
-4.9
+4.8
 
 Conclusion
 
@@ -482,15 +518,50 @@ The scoping review has made it clear that there is a lack of research into the
 effectiveness of different work methodologies. The industry seems focused
 on researching performance metrics for each methodology, rather than the
 effectiveness of the methodology itself.
+4.9
+
+Our Work Methodology
+
+At Lightside Instruments we work with both hardware and software in a small
+team. This workflows lends a great deal of flexibility to our work. With most
+engineers doubling as both hardware and software engineers, we have found
+it cumbersome to use a strict work methodology like most agile frameworks.
+Due to the small size of our team we have adapted a DevOps like approach
+that is tailored for our needs. We have a set of tasks that are defined in a
+git repository. After a task is completed a pull request is submitted and the
+task is marked as pending review. When the request is approved the task is
+marked as completed and the code is merged into the main branch. We not
+only use automated continues integration and continues deployment (CI/CD)
+systems for our software, but also for our hardware. We have developed a
+set of workflows that are used to automatically generate the production files
+for our hardware.
+Whilst there is no empirical evidence or any research suggesting that our
+work methodology is more effective than any of the other methodologies, we
+have found it to be a good fit for our needs. And we feel that it adheres close
+the principles set forth by the agile manifesto [24].
 
 5
 
 NETCONF and YANG sensor management
 
 Hardware management is an essential part of administrating a larger network.
-Together with Lightside Instruments we have developed open source tools for
-YANG and NETCONF aimed at hardware sensor management.
-5.1
+Together with Lightside Instruments AS we have developed open source tools
+for YANG and NETCONF aimed at hardware sensor management.
+
+17
+
+5.1
+
+Project description
+
+Our aim is to develop a set of open source tools for YANG and NETCONF
+aimed at the management and monitoring of hardware sensors. The goal is
+to produce a reference implementation of a NETCONF device that presents
+a sensor YANG model to the user. And a set of tools that can be used to
+manage and monitor the NETCONF devices.
+We aim to develop a reference implementation of a decentralized monitoring
+and management system for NETCONF devices. This system will demonstrate the power and flexibility of NETCONF and YANG for hardware management and monitoring, an illustration of this can be seen in Figure 10.
+5.2
 
 YANG Model
 
@@ -501,7 +572,7 @@ will be using a custom YANG model developed by Lightside Instruments AS
 that only describes the state of thermometers. See Figure 5 for the YANG
 model.
 
-16
+18
 
 module lsi-thermometers {
 yang-version 1.1;
@@ -537,16 +608,16 @@ range "-27315..max";
 
 Figure 5: YANG model for thermometer management
 
-17
+19
 
-5.2
+5.3
 
 Node-RED
 
 Node-RED is a low code programming tool for event driven applications. It
 makes it possible to create arbitrary flows that function as a compatibility
 layer between different systems and protocols. The low code nature of NodeRED makes arbitrary system integration accessible even for the lay person.
-5.2.1
+5.3.1
 
 Red-Netconf
 
@@ -558,34 +629,112 @@ with a NETCONF device.
 to a NETCONF device using yangcli commands.
 Using these two nodes we are able to create Node-RED flows that can manage
 NETCONF devices.
-5.2.1.1 Temperature alert
+5.3.1.1 Temperature alert
 As an example of how the Red-Netconf nodes can be used we created a NodeRED reference flow that collects data from a thermometer and switches on
 an LED when the temperature is above 25 degrees Celsius, this can be seen
 in Figure 6.
 
-18
+20
 
 Figure 6: Node-RED flow using Red-Netconf nodes that monitors a temperature sensor and switches on an LED when the temperature is above 25
 degrees Celsius.
-5.2.2
+5.3.2
 
 Node-Yuma123
 
-Node-Yuma123 [23] is a NodeJS package that implements a set of Yuma123
+Node-Yuma123 [25] is a NodeJS package that implements a set of Yuma123
 bindings.
-5.2.2.1
-
-easyNetconf
-
-5.3
+5.3.2.1 easyNetconf
+C is a low level functional programming language, there are many implementations of the C compiler. All of these implementations follow the C standard
+set forth by the American National Standards Institute (ANSI) in the ANSI
+C standard. Due to JavaScipts object-oriented nature we decided to create
+a wrapper around the node-Yuma123 library. This wrapper allows us to use
+the node-Yuma123 library in an object-oriented way.
+5.4
 
 Grafana
+
+Grafana is an open source data visualization tool. Since its inception ins
+2014 it has become the industry standard for data visualization. It is used to
+visualize arbitrary data from different data sources. We have developed a solution for fetching and visualizing arbitrary NETCONF data using Grafana.
+We call this solution NetconfAggregator.
+
+21
+
+5.4.1
+
+NetconfAggregator
+
+NetconfAggregator is a NodeJS package that uses the easyNetconf wrapper
+[17] to aggregate NETCONF data and store it in a postgresql database. The
+data is stored in the form of a time series consisting of an ID, a timestamp
+and the raw XML data from the NETCONF device. This allows the data
+to be extracted and visualized using XPATH queries. An example of this
+can be seen in Figure 7. This example shows how the query ”//proc/meminfo/MemFree” can be used to create a graph of the memory usage on a
+raspberry pi trough the NetconfAggregator datasource plugin in Grafana.
+Figure 8 shows the architecture of the NetconfAggregator, consisting of a
+PostgreSQL database, a NetconfAggregator instance and a Grafana instance
+running the NetconfAggregator datasource plugin. The NetconfAggregator
+gets the state of each NETCONF device using the YangCLI command ”xget
+/” which fetches the state of the device. The respone is then stored in
+the database. When the NetconfAggregator receives a query from the datasource plugin it applies the specified XPATH to the relevant data-range in
+the database and returns the result to the datasource plugin.
+
+22
+
+Figure 7: Querying the memory free data on a raspberry pi using XPATH
+and the NetconfAggregator plugin.
+
+23
+
+Figure 8: NetconfAggregator architecture.
+
+24
+
+We quickly discovered that processing XPATHS is processor intensive.
+Especially when the data set is large. Grafana also has a tendency to send
+all the queries belonging to a dashboard at once therefore, we decided to
+implement a caching system, where the results of the XPATH queries are
+cached in memory, stored in a hash table. However, this did not work as
+expected, as the queries were arriving at the same time the responses did
+not have time to reach the cache before the next identical query arrived. To
+solve this we implemented a queue system, we call it the event queue. When
+a query goes to processing it is simultaneously added to the event queue.
+Future identical queries are delayed until the processing of the first query is
+completed. A delay is added to each request that the server receives. This
+delay is based on the number of queries that are currently being processed,
+and thus makes sure that no two identical queries are processed at the same
+time. An illustration of how requests are processed can be seen in Figure 9.
+
+25
+
+26
+Figure 9: XPATH query processing.
+
+5.5
+
+Decentralized monitoring
+
+We believe that the power of NETCONF lies in its ability to be used in a
+decentralized manner. This means that multiple aggregators can be used to
+manage the same NETCONF devices. The exampel in Figure 10 shows two
+servers each containing a node-red instance, a NetconfAggregator instance
+and a Grafana instance. The node-red instance and the NetconfAggregator
+functions completely independently of each other. Thus making the monitoring system completely separate from the management system. The example
+consists of a normal networking setup consisting of three NETCONF enabled switches, a NETCONF enabled temperature sensor and a NETCONF
+enabled alarm. This architecture allows for arbitrary control and monitoring
+of the NETCONF devices using the NetconfAggregator and Node-RED.
+
+27
+
+Figure 10: Decentralized monitoring of NETCONF devices using Grafana,
+NetconfAggregator and Node-RED.
 
 6
 
 NETCONF Security
 
-19
+28
 
 References
 [1] @lightside-Instruments/Red-Netconf.
@@ -613,58 +762,66 @@ on 04/27/2025).
 [11] Rob Enns et al. Network Configuration Protocol (NETCONF).
 Request for Comments RFC 6241. Internet Engineering Task Force,
 June 2011. doi: 10.17487/RFC6241. (Visited on 01/12/2025).
-[12] “Extreme Programming”. In: Wikipedia (Apr. 2025). (Visited on
+[12] Extensible Markup Language (XML). https://www.w3.org/XML/.
+(Visited on 05/07/2025).
+[13] “Extreme Programming”. In: Wikipedia (Apr. 2025). (Visited on
 04/27/2025).
-[13] Framework. https://framework.scaledagile.com/. (Visited on
+[14] Framework. https://framework.scaledagile.com/. (Visited on
 04/27/2025).
-[14] Google Scholar. https://scholar.google.com/. (Visited on
-03/28/2025).
-20
+29
 
-[15] Grafana: The Open and Composable Observability Platform.
+[15] Google Scholar. https://scholar.google.com/. (Visited on
+03/28/2025).
+[16] Grafana: The Open and Composable Observability Platform.
 https://grafana.com/. (Visited on 01/20/2025).
-[16] Home — Scrum.Org. https://www.scrum.org/index. (Visited on
+[17] Joar Heimonen. Slenderman00/Netconfaggregator. May 2025.
+(Visited on 05/07/2025).
+[18] Home — Scrum.Org. https://www.scrum.org/index. (Visited on
 03/28/2025).
-[17] IEEE Xplore. https://ieeexplore.ieee.org/Xplore/home.jsp. (Visited
+[19] IEEE Xplore. https://ieeexplore.ieee.org/Xplore/home.jsp. (Visited
 on 03/28/2025).
-[18] “Kanban”. In: Wikipedia (Apr. 2025). (Visited on 04/27/2025).
-[19] “Kanban (Development)”. In: Wikipedia (Mar. 2025). (Visited on
+[20] “Kanban”. In: Wikipedia (Apr. 2025). (Visited on 04/27/2025).
+[21] “Kanban (Development)”. In: Wikipedia (Mar. 2025). (Visited on
 04/27/2025).
-[20] Lightside Instruments AS – YANG Model Network Managed
+[22] Lightside Instruments AS – YANG Model Network Managed
 Instruments. (Visited on 01/20/2025).
-[21] Low-Code Programming for Event-Driven Applications : Node-RED.
+[23] Low-Code Programming for Event-Driven Applications : Node-RED.
 https://nodered.org/. (Visited on 03/29/2025).
-[22] Manifesto for Agile Software Development.
+[24] Manifesto for Agile Software Development.
 http://agilemanifesto.org/. (Visited on 06/02/2024).
-[23] Node-Yuma123. https://www.npmjs.com/package/node-yuma123.
+[25] Node-Yuma123. https://www.npmjs.com/package/node-yuma123.
 Apr. 2025. (Visited on 04/22/2025).
-[24] Node.Js — Run JavaScript Everywhere. https://nodejs.org/en.
+[26] Node.Js — Run JavaScript Everywhere. https://nodejs.org/en.
 (Visited on 03/29/2025).
-[25] Organisations-. https://www.peoplecert.org/Organisations. (Visited
+[27] Organisations-. https://www.peoplecert.org/Organisations. (Visited
 on 03/28/2025).
-[26] “Pair Programming”. In: Wikipedia (Nov. 2024). (Visited on
+[28] “Pair Programming”. In: Wikipedia (Nov. 2024). (Visited on
 04/27/2025).
-[27] Phased Project Planning Guidelines. Aug. 1968. (Visited on
+[29] Phased Project Planning Guidelines. Aug. 1968. (Visited on
 04/27/2025).
-[28] PRISMA Statement. https://www.prisma-statement.org. (Visited on
+[30] PRISMA Statement. https://www.prisma-statement.org. (Visited on
 03/28/2025).
-[29] “Scrum (Rugby Union)”. In: Wikipedia (Apr. 2025). (Visited on
+[31] “Scrum (Rugby Union)”. In: Wikipedia (Apr. 2025). (Visited on
 04/27/2025).
-[30] Scrum Alliance - Find Courses for Scrum and Agile Certifications.
-https://www.scrumalliance.org. (Visited on 03/28/2025).
-[31] “The New New Product Development Game”. In: Harvard Business
-Review (). issn: 0017-8012. (Visited on 04/27/2025).
-21
+30
 
-[32] Christiaan Verwijs and Daniel Russo. “A Theory of Scrum Team
+[32] Scrum Alliance - Find Courses for Scrum and Agile Certifications.
+https://www.scrumalliance.org. (Visited on 03/28/2025).
+[33] “The New New Product Development Game”. In: Harvard Business
+Review (). issn: 0017-8012. (Visited on 04/27/2025).
+[34] Vladimir Vassilev. Vlvassilev/Yuma123. Mar. 2025. (Visited on
+04/27/2025).
+[35] Christiaan Verwijs and Daniel Russo. “A Theory of Scrum Team
 Effectiveness”. In: ACM Transactions on Software Engineering and
 Methodology 32.3 (July 2023), pp. 1–51. issn: 1049-331X, 1557-7392.
 doi: 10.1145/3571849. (Visited on 04/27/2025).
-[33] “Waterfall Model”. In: Wikipedia (Feb. 2025). (Visited on
+[36] “Waterfall Model”. In: Wikipedia (Feb. 2025). (Visited on
 04/27/2025).
+[37] XML Path Language (XPath) 3.1.
+https://www.w3.org/TR/xpath-31/. (Visited on 05/07/2025).
 © 2025 Joar Heimonen, Christian Vu, Naly Keli
 This work is licensed under a Creative Commons Attribution-Sharealike 4.0 International License.
 
-22
+31
 
 

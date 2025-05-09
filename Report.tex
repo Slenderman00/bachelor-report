@@ -571,7 +571,8 @@ We have developed a solution for fetching and visualizing arbitrary NETCONF data
 We call this solution NetconfAggregator.
 
 \subsubsection{NetconfAggregator}
-NetconfAggregator is a NodeJS package that uses the easyNetconf Library \cite{heimonenSlenderman00Netconfaggregator2025} to aggregate NETCONF data and store 
+NetconfAggregator is a NodeJS package that uses the easyNetconf wrapper 
+\cite{heimonenSlenderman00Netconfaggregator2025} to aggregate NETCONF data and store 
 it in a postgresql database. The data is stored in the form of a time series consisting of an ID, a timestamp and the 
 raw XML data from the NETCONF device. This allows the data to be extracted and visualized using XPATH queries.
 An example of this can be seen in \textit{Figure \ref{fig:netconf-aggregator-memfree}}.
@@ -582,7 +583,7 @@ on a raspberry pi trough the NetconfAggregator datasource plugin in Grafana.
 Figure \ref{fig:netconf-aggregator} shows the architecture of the NetconfAggregator, consisting
 of a PostgreSQL database, a NetconfAggregator instance and a Grafana instance running the NetconfAggregator datasource plugin.
 The NetconfAggregator gets the state of each NETCONF device using the YangCLI command \textit{"xget /"} which
-fetches the state of the device. The respone is then stored in the database.
+fetches the state of the device. The response is then stored in the database.
 When the NetconfAggregator receives a query from the datasource plugin it applies the specified XPATH to 
 the relevant data-range in the database and returns the result to the datasource plugin.
 
@@ -629,7 +630,7 @@ An illustration of how requests are processed can be seen in \textit{Figure \ref
 \subsection{Decentralized monitoring}
 We believe that the power of NETCONF lies in its ability to be used in a decentralized manner.
 This means that multiple aggregators can be used to manage the same NETCONF devices. 
-The exampel in \textit{Figure \ref{fig:decentralized-monitoring}} shows two servers each containing a node-red instance, a NetconfAggregator 
+The example in \textit{Figure \ref{fig:decentralized-monitoring}} shows two servers each containing a node-red instance, a NetconfAggregator 
 instance and a Grafana instance. The node-red instance and the NetconfAggregator functions completely independently of each other.
 Thus making the monitoring system completely separate from the management system. The example consists of a normal networking setup
 consisting of three NETCONF enabled switches, a NETCONF enabled temperature sensor and a NETCONF enabled alarm.
