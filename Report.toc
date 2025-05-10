@@ -32,7 +32,7 @@
 \contentsline {subsection}{\numberline {4.8}Conclusion}{17}{subsection.4.8}%
 \contentsline {subsection}{\numberline {4.9}Our Work Methodology}{17}{subsection.4.9}%
 \contentsline {section}{\numberline {5}NETCONF and YANG sensor management}{17}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Project description}{19}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.1}NETCONF}{19}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}YANG Model}{19}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Node-RED}{21}{subsection.5.3}%
 \contentsline {subsubsection}{\numberline {5.3.1}Red-Netconf}{21}{subsubsection.5.3.1}%
