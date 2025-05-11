@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.24)  11 MAY 2025 22:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.24)  11 MAY 2025 22:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1042,18 +1042,18 @@ Overfull \hbox (4.05891pt too wide) detected at line 715
 LaTeX Warning: Reference `fig:diffie-hellman' on page 29 undefined on input line 726.
 
 [29]
-/home/joar/Documents/bachelor-report/Report.tex:742: Missing $ inserted.
+/home/joar/Documents/bachelor-report/Report.tex:743: Missing $ inserted.
 <inserted text> 
                 $
-l.742 ...y of a bruteforce attack ie. 2^1 ... 2^n}
+l.743 ...y of a bruteforce attack ie. 2^1 ... 2^n}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-/home/joar/Documents/bachelor-report/Report.tex:742: Extra }, or forgotten $.
+/home/joar/Documents/bachelor-report/Report.tex:743: Extra }, or forgotten $.
 <recently read> \egroup 
                         
-l.742 ...y of a bruteforce attack ie. 2^1 ... 2^n}
+l.743 ...y of a bruteforce attack ie. 2^1 ... 2^n}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1061,53 +1061,53 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-/home/joar/Documents/bachelor-report/Report.tex:742: Missing $ inserted.
+/home/joar/Documents/bachelor-report/Report.tex:743: Missing $ inserted.
 <inserted text> 
                 $
-l.742 ...y of a bruteforce attack ie. 2^1 ... 2^n}
+l.743 ...y of a bruteforce attack ie. 2^1 ... 2^n}
                                                   
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--742
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 [][]\OT1/cmr/m/n/10.95 Writer's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--742
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \OT1/cmr/m/n/10.95 note:[]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--742
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \OT1/cmr/m/it/8 In-clude a
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--742
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \OT1/cmr/m/it/8 graph of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--742
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \OT1/cmr/m/it/8 com-pu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--742
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \OT1/cmr/m/it/8 ta-tional
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 742--742
+Underfull \hbox (badness 10000) in paragraph at lines 743--743
 \OT1/cmr/m/it/8 com-plex-ity
  []
 
-/home/joar/Documents/bachelor-report/Report.tex:742: Missing } inserted.
+/home/joar/Documents/bachelor-report/Report.tex:743: Missing } inserted.
 <inserted text> 
                 }
-l.742 ...y of a bruteforce attack ie. 2^1 ... 2^n}
+l.743 ...y of a bruteforce attack ie. 2^1 ... 2^n}
                                                   
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1118,7 +1118,7 @@ my insertion and my current dilemma will both disappear.
 <./images/diffiehellman.drawio.png, id=332, 593.21625pt x 502.87875pt>
 File: ./images/diffiehellman.drawio.png Graphic file (type png)
 <use ./images/diffiehellman.drawio.png>
-Package pdftex.def Info: ./images/diffiehellman.drawio.png  used on input line 748.
+Package pdftex.def Info: ./images/diffiehellman.drawio.png  used on input line 749.
 (pdftex.def)             Requested size: 390.0pt x 330.61955pt.
 [30] [31 <./images/diffiehellman.drawio.png>] [32] [33] [34] (./Report.aux)
  ***********
@@ -1158,7 +1158,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,12n,93p,2034b,1514s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Report.pdf (34 pages, 2393556 bytes).
+Output written on Report.pdf (34 pages, 2393593 bytes).
 PDF statistics:
  472 PDF objects out of 1000 (max. 8388607)
  361 compressed objects within 4 object streams
