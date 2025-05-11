@@ -691,9 +691,8 @@ and the Transport Layer Security (TLS) \cite{RFC5246} protocols.
 A secure shell (SSH) is only as good as the configuration of the SSH server.
 The process of securing an SSH server is called "hardening".
 There are many ways to harden an SSH server. The following are some of the 
-more common practices.
-
-Asymmetric encryption is one of the most common ways of securing an SSH server.
+more common practices. Asymmetric encryption is one of the most common ways of 
+securing an SSH server.
 This involves every user generating a public/private key pair, the
 public key is then passed to the server and the private key is kept on the client.
 The server can then use the public key to encrypt messages that can only be decrypted
@@ -707,13 +706,42 @@ this generator must also be shared between both parties. The generator
 is a primitive root modulo of \textit{p}.
 A number \( g \) is a \textbf{primitive root modulo of \( p \)} if:
 \[
-\sum_{k=1}^{p-1} \left( g^k \mod p \right) = \sum_{n=1}^{p-1} n = \frac{(p-1)p}{2}
+\sum_{k=1}^{p-1} \left( g^k\Mod{p} \right) = \sum_{n=1}^{p-1} n = \frac{(p-1)p}{2}
 \]
 This means that the sum of the generator raised to the power of \textit{1-p modulus p} will always be the 
 same as the sum of all integers from \textit{1} to \textit{1-p}. Therefor the expression can also be written as:
 \[
 \{ g^1\Mod{p},\;g^2\Mod{p},\;g^3\Mod{p},\;\dots,\;g^{p-1} \Mod{p} \} = \{ 1, 2, 3, \dots, p-1 \}.
 \]
+After the generator has been selected each client generates a secret number.
+Each party calculates a public key \textit{pubk} that is to be shared using their \textit{secret}.
+\[
+pubk = \{g^{secret} \Mod{p}\}
+\]
+The shared secret \textit{s} can then be calculated by using the other parties public key,
+the clients secret and the large common prime \textit{p}.
+\[
+s = \{pubk^{secret} \Mod{p} \Mod{p}\}
+\]
+Now assuming that the bad actor as can be seen in \textit{Figure \ref{fig:diffie-hellman}} has intercepted
+all traffic it will be to mathematically complex for the bad actor to calculate the shared secret 
+based just on the large common prime \textit{p}. Assuming the bad actor is trying the 
+General Number Field Sieve (GNFS) we can calculate the computation complexity using the following
+\textit{L} notation where \textit{c} is a constant expressing the efficiency of the implementation
+\(c = (64/9)^{1/3}.\)
+\[
+L_p\left[1/3, c\right] = \exp\left(c (\log p)^{1/3} (\log \log p)^{2/3}\right)
+\]
+Assuming that \textit{p} is a 1024-bit number there is 
+\(2^{1024}\) combinations. Using the prime number theorem we know that the amount of primes 
+will be the natural logarithm of the complexity of \textit{p} approximately \textit{709.63}.
+\[
+\ln(2^{1024}) = 1024 \cdot 0.693 \approx 709.63.
+\]
+
+\writersnote{Include a graph of the running computational complexity of a bruteforce attack ie. 2^1 ... 2^n}
+
+
 
 \begin{figure}
   \centering
@@ -721,7 +749,6 @@ same as the sum of all integers from \textit{1} to \textit{1-p}. Therefor the ex
   \caption{An illustration of the Diffie-Hellman key exchange protocol. \\**The generator number is a primitive root modulo of p.}
   \label{fig:diffie-hellman}
 \end{figure}
-
 
 
 

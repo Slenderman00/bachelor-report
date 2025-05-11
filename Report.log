@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.24)  11 MAY 2025 21:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.24)  11 MAY 2025 22:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -852,7 +852,6 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 \c@lstlisting=\count460
 Package hyperref Info: Link coloring ON on input line 92.
- (./Report.out) (./Report.out)
 \@outlinefile=\write5
 \openout5 = `Report.out'.
 
@@ -860,11 +859,12 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Report.toc [2])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+No file Report.toc.
 \tf@toc=\write6
 \openout6 = `Report.toc'.
 
- [3]
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 107--117
 
  []
@@ -874,7 +874,7 @@ Overfull \hbox (3.71658pt too wide) in paragraph at lines 117--119
 []\OT1/cmr/bx/n/12 Work Method-ol-ogy: \OT1/cmr/m/n/12 An in-dept anal-y-sis of the knowl-edge base around
  []
 
-[4{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [5] [6] [7]
+[3{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [4] [5] [6]
 Overfull \hbox (7.60071pt too wide) in paragraph at lines 241--241
  []       \OT1/cmtt/m/n/12 (Scrum OR Kanban OR Waterfall OR "Extreme Programming" OR DevOps)[] 
  []
@@ -884,7 +884,11 @@ Overfull \hbox (69.35074pt too wide) in paragraph at lines 241--241
  []\OT1/cmtt/m/n/12 (Effectiveness OR Efficiency OR Productivity OR Performance OR Success OR Failure)[] 
  []
 
-[8]
+[7]
+
+LaTeX Warning: Reference `fig:prisma' on page 8 undefined on input line 270.
+
+
 Overfull \hbox (90.1764pt too wide) in paragraph at lines 343--344
 [][] 
  []
@@ -892,27 +896,37 @@ Overfull \hbox (90.1764pt too wide) in paragraph at lines 343--344
 
 LaTeX Warning: Float too large for page by 61.03358pt on input line 347.
 
-[9] [10]
+[8] [9]
+
+LaTeX Warning: Reference `fig:autoscrum' on page 10 undefined on input line 368.
+
+
+LaTeX Warning: Reference `fig:sAFE' on page 10 undefined on input line 370.
+
+
+LaTeX Warning: Reference `fig:the_agile_landscape' on page 10 undefined on input line 372.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 353--373
 
  []
 
-<./images/autoscrum.png, id=382, 1207.51125pt x 789.95125pt>
+<./images/autoscrum.png, id=158, 1207.51125pt x 789.95125pt>
 File: ./images/autoscrum.png Graphic file (type png)
 <use ./images/autoscrum.png>
 Package pdftex.def Info: ./images/autoscrum.png  used on input line 376.
 (pdftex.def)             Requested size: 390.0pt x 255.12798pt.
-<./images/sAFE.png, id=385, 1044.90375pt x 717.68124pt>
+<./images/sAFE.png, id=161, 1044.90375pt x 717.68124pt>
 File: ./images/sAFE.png Graphic file (type png)
 <use ./images/sAFE.png>
 Package pdftex.def Info: ./images/sAFE.png  used on input line 383.
 (pdftex.def)             Requested size: 390.0pt x 267.87044pt.
-<./images/the_agile_landscape.png, id=388, 1104.125pt x 823.075pt>
+<./images/the_agile_landscape.png, id=164, 1104.125pt x 823.075pt>
 File: ./images/the_agile_landscape.png Graphic file (type png)
 <use ./images/the_agile_landscape.png>
 Package pdftex.def Info: ./images/the_agile_landscape.png  used on input line 390.
 (pdftex.def)             Requested size: 390.0pt x 290.73053pt.
-[11] [12 <./images/autoscrum.png (PNG copy)>] [13 <./images/sAFE.png (PNG copy)>] [14 <./images/the_agile_landscape.png>] [15] [16]
+[10] [11 <./images/autoscrum.png (PNG copy)>] [12 <./images/sAFE.png (PNG copy)>] [13 <./images/the_agile_landscape.png>] [14] [15]
 Underfull \hbox (badness 10000) in paragraph at lines 452--465
 
  []
@@ -923,108 +937,231 @@ Overfull \hbox (3.29156pt too wide) in paragraph at lines 466--466
  []
 
 
+LaTeX Warning: Reference `fig:architecture' on page 16 undefined on input line 478.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 468--479
 
  []
 
-[17]
-<./images/refimparch2.drawio.png, id=445, 569.12625pt x 277.035pt>
+[16]
+<./images/refimparch2.drawio.png, id=234, 569.12625pt x 277.035pt>
 File: ./images/refimparch2.drawio.png Graphic file (type png)
 <use ./images/refimparch2.drawio.png>
 Package pdftex.def Info: ./images/refimparch2.drawio.png  used on input line 482.
 (pdftex.def)             Requested size: 390.0pt x 189.84814pt.
- [18 <./images/refimparch2.drawio.png>]
+ [17 <./images/refimparch2.drawio.png>]
+
+LaTeX Warning: Reference `fig:yang' on page 18 undefined on input line 498.
+
+
 Overfull \hbox (17.5502pt too wide) in paragraph at lines 533--533
 []              \OT1/cmtt/m/n/12 "Temperature in degrees Celsius multiplied by 100.";[] 
  []
 
-[19] [20] [21]
-<./images/red-netconf.png, id=475, 1053.9375pt x 407.5225pt>
+[18] [19]
+
+LaTeX Warning: Reference `fig:red-netconf' on page 20 undefined on input line 558.
+
+[20]
+<./images/red-netconf.png, id=265, 1053.9375pt x 407.5225pt>
 File: ./images/red-netconf.png Graphic file (type png)
 <use ./images/red-netconf.png>
 Package pdftex.def Info: ./images/red-netconf.png  used on input line 564.
 (pdftex.def)             Requested size: 390.0pt x 150.7996pt.
 
 
-LaTeX Warning: Citation 'libuv' on page 22 undefined on input line 585.
+LaTeX Warning: Citation 'libuv' on page 21 undefined on input line 585.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 572--588
 
  []
 
-[22 <./images/red-netconf.png>]
+[21 <./images/red-netconf.png>]
+
+LaTeX Warning: Reference `fig:netconf-aggregator-memfree' on page 22 undefined on input line 608.
+
+
+LaTeX Warning: Reference `fig:netconf-aggregator' on page 22 undefined on input line 613.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 604--619
 
  []
 
-<./images/memfree.png, id=484, 1136.245pt x 936.49875pt>
+<./images/memfree.png, id=275, 1136.245pt x 936.49875pt>
 File: ./images/memfree.png Graphic file (type png)
 <use ./images/memfree.png>
 Package pdftex.def Info: ./images/memfree.png  used on input line 622.
 (pdftex.def)             Requested size: 390.0pt x 321.4348pt.
-<./images/NetconfAggregator.png, id=485, 492.84125pt x 342.27875pt>
+<./images/NetconfAggregator.png, id=276, 492.84125pt x 342.27875pt>
 File: ./images/NetconfAggregator.png Graphic file (type png)
 <use ./images/NetconfAggregator.png>
 Package pdftex.def Info: ./images/NetconfAggregator.png  used on input line 629.
 (pdftex.def)             Requested size: 390.0pt x 270.86728pt.
-[23] [24 <./images/memfree.png (PNG copy)>] [25 <./images/NetconfAggregator.png>]
-<./images/xpathquery.drawio.png, id=504, 342.27875pt x 586.19pt>
+[22] [23 <./images/memfree.png (PNG copy)>] [24 <./images/NetconfAggregator.png>]
+
+LaTeX Warning: Reference `fig:xpath-query' on page 25 undefined on input line 647.
+
+<./images/xpathquery.drawio.png, id=295, 342.27875pt x 586.19pt>
 File: ./images/xpathquery.drawio.png Graphic file (type png)
 <use ./images/xpathquery.drawio.png>
 Package pdftex.def Info: ./images/xpathquery.drawio.png  used on input line 652.
 (pdftex.def)             Requested size: 342.2779pt x 586.18857pt.
 
-
 LaTeX Warning: Float too large for page by 62.18855pt on input line 655.
 
-[26] [27 <./images/xpathquery.drawio.png>] [28]
-<./images/architecture1.png, id=521, 523.9575pt x 453.695pt>
+[25] [26 <./images/xpathquery.drawio.png>]
+
+LaTeX Warning: Reference `fig:decentralized-monitoring' on page 27 undefined on input line 663.
+
+[27]
+<./images/architecture1.png, id=312, 523.9575pt x 453.695pt>
 File: ./images/architecture1.png Graphic file (type png)
 <use ./images/architecture1.png>
 Package pdftex.def Info: ./images/architecture1.png  used on input line 673.
 (pdftex.def)             Requested size: 390.0pt x 337.70897pt.
 
 
-LaTeX Warning: Citation 'RFC4301' on page 29 undefined on input line 687.
+LaTeX Warning: Citation 'RFC4301' on page 28 undefined on input line 687.
 
 
-LaTeX Warning: Citation 'RFC5246' on page 29 undefined on input line 688.
+LaTeX Warning: Citation 'RFC5246' on page 28 undefined on input line 688.
 
-[29 <./images/architecture1.png>]
-Overfull \hbox (4.05891pt too wide) detected at line 716
+[28 <./images/architecture1.png>]
+
+LaTeX Warning: Reference `fig:diffie-hellman' on page 29 undefined on input line 702.
+
+
+Overfull \hbox (4.05891pt too wide) detected at line 715
 \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 g[] \OT1/cmr/m/n/12 ([] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  g[] \OT1/cmr/m/n/12 ([] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  g[] \OT1/cmr/m/n/12 ([] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  [] ;  g[] \OT1/cmr/m/n/12 ([] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; [] ; p \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 :
  []
 
-<./images/diffiehellman.drawio.png, id=528, 593.21625pt x 502.87875pt>
+
+LaTeX Warning: Reference `fig:diffie-hellman' on page 29 undefined on input line 726.
+
+[29]
+/home/joar/Documents/bachelor-report/Report.tex:742: Missing $ inserted.
+<inserted text> 
+                $
+l.742 ...y of a bruteforce attack ie. 2^1 ... 2^n}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/home/joar/Documents/bachelor-report/Report.tex:742: Extra }, or forgotten $.
+<recently read> \egroup 
+                        
+l.742 ...y of a bruteforce attack ie. 2^1 ... 2^n}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+/home/joar/Documents/bachelor-report/Report.tex:742: Missing $ inserted.
+<inserted text> 
+                $
+l.742 ...y of a bruteforce attack ie. 2^1 ... 2^n}
+                                                  
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+[][]\OT1/cmr/m/n/10.95 Writer's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+\OT1/cmr/m/n/10.95 note:[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+\OT1/cmr/m/it/8 In-clude a
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+\OT1/cmr/m/it/8 graph of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+\OT1/cmr/m/it/8 com-pu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+\OT1/cmr/m/it/8 ta-tional
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 742--742
+\OT1/cmr/m/it/8 com-plex-ity
+ []
+
+/home/joar/Documents/bachelor-report/Report.tex:742: Missing } inserted.
+<inserted text> 
+                }
+l.742 ...y of a bruteforce attack ie. 2^1 ... 2^n}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+<./images/diffiehellman.drawio.png, id=332, 593.21625pt x 502.87875pt>
 File: ./images/diffiehellman.drawio.png Graphic file (type png)
 <use ./images/diffiehellman.drawio.png>
-Package pdftex.def Info: ./images/diffiehellman.drawio.png  used on input line 720.
+Package pdftex.def Info: ./images/diffiehellman.drawio.png  used on input line 748.
 (pdftex.def)             Requested size: 390.0pt x 330.61955pt.
 [30] [31 <./images/diffiehellman.drawio.png>] [32] [33] [34] (./Report.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
-Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: 11ACF7A5DA9B2BEF9B9CF5B66E346A3D;6129.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Report.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  11ACF7A5DA9B2BEF9B9CF5B66E346A3D;6129.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Report
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 33308 strings out of 474222
- 660982 string characters out of 5748732
- 1937975 words of memory out of 5000000
- 54956 multiletter control sequences out of 15000+600000
- 566941 words of font info for 67 fonts, out of 8000000 for 9000
+ 33254 strings out of 474222
+ 660095 string characters out of 5748732
+ 1935975 words of memory out of 5000000
+ 54907 multiletter control sequences out of 15000+600000
+ 567520 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,93p,2034b,1514s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Report.pdf (34 pages, 2365158 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on Report.pdf (34 pages, 2393556 bytes).
 PDF statistics:
- 660 PDF objects out of 1000 (max. 8388607)
- 553 compressed objects within 6 object streams
+ 472 PDF objects out of 1000 (max. 8388607)
+ 361 compressed objects within 4 object streams
  132 named destinations out of 1000 (max. 500000)
- 535 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 159 words of extra memory for PDF output out of 10000 (max. 10000000)
 
