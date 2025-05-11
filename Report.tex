@@ -726,13 +726,16 @@ s = \{pubk^{secret} \Mod{p} \Mod{p}\}
 Now assuming that the bad actor as can be seen in \textit{Figure \ref{fig:diffie-hellman}} has intercepted
 all traffic it will be to mathematically complex for the bad actor to calculate the shared secret 
 based just on the large common prime \textit{p}. Assuming the bad actor is trying the 
-General Number Field Sieve (GNFS) we can calculate the computation complexity using the following
-\textit{L} notation where \textit{c} is a constant expressing the efficiency of the implementation
-\(c = (64/9)^{1/3}.\)
+General Number Field Sieve (GNFS) we can calculate the computation approximate complexity using the following
+big O expression where \textit{n} is the current complexity of \textit{p}. If $p=127$ then $n=2^8$
 \[
-L_p\left[1/3, c\right] = \exp\left(c (\log p)^{1/3} (\log \log p)^{2/3}\right)
+O(n)=\exp((\log n){2/3}).
 \]
 Assuming that \textit{p} is a 1024-bit number there is 
+then the computation complexity of solving the shared secret will be 
+\[
+O(2^{1024})=\exp((\log 2^{1024}){2/3}).
+\]
 \(2^{1024}\) total combinations of p. According to the prime number theorem the amount of primes 
 will be the natural logarithm of the complexity of \textit{p} therefore there are approximately \textit{709.63}
 potential valid numbers.
@@ -740,9 +743,8 @@ potential valid numbers.
 \ln(2^{1024}) = 1024 \cdot 0.693 \approx 709.63.
 \]
 
-\writersnote{Include a graph of the running computational complexity of a bruteforce attack ie. 2^1 ... 2^n}
 
-
+\writersnote{Include a graph of the running computational complexity of a bruteforce attack ie. $2^1 ... 2^n$}
 
 \begin{figure}
   \centering

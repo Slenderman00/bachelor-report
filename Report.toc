@@ -1,47 +1,47 @@
-\contentsline {section}{\numberline {1}Introduction}{3}{section.1}%
-\contentsline {section}{\numberline {2}Lightside Instruments AS}{3}{section.2}%
-\contentsline {section}{\numberline {3}Technical background}{4}{section.3}%
-\contentsline {subsection}{\numberline {3.1}NETCONF and YANG}{4}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Yuma123}{4}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}NodeJS}{4}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Node-Yuma123}{4}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}Node-RED}{4}{subsection.3.5}%
-\contentsline {subsection}{\numberline {3.6}Grafana}{4}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}XML and XPATH}{5}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}Scrum}{5}{subsection.3.8}%
-\contentsline {subsection}{\numberline {3.9}Kanban}{5}{subsection.3.9}%
-\contentsline {subsection}{\numberline {3.10}Waterfall}{5}{subsection.3.10}%
-\contentsline {subsection}{\numberline {3.11}Extreme Programming}{5}{subsection.3.11}%
-\contentsline {section}{\numberline {4}Work Methodology}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Research Question}{5}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Scoping Review}{6}{subsection.4.2}%
-\contentsline {subsubsection}{\numberline {4.2.1}Search strategy}{6}{subsubsection.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.2.2}Exclusion Criteria}{7}{subsubsection.4.2.2}%
-\contentsline {subsubsection}{\numberline {4.2.3}Result}{8}{subsubsection.4.2.3}%
-\contentsline {paragraph}{\numberline {4.2.3.1}PRISMA flow diagram}{8}{paragraph.4.2.3.1}%
-\contentsline {subsection}{\numberline {4.3}Scrum}{10}{subsection.4.3}%
-\contentsline {subsubsection}{\numberline {4.3.1}Evidentiary foundation}{14}{subsubsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.4}Kanban}{14}{subsection.4.4}%
-\contentsline {subsubsection}{\numberline {4.4.1}Evidentiary foundation}{14}{subsubsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.5}Waterfall}{14}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}Evidentiary foundation}{15}{subsubsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.6}Extreme Programming}{15}{subsection.4.6}%
-\contentsline {subsubsection}{\numberline {4.6.1}Evidentiary foundation}{15}{subsubsection.4.6.1}%
-\contentsline {subsection}{\numberline {4.7}DevOps}{15}{subsection.4.7}%
-\contentsline {subsubsection}{\numberline {4.7.1}Evidentiary foundation}{15}{subsubsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.8}Conclusion}{16}{subsection.4.8}%
-\contentsline {subsection}{\numberline {4.9}Our Work Methodology}{16}{subsection.4.9}%
-\contentsline {section}{\numberline {5}NETCONF and YANG sensor management}{16}{section.5}%
-\contentsline {subsection}{\numberline {5.1}NETCONF}{18}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}YANG Model}{18}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Node-RED}{20}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Red-Netconf}{20}{subsubsection.5.3.1}%
-\contentsline {paragraph}{\numberline {5.3.1.1}Temperature alert}{20}{paragraph.5.3.1.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Node-Yuma123}{21}{subsubsection.5.3.2}%
-\contentsline {paragraph}{\numberline {5.3.2.1}easyNetconf}{21}{paragraph.5.3.2.1}%
-\contentsline {subsection}{\numberline {5.4}Grafana}{22}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}NetconfAggregator}{22}{subsubsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.5}Decentralized monitoring}{27}{subsection.5.5}%
-\contentsline {section}{\numberline {6}NETCONF Security}{28}{section.6}%
-\contentsline {subsection}{\numberline {6.1}SSH hardening}{29}{subsection.6.1}%
-\contentsline {section}{References}{32}{figure.caption.13}%
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {section}{\numberline {2}Lightside Instruments AS}{4}{section.2}%
+\contentsline {section}{\numberline {3}Technical background}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}NETCONF and YANG}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Yuma123}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}NodeJS}{5}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Node-Yuma123}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Node-RED}{5}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.6}Grafana}{5}{subsection.3.6}%
+\contentsline {subsection}{\numberline {3.7}XML and XPATH}{6}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}Scrum}{6}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.9}Kanban}{6}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.10}Waterfall}{6}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.11}Extreme Programming}{6}{subsection.3.11}%
+\contentsline {section}{\numberline {4}Work Methodology}{6}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Research Question}{6}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Scoping Review}{7}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Search strategy}{7}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Exclusion Criteria}{8}{subsubsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.3}Result}{9}{subsubsection.4.2.3}%
+\contentsline {paragraph}{\numberline {4.2.3.1}PRISMA flow diagram}{9}{paragraph.4.2.3.1}%
+\contentsline {subsection}{\numberline {4.3}Scrum}{11}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Evidentiary foundation}{15}{subsubsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.4}Kanban}{15}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Evidentiary foundation}{15}{subsubsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.5}Waterfall}{15}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}Evidentiary foundation}{16}{subsubsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.6}Extreme Programming}{16}{subsection.4.6}%
+\contentsline {subsubsection}{\numberline {4.6.1}Evidentiary foundation}{16}{subsubsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.7}DevOps}{16}{subsection.4.7}%
+\contentsline {subsubsection}{\numberline {4.7.1}Evidentiary foundation}{16}{subsubsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.8}Conclusion}{17}{subsection.4.8}%
+\contentsline {subsection}{\numberline {4.9}Our Work Methodology}{17}{subsection.4.9}%
+\contentsline {section}{\numberline {5}NETCONF and YANG sensor management}{17}{section.5}%
+\contentsline {subsection}{\numberline {5.1}NETCONF}{19}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}YANG Model}{19}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Node-RED}{21}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Red-Netconf}{21}{subsubsection.5.3.1}%
+\contentsline {paragraph}{\numberline {5.3.1.1}Temperature alert}{21}{paragraph.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Node-Yuma123}{22}{subsubsection.5.3.2}%
+\contentsline {paragraph}{\numberline {5.3.2.1}easyNetconf}{22}{paragraph.5.3.2.1}%
+\contentsline {subsection}{\numberline {5.4}Grafana}{23}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}NetconfAggregator}{23}{subsubsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.5}Decentralized monitoring}{28}{subsection.5.5}%
+\contentsline {section}{\numberline {6}NETCONF Security}{29}{section.6}%
+\contentsline {subsection}{\numberline {6.1}SSH hardening}{30}{subsection.6.1}%
+\contentsline {section}{References}{33}{figure.caption.13}%
