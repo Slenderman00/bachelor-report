@@ -750,6 +750,8 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{RFC4301}
+  \missing{RFC5246}
   \missing{libuv}
 \endrefsection
 \endinput

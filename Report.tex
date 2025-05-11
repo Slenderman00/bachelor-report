@@ -3,6 +3,7 @@
 
 % Package imports (organized and deduplicated)
 \usepackage{biblatex}
+\usepackage{amsmath}
 \usepackage{changepage}
 \usepackage{color}
 \usepackage{enumitem}
@@ -30,6 +31,8 @@
 \setcounter{tocdepth}{4}
 
 \newcommand{\writersnote}[1]{\marginpar{\small{\textcolor{blue}{Writer's note:}} \scriptsize\textit{#1}}}
+
+\newcommand{\Mod}[1]{\ (\mathrm{mod}\ #1)}
 
 % \usepackage{background}
 % \backgroundsetup{
@@ -697,15 +700,28 @@ The server can then use the public key to encrypt messages that can only be decr
 by the private key. A central step in initializing an SSH connection is the 
 key exchange (KEX) between the client and server. This is done through 
 the Elliptic-curve Diffie-Hellman (ECDH) KEX protocol.
-An illustration of how the Diffie-Hellman key exchange protocol works can be seen in
-\textit{Figure \ref{fig:diffie-hellman}}.
+As seen in \textit{Figure \ref{fig:diffie-hellman}} the exchange starts by 
+the two parties in the key exchange selecting a large common prime, in this case
+\textit{p = 7}, after this a generator \textit{g} of \textit{g(p)} is selected
+this generator must also be shared between both parties. The generator 
+is a primitive root modulo of \textit{p}.
+A number \( g \) is a \textbf{primitive root modulo of \( p \)} if:
+\[
+\sum_{k=1}^{p-1} \left( g^k \mod p \right) = \sum_{n=1}^{p-1} n = \frac{(p-1)p}{2}
+\]
+This means that the sum of the generator raised to the power of \textit{1-p modulus p} will always be the 
+same as the sum of all integers from \textit{1} to \textit{1-p}. Therefor the expression can also be written as:
+\[
+\{ g^1\Mod{p},\;g^2\Mod{p},\;g^3\Mod{p},\;\dots,\;g^{p-1} \Mod{p} \} = \{ 1, 2, 3, \dots, p-1 \}.
+\]
 
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{diffiehellman.drawio.png}
-  \caption{An illustration of the Diffie-Hellman key exchange protocol. \\**The secret number is a discrete logarithm of the common prime this is called a generator.}
+  \caption{An illustration of the Diffie-Hellman key exchange protocol. \\**The generator number is a primitive root modulo of p.}
   \label{fig:diffie-hellman}
 \end{figure}
+
 
 
 
