@@ -43,4 +43,5 @@
 \contentsline {subsubsection}{\numberline {5.4.1}NetconfAggregator}{23}{subsubsection.5.4.1}%
 \contentsline {subsection}{\numberline {5.5}Decentralized monitoring}{28}{subsection.5.5}%
 \contentsline {section}{\numberline {6}NETCONF Security}{29}{section.6}%
-\contentsline {section}{References}{30}{section.6}%
+\contentsline {subsection}{\numberline {6.1}SSH hardening}{30}{subsection.6.1}%
+\contentsline {section}{References}{32}{figure.caption.13}%

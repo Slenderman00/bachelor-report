@@ -2417,6 +2417,8 @@
     <bcf:citekey order="54" intorder="1">LightsideinstrumentsRednetconf</bcf:citekey>
     <bcf:citekey order="55" intorder="1">libuv</bcf:citekey>
     <bcf:citekey order="56" intorder="1">heimonenSlenderman00Netconfaggregator2025</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">RFC4301</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">RFC5246</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

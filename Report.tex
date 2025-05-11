@@ -676,8 +676,38 @@ This architecture allows for arbitrary control and monitoring of the NETCONF dev
 
 \section{NETCONF Security}
 The security of Remote Procedure Calls (RPC) is an important part of any
-NETCONF implementation. NETCONF is developed in a manner that allows it to function
-over any transport layer, where the most common is secure shell (SSH).
+NETCONF setup. NETCONF is developed in a manner that allows it to function
+over any transport layer, where the most commonly used is secure shell (SSH).
+By utilizing SSH the protocol is able to outsource the security of the transport layer 
+allowing the protocol to focus on the management of network devices instead
+of the security of the transport layer. This type of compartmentalization is common 
+when it comes to IETF standards. Other notable examples of this are the Internet Protocol Security (IPsec) \cite{RFC4301} 
+and the Transport Layer Security (TLS) \cite{RFC5246} protocols.
+
+\subsection{SSH hardening}
+A secure shell (SSH) is only as good as the configuration of the SSH server.
+The process of securing an SSH server is called "hardening".
+There are many ways to harden an SSH server. The following are some of the 
+more common practices.
+
+Asymmetric encryption is one of the most common ways of securing an SSH server.
+This involves every user generating a public/private key pair, the
+public key is then passed to the server and the private key is kept on the client.
+The server can then use the public key to encrypt messages that can only be decrypted
+by the private key. A central step in initializing an SSH connection is the 
+key exchange (KEX) between the client and server. This is done through 
+the Elliptic-curve Diffie-Hellman (ECDH) KEX protocol.
+An illustration of how the Diffie-Hellman key exchange protocol works can be seen in
+\textit{Figure \ref{fig:diffie-hellman}}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{diffiehellman.drawio.png}
+  \caption{An illustration of the Diffie-Hellman key exchange protocol. \\**The secret number is a discrete logarithm of the common prime this is called a generator.}
+  \label{fig:diffie-hellman}
+\end{figure}
+
+
 
 
 \pagebreak

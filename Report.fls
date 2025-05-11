@@ -389,6 +389,10 @@ INPUT ./images/architecture1.png
 INPUT ./images/architecture1.png
 INPUT ./images/architecture1.png
 INPUT ./images/architecture1.png
+INPUT ./images/diffiehellman.drawio.png
+INPUT ./images/diffiehellman.drawio.png
+INPUT ./images/diffiehellman.drawio.png
+INPUT ./images/diffiehellman.drawio.png
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmcsc10.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
 INPUT Report.aux
