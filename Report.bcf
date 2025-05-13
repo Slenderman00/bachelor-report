@@ -2430,9 +2430,13 @@
     <bcf:citekey order="56" intorder="1">YumaYangcliManual</bcf:citekey>
     <bcf:citekey order="57" intorder="1">LibuvDocumentation</bcf:citekey>
     <bcf:citekey order="58" intorder="1">heimonenSlenderman00Netconfaggregator2025</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">RFC4301</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">RFC5246</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">ChallengeResponseAuthentication2024</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">consortiumISCOpenSource2024</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">TAPROpenHardware</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">seoSecurityArchitectureInternet2005</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">rescorlaTransportLayerSecurity2008</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">ChallengeResponseAuthentication2024</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">Fail2banFail2ban2025</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">CVERecordCVE20246387</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -249,7 +249,7 @@ The scoping review will include articles meeting the following criteria:
   \item Relevant to the research question
   \item Empirical evidence
   \item Quantitative studies
-  \item One of the 20 first results from each database
+  \item 20 first results from each database
   \item Evaluating the effectiveness of the following methodologies:
   \begin{itemize}
     \item Scrum
@@ -532,7 +532,7 @@ The YANG model consists of a container "thermometers" that can contain multiple
 this container, contains a list of thermometers where each thermometer 
 contains two leafs one containing the thermometer name and one containing the temperature in the form 
 of a 32-bit integer that is limited from -27315 degrees Celsius, the field does not support floats and the value must
-therefor be divided by one hundred after being read. The max value in the model represents the max value of a 32-bit integer where the most
+therefore be divided by one hundred after being read. The max value in the model represents the max value of a 32-bit integer where the most
 significant bit is used as the sign bit.
 
 \begin{figure}
@@ -679,7 +679,7 @@ it in a postgresql database. The data is stored in the form of a time series con
 raw XML data from the NETCONF device. This allows the data to be extracted and visualized using XPATH queries.
 An example of this can be seen in \textit{Figure \ref{fig:netconf-aggregator-memfree}}.
 This example shows how the query \textit{"//proc/meminfo/MemFree"} can be used to create a graph of the memory usage 
-on a raspberry pi trough the NetconfAggregator datasource plugin in Grafana.
+on a raspberry pi through the NetconfAggregator datasource plugin in Grafana.
 \\
 \\
 Figure \ref{fig:netconf-aggregator} shows the architecture of the NetconfAggregator, consisting
@@ -745,7 +745,97 @@ This architecture allows for arbitrary control and monitoring of the NETCONF dev
   \label{fig:decentralized-monitoring}
 \end{figure}
 
+An example of this kind of decentralized architecture can be seen in \textit{figure \ref{fig:decentralized-monitoring}}.
+This example consists of two servers running both a NetconfAggregator and a Node-RED instance. Due to the way NETCONF works 
+both of these data aggregators and orchestrators can operate on the same devices simultaneously,
+note that there are a few situations where node-red might create some race conditions but, these are complex 
+flows this only applies to complex flows that are dependent on an internal state. All stateless
+flows will function without race conditions as the state of a NETCONF device is stored in the device.
+
 \newpage
+
+\subsection{Our Reference Implementation}
+After developing our tools and hardware prototypes we decided to create a reference implementation.
+The goal of the implementation was not only to test the stability of our tools but also function as 
+a product demonstration, as most of our tools are quite low-lever it can be hard to demonstrate the 
+functionality of these tools without multiple devices interacting together as can be seen in 
+\textit{figure \ref{ref:reference-implementation}}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{setup.jpg}
+  \caption{Our reference implementation consisting of two thermometers a NETCONF controllable Led strip, a Node-RED instance, a Grafana instance and a NetconfAggregator instance.}
+  \label{ref:reference-implementation}
+\end{figure}
+
+\newpage
+We built three different NETCONF thermometers. Two of the thermometers were built on top of 
+a yet to be released product, the Ethernet4pizero-poe shield. This shield adds 
+power over Ethernet to the Raspberry Pi zero creating a cheap and portable solution 
+for NETCONF hardware development. This shield was purpously created in the hope that 
+we would be able to build a temperature probe on top of it. It has been in development by 
+Vassilev and Heimonen since the summer of 2024. An image of our first thermometer can be seen in 
+\textit{figure \ref{ref:temp-one}}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{temp-sensor-one.JPG}
+  \caption{Temperature sensor one, consisting of a Raspberry Pi zero and an Ethernet4pizero-poe shield. \\ 
+  \textit{Note: the shield does not contain a transformer, and therefore it is 
+  not galvanically isolated, this limits the potential use cases of the shield as there might be 
+  large differences in voltage potentials between ground and the devices ground.}}
+  \label{ref:temp-one}
+\end{figure}
+
+Our third thermometer is quite experimental and not yet finished.
+Due to its experimental nature we have decided to include it anyway. 
+Small form Factor Pluggable (SFP) is a type of module often used in network switches to 
+make Network Interface Cards (NIC) easily replacable and the swithces easily configurable. 
+An SFP port features two Serializer Deserializers (SerDes) lanes and most importantly for our purposes 
+an Inter Chip Connect (I2C) lane. Using this I2C lane one can in theory create an SFP sensor probe. 
+This allows for the utilization of empty SFP ports for the monitoring of temperature, humidity etc. 
+We created such a module as can be seen in \textit{figure \ref{ref:temp-sfp}} an example of how the SFP is used 
+can be seen in \textit{figure \ref{ref:temp-sfp-spark}}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{sfp.JPG}
+  \caption{A Small form Factor Pluggable temperature sensor.}
+  \label{ref:temp-sfp}
+\end{figure}
+
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{spark.JPG}
+  \caption{A Small form Factor Pluggable temperature sensor plugged into the SPARK network tester.}
+  \label{ref:temp-sfp-spark}
+\end{figure}
+
+\newpage
+
+\subsection{Open Source Hardware and Software Development}
+All software developed by Lightside Instruments is open source, published under 
+the Internet Software Consortium (ISC) license \cite{consortiumISCOpenSource2024} while 
+all hardware is licensed under the TAPR open hardware license \cite{TAPROpenHardware}. 
+All of Lightside Instruments hardware products are also certified or in the 
+process of getting certified by the Open Source Hardware Association (OSHWA).
+\\
+\\
+We believe that when developing secure system's transparency is key therefore it is of the 
+utmost importance that all development happens as transparently as possible in the public eye.
+Open source software development also allows for third party contributions, this greatly 
+increases the speed at which innovation occurs by allowing developers and engineers to collaborate openly. 
+This collaboration fosters a community-driven approach to development where ideas are shared freely 
+without any commercial incentives.
+Many modern companies sell Software as a Service (SaaS) products, this kind of software is fundamentally 
+incompatible with open source development and is something that we are fundamentally opposed to.
+We believe that we must strive to create an ecosystem of software and hardware that is not only free in a
+monetary sense but also free as in freedom — unrestricted by the constraints of capitalism.
+
+
+
+
 
 \section{NETCONF Security}
 The security of Remote Procedure Calls (RPC) is an important part of any
@@ -754,8 +844,9 @@ over any transport layer, where the most commonly used is secure shell (SSH).
 By utilizing SSH the protocol is able to outsource the security of the transport layer 
 allowing the protocol to focus on the management of network devices instead
 of the security of the transport layer. This type of compartmentalization is common 
-when it comes to IETF standards. Other notable examples of this are the Internet Protocol Security (IPsec) \cite{RFC4301} 
-and the Transport Layer Security (TLS) \cite{RFC5246} protocols.
+when it comes to IETF standards. Other notable examples of this 
+are the Internet Protocol Security (IPsec) \cite{seoSecurityArchitectureInternet2005} 
+and the Transport Layer Security (TLS) \cite{rescorlaTransportLayerSecurity2008} protocols.
 
 \subsection{SSH hardening}
 A secure shell (SSH) is only as good as the configuration of the SSH server.
@@ -781,7 +872,7 @@ A number \( g \) is a \textbf{primitive root modulo of \( p \)} if:
 \sum_{k=1}^{p-1} \left( g^k\Mod{p} \right) = \sum_{n=1}^{p-1} n = \frac{(p-1)p}{2}
 \]
 This means that the sum of the generator raised to the power of \textit{1-p modulus p} will always be the 
-same as the sum of all integers from \textit{1} to \textit{1-p}. Therefor the expression can also be written as:
+same as the sum of all integers from \textit{1} to \textit{1-p}. Therefore the expression can also be written as:
 \[
 \{ g^1\Mod{p},\;g^2\Mod{p},\;g^3\Mod{p},\;\dots,\;g^{p-1} \Mod{p} \} = \{ 1, 2, 3, \dots, p-1 \}.
 \]
@@ -862,10 +953,20 @@ the key is ever compromised.
   \label{fig:dual-key}
 \end{figure}
 
+\subsubsection{Fail2ban}
+Fail2ban is a daemon \cite{Fail2banFail2ban2025} that scans an SSH servers auth log for 
+unwelcome intrusions. If an intrusion is detected it creates a system firewall rule to block the IP address.
+Whilst a correctly configured SSH server should be secure without fail2ban they still experience multiple brute-force attacks
+every hour if they are open to the internet. This can be draining on the SSH servers performance and the system resources.
+Therefore, it is practical to have a tool that detects and blocks the bad actors. In 2024 the CVE-2024-6387 \cite{CVERecordCVE20246387} vulnerability
+was discovered, this vulnerability allowed a bad actor to perform a denial of service attack on all OpenSSH servers through 
+a race condition in the OpenSSH servers authentication handling. This is a vulnerability that while not 
+totally mitigated by fail2ban the risk of this happening would be greatly reduced.
 
 
 \pagebreak
 \addcontentsline{toc}{section}{References}
 \printbibliography
+\listoffigures
 \license
 \end{document}
