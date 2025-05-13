@@ -31,17 +31,20 @@
 \contentsline {subsubsection}{\numberline {4.7.1}Evidentiary foundation}{16}{subsubsection.4.7.1}%
 \contentsline {subsection}{\numberline {4.8}Conclusion}{17}{subsection.4.8}%
 \contentsline {subsection}{\numberline {4.9}Our Work Methodology}{17}{subsection.4.9}%
-\contentsline {section}{\numberline {5}NETCONF and YANG sensor management}{17}{section.5}%
+\contentsline {subsection}{\numberline {4.10}Observations And Outcomes of our Work Methodology}{17}{subsection.4.10}%
+\contentsline {section}{\numberline {5}NETCONF and YANG sensor management}{18}{section.5}%
 \contentsline {subsection}{\numberline {5.1}NETCONF}{19}{subsection.5.1}%
 \contentsline {subsection}{\numberline {5.2}YANG Model}{19}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Node-RED}{21}{subsection.5.3}%
-\contentsline {subsubsection}{\numberline {5.3.1}Red-Netconf}{21}{subsubsection.5.3.1}%
-\contentsline {paragraph}{\numberline {5.3.1.1}Temperature alert}{21}{paragraph.5.3.1.1}%
-\contentsline {subsubsection}{\numberline {5.3.2}Node-Yuma123}{22}{subsubsection.5.3.2}%
-\contentsline {paragraph}{\numberline {5.3.2.1}easyNetconf}{22}{paragraph.5.3.2.1}%
-\contentsline {subsection}{\numberline {5.4}Grafana}{23}{subsection.5.4}%
-\contentsline {subsubsection}{\numberline {5.4.1}NetconfAggregator}{23}{subsubsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.5}Decentralized monitoring}{28}{subsection.5.5}%
-\contentsline {section}{\numberline {6}NETCONF Security}{29}{section.6}%
-\contentsline {subsection}{\numberline {6.1}SSH hardening}{30}{subsection.6.1}%
-\contentsline {section}{References}{33}{figure.caption.13}%
+\contentsline {subsection}{\numberline {5.3}Node-RED}{22}{subsection.5.3}%
+\contentsline {subsubsection}{\numberline {5.3.1}Red-Netconf}{22}{subsubsection.5.3.1}%
+\contentsline {paragraph}{\numberline {5.3.1.1}Temperature alert}{22}{paragraph.5.3.1.1}%
+\contentsline {subsubsection}{\numberline {5.3.2}Node-Yuma123}{25}{subsubsection.5.3.2}%
+\contentsline {paragraph}{\numberline {5.3.2.1}easyNetconf}{26}{paragraph.5.3.2.1}%
+\contentsline {subsection}{\numberline {5.4}Grafana}{26}{subsection.5.4}%
+\contentsline {subsubsection}{\numberline {5.4.1}NetconfAggregator}{26}{subsubsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.5}Decentralized monitoring}{31}{subsection.5.5}%
+\contentsline {section}{\numberline {6}NETCONF Security}{32}{section.6}%
+\contentsline {subsection}{\numberline {6.1}SSH hardening}{33}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {6.1.1}Diffie-Hellman}{33}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.2}Private Public Key Authentication}{36}{subsubsection.6.1.2}%
+\contentsline {section}{References}{38}{figure.caption.17}%

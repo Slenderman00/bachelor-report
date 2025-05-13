@@ -5,7 +5,7 @@ Joar Heimonen, Christian Vu, Naly Keli
 contact@joar.me
 chvu002@student.kristiania.no
 nake002@student.kristiania.no
-May 9, 2025
+May 13, 2025
 Abstract
 Preliminary Abstract
 
@@ -88,8 +88,9 @@ Preliminary Abstract
 
 2
 
-5 NETCONF and YANG sensor management
-5.1 Project description . . . . . . . . . . . . . . . . . . . . . . . .
+4.10 Observations And Outcomes of our Work Methodology . . . . 17
+5 NETCONF and YANG sensor management
+5.1 NETCONF . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 5.2 YANG Model . . . . . . . . . . . . . . . . . . . . . . . . . . .
 5.3 Node-RED . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
 5.3.1 Red-Netconf . . . . . . . . . . . . . . . . . . . . . . . .
@@ -100,25 +101,24 @@ Preliminary Abstract
 5.4.1 NetconfAggregator . . . . . . . . . . . . . . . . . . . .
 5.5 Decentralized monitoring . . . . . . . . . . . . . . . . . . . . .
 
-17
 18
-18
-20
-20
-20
-21
-21
-21
+19
+19
 22
-27
+22
+22
+23
+23
+24
+24
+29
 
 6 NETCONF Security
-
-28
-
+30
+6.1 SSH hardening . . . . . . . . . . . . . . . . . . . . . . . . . . 31
 References
 
-29
+34
 
 3
 
@@ -150,7 +150,7 @@ Lightside Instruments is a company specializing in developing instruments
 with model based network management for use in networking, network interconnect testing and telemetry. They design their instruments with YANG
 (RFC7950) [6] models and NETCONF (RFC6241) [11] protocol. The instruments are based on IETF standards and drafts, and are implemented with
 software tools available in Debian, programmable logic and open hardware
-[22].
+[23].
 
 4
 
@@ -170,14 +170,14 @@ constraints making them error correcting.
 
 Yuma123
 
-Yuma123 [34] is an open source NETCONF and YANG implementation.
+Yuma123 [35] is an open source NETCONF and YANG implementation.
 Yuma123 is available as a Debian package and is maintained by Lightside
 Instruments AS.
 3.3
 
 NodeJS
 
-Node.js [26] is a JavaScript runtime built on Chrome’s V8 JavaScript engine.
+Node.js [27] is a JavaScript runtime built on Chrome’s V8 JavaScript engine.
 It is used to build JavaScript applications that can run independently of
 a web browser. Node.js is popular for building server-side applications as
 it is relatively performant and it allows developers to work with the same
@@ -186,15 +186,15 @@ language on both the client and server.
 
 Node-Yuma123
 
-Node-Yuma123 [25] is a NodeJS package that implements a set of Yuma123
+Node-Yuma123 [26] is a NodeJS package that implements a set of Yuma123
 bindings. It allows for efficient NETCONF and YANG development in
 NodeJS.
 3.5
 
 Node-RED
 
-Node-RED [23] is an open source low code programming tool for event driven
-applications. It is developed by IBM and is based on Node.js [26]. Node-RED
+Node-RED [24] is an open source low code programming tool for event driven
+applications. It is developed by IBM and is based on Node.js [27]. Node-RED
 is used to connect hardware devices and APIs through a visual programming
 interface.
 3.6
@@ -211,7 +211,7 @@ XML and XPATH
 
 XML stands for Extensible Markup Language [12]. It is a markup language
 that is used to encode data in a format that is both human and machine
-readable. XPATH [37] is a language for navigating XML documents. An
+readable. XPATH [38] is a language for navigating XML documents. An
 XPATH expression allows for the selection of arbitrary nodes in an XML
 document.
 3.8
@@ -220,7 +220,7 @@ Scrum
 
 Scrum [18] is a framework for agile [5] software development. The term Scrum
 is derived from the game of rugby, where a scrum is a way of restarting play
-after a minor infringement [31].
+after a minor infringement [32].
 3.9
 
 Kanban
@@ -231,7 +231,7 @@ is derived from the Japanese word for ”signboard” or ”billboard” [21].
 
 Waterfall
 
-Waterfall [36] is a framework for software development. The waterfall model
+Waterfall [37] is a framework for software development. The waterfall model
 is a linear and sequential approach to software development.
 3.11
 
@@ -276,8 +276,8 @@ We will be searching the following databases:
 We will also be searching the following industry websites:
 • Agile Alliance [4]
 • Scrum.org [18]
-• DevOps Institute [27]
-• Scrum Alliance [32]
+• DevOps Institute [28]
+• Scrum Alliance [33]
 Our search will consists of a set of primary and secondary keywords. The
 primary keywords are:
 • Scrum
@@ -322,12 +322,12 @@ The systematic review will include articles meeting the following criteria:
 Result
 
 After applying the exclusion criteria to a set of 60 articles, we discovered
-that 4 of them were duplicates. The 56 remaining articles were screened by
-title and abstract, resulting in 12 articles being excluded. The 44 remaining
-articles were assessed for eligibility, resulting in 33 articles being excluded.
-The 11 remaining articles were included in the review.
+that 5 of them were duplicates. The 55 remaining articles were screened by
+title and abstract, resulting in 12 articles being excluded. The 43 remaining
+articles were assessed for eligibility, resulting in 42 articles being excluded.
+Only one article was assessed to be eligible for this review.
 4.2.3.1 PRISMA flow diagram
-Figure 1 shows the PRISMA [30] flow diagram for the scoping review. The
+Figure 1 shows the PRISMA [31] flow diagram for the scoping review. The
 PRISMA flow diagram is a standardized way of reporting the results of a
 scoping review.
 
@@ -366,7 +366,7 @@ of methodology effectiveness
 - Theoretical papers
 without implementation
 - Industry bias
-(n = 39)
+(n = 42)
 
 Included
 Studies included in review
@@ -374,7 +374,7 @@ Studies included in review
 Scrum
 (n = 1)
 DevOps
-(n = 3)
+(n = 0)
 Kanban
 (n = 0)
 Waterfall (n = 0)
@@ -391,12 +391,12 @@ Scrum
 
 Scrum is a framework for agile software development. The term Scrum is
 derived from the game of rugby, where a scrum is a way of restarting play
-after a minor infringement [31]. The use of the term Scrum in software development was first introduced by Takeuchi and Nonaka in 1986 in a paper
-titled ”The New New Product Development Game” [33]. In the paper, the
+after a minor infringement [32]. The use of the term Scrum in software development was first introduced by Takeuchi and Nonaka in 1986 in a paper
+titled ”The New New Product Development Game” [34]. In the paper, the
 authors argue for a new approach to product development where the different
 stages of development are overlapped, rather than sequentially executed in
 a ”pass the baton” fashion. This differs from the then popular NASA type
-PPP (Phased Project Planning) model [29].
+PPP (Phased Project Planning) model [30].
 Modern Scrum development consists of a set of sprints, these sprints consists of a pre-defined set of tasks that are to be completed in the pre-defined
 sprint time frame. Each task or ”story” is assigned an arbitrary number of
 points that represents the complexity of the task. The sprint is the completed
@@ -429,7 +429,7 @@ methods used for project management.
 Evidentiary foundation
 
 With only one article ”A Theory of Scrum Team Effectiveness” by Verwijs
-and Russo [35] we can conclude that there is no empirical evidence that
+and Russo [36] we can conclude that there is no empirical evidence that
 Scrum increases worker productivity or efficiency. Whilst the findings of
 the article seems promising, and the article is thorough, there simply is not
 enough research on the topic to comment on the evidentiary foundation of
@@ -448,7 +448,7 @@ the development process. As a task is worked on it traverses the columns of
 the board until it is completed. This provides a visual representation of the
 state of the project and allows for easy identification of bottlenecks in the
 process. Kanban is a much more flexible and lean approach to project management than Scrum, as it follows closer to the agile manifesto’s principles
-of flexibility and adaptability [24].
+of flexibility and adaptability [25].
 4.4.1
 
 Evidentiary foundation
@@ -459,9 +459,9 @@ empirical evidence that Kanban increases worker productivity or efficiency.
 
 Waterfall
 
-The waterfall [36] is a linear and sequential approach to software development. Sets of tasks are grouped into phases, where each phase must be
+The waterfall [37] is a linear and sequential approach to software development. Sets of tasks are grouped into phases, where each phase must be
 completed before the next phase can begin. This is reminiscent of the NASA
-type PPP (Phased Project Planning) model [29]. The waterfall model mirrors the traditional problem solving process, of breaking a problem down
+type PPP (Phased Project Planning) model [30]. The waterfall model mirrors the traditional problem solving process, of breaking a problem down
 into a set of smaller problems, and solving each of the smaller problems in a
 
 15
@@ -480,7 +480,7 @@ Extreme Programming
 
 Extreme Programming [13] is a framework for agile software development.
 Extreme Programming takes the best practices of software development and
-takes them to the extreme, hence the name. A core part of Extreme Programming is the use of pair programming [28], where two developers work
+takes them to the extreme, hence the name. A core part of Extreme Programming is the use of pair programming [29], where two developers work
 together on the same code.
 4.6.1
 
@@ -502,14 +502,13 @@ detection and correction.
 
 Evidentiary foundation
 
-DevOps and Research Assessment (DORA) [10] is a research department at
-Google that focuses on researching assessment methods for DevOps. They
-publish a yearly report on the state of DevOps. Other than DORA independent research into the topic is scarce and whilst research is being done there
-
+We did not manage to find any articles that assess the effectiveness of DevOps
+versus other paradigmes, but. DevOps and Research Assessment (DORA)
+[10] is a research department at Google that focuses on researching assessment methods for DevOps. They publish a yearly report on the state of
+DevOps. Other than DORA independent research into the topic is scarce
 16
 
-is currently not a strong enough evidentiary foundation to make any claims
-about the effectiveness of DevOps.
+and whilst research is being done there is currently not a strong enough evidentiary foundation to make any claims about the effectiveness of DevOps.
 4.8
 
 Conclusion
@@ -538,7 +537,26 @@ for our hardware.
 Whilst there is no empirical evidence or any research suggesting that our
 work methodology is more effective than any of the other methodologies, we
 have found it to be a good fit for our needs. And we feel that it adheres close
-the principles set forth by the agile manifesto [24].
+the principles set forth by the agile manifesto [25].
+4.10
+
+Observations And Outcomes of our Work Methodology
+
+During the past six months working on this project we experienced several cases of hardware failure. When a case of hardware failure were severe
+enough to warrant action on our part we called this a ”side quest”. When a
+side quest was initiated, the team would temporarily shift focus to address
+the issue. These side quests often involved debugging hardware, replacing
+faulty components, or reconfiguring systems to ensure proper functionality.
+17
+
+While these tasks were not part of the original project scope, they provided
+valuable insights into the robustness of our designs and workflows. For example, during one side quest, we discovered that the Wi-Fi chipset on one
+of our Raspberry Pi zero 2w’s had failed. Due to our decision to solder this
+Raspberry directly onto our ethernet4pizero-poe card we decided to try and
+desolder the broken Wi-Fi chipset instead of re-building the whole prototype.
+These side quests proved to be an invaluable way of keeping productivity up
+without shifting focus to unrelated tasks. These tasks, while not directly
+contributing to the project’s progress.
 
 5
 
@@ -546,21 +564,23 @@ NETCONF and YANG sensor management
 
 Hardware management is an essential part of administrating a larger network.
 Together with Lightside Instruments AS we have developed open source tools
-for YANG and NETCONF aimed at hardware sensor management.
+for YANG and NETCONF aimed at hardware sensor management. We have
+built a reference implementation of a NETCONF system that tackles this
+issue. Our reference implementation consists two NETCONF temperature
+probes, a data aggregator, a data visualization tool and a tool for quick management of NETCONF devices.
+The following sections will describe the project and how each of the components are implemented. An illustration of the architecture of the project
+can be seen in Figure 5.
 
-17
+18
 
-5.1
+Figure 5: Architecture of the NETCONF and YANG sensor management
+system.
+5.1
 
-Project description
+NETCONF
 
-Our aim is to develop a set of open source tools for YANG and NETCONF
-aimed at the management and monitoring of hardware sensors. The goal is
-to produce a reference implementation of a NETCONF device that presents
-a sensor YANG model to the user. And a set of tools that can be used to
-manage and monitor the NETCONF devices.
-We aim to develop a reference implementation of a decentralized monitoring
-and management system for NETCONF devices. This system will demonstrate the power and flexibility of NETCONF and YANG for hardware management and monitoring, an illustration of this can be seen in Figure 10.
+NETCONF [11] is a mode based Network Configuration Protocol implemented by the IETF (Internet Engineering Task Force) in the RFC (Request
+for Comments) 6241 [11].
 5.2
 
 YANG Model
@@ -569,10 +589,19 @@ The YANG model is a model used to describe the state and actions of a NETCONF de
 a set of standard YANG models for NETCONF devices. For the purposes of
 this project we will not be using the standard YANG models, but instead we
 will be using a custom YANG model developed by Lightside Instruments AS
-that only describes the state of thermometers. See Figure 5 for the YANG
+that only describes the state of thermometers. See Figure 6 for the YANG
 model.
+The YANG model consists of a container ”thermometers” that can contain
+multiple this container, contains a list of thermometers where each thermometer contains two leafs one containing the thermometer name and one
+containing the temperature in the form of a 32-bit integer that is limited
+from -27315 degrees Celsius, the field does not support floats and the value
+19
 
-18
+must therefor be divided by one hundred after being read. The max value
+in the model represents the max value of a 32-bit integer where the most
+significant bit is used as the sign bit.
+
+20
 
 module lsi-thermometers {
 yang-version 1.1;
@@ -606,9 +635,9 @@ range "-27315..max";
 }
 }
 
-Figure 5: YANG model for thermometer management
+Figure 6: YANG model for thermometer management
 
-19
+21
 
 5.3
 
@@ -632,20 +661,35 @@ NETCONF devices.
 5.3.1.1 Temperature alert
 As an example of how the Red-Netconf nodes can be used we created a NodeRED reference flow that collects data from a thermometer and switches on
 an LED when the temperature is above 25 degrees Celsius, this can be seen
-in Figure 6.
+in Figure 7.
 
-20
+22
 
-Figure 6: Node-RED flow using Red-Netconf nodes that monitors a temperature sensor and switches on an LED when the temperature is above 25
+Figure 7: Node-RED flow using Red-Netconf nodes that monitors a temperature sensor and switches on an LED when the temperature is above 25
 degrees Celsius.
 5.3.2
 
 Node-Yuma123
 
-Node-Yuma123 [25] is a NodeJS package that implements a set of Yuma123
-bindings.
+Yuma123 is an implementation of the NETCONF standard that is written
+in C. It consists of a NETCONF server written in C, an RPC (Remote Procedure Call) client and a yangcli interpreter. The yangcli interpreter is a
+command line tool that can be used to interact with NETCONF devices
+using YANG models and yangcli commands. yangcli translates the yangcli
+commands into NETCONF RPC calls and sends them to the NETCONF
+device. Yuma123 also presents an API that can be used to interact with the
+NETCONF server called libyuma-dev.
+Node-Yuma123 is a set of NodeJS bindings for the Yuma123 API. It is written in C++ and created to resemble the original C API as closely as possible.
+Node-Yuma123 also implements some new functions like asynchronous connections. Implementing this was quite a challenge as the libyuma-dev API is
+not thread safe. Instead of running each connection in a new thread we stack
+the instructions using libuv [22] and run them in the main thread. This
+resolves most of our threading issues, but some issues still remain. These
+issues are related to how libyuma-dev allocates memory.
 5.3.2.1 easyNetconf
-C is a low level functional programming language, there are many implementations of the C compiler. All of these implementations follow the C standard
+C is a low level functional programming language, there are many implemen-
+
+23
+
+tations of the C compiler. All of these implementations follow the C standard
 set forth by the American National Standards Institute (ANSI) in the ANSI
 C standard. Due to JavaScipts object-oriented nature we decided to create
 a wrapper around the node-Yuma123 library. This wrapper allows us to use
@@ -658,10 +702,7 @@ Grafana is an open source data visualization tool. Since its inception ins
 2014 it has become the industry standard for data visualization. It is used to
 visualize arbitrary data from different data sources. We have developed a solution for fetching and visualizing arbitrary NETCONF data using Grafana.
 We call this solution NetconfAggregator.
-
-21
-
-5.4.1
+5.4.1
 
 NetconfAggregator
 
@@ -670,26 +711,26 @@ NetconfAggregator is a NodeJS package that uses the easyNetconf wrapper
 data is stored in the form of a time series consisting of an ID, a timestamp
 and the raw XML data from the NETCONF device. This allows the data
 to be extracted and visualized using XPATH queries. An example of this
-can be seen in Figure 7. This example shows how the query ”//proc/meminfo/MemFree” can be used to create a graph of the memory usage on a
+can be seen in Figure 8. This example shows how the query ”//proc/meminfo/MemFree” can be used to create a graph of the memory usage on a
 raspberry pi trough the NetconfAggregator datasource plugin in Grafana.
-Figure 8 shows the architecture of the NetconfAggregator, consisting of a
+Figure 9 shows the architecture of the NetconfAggregator, consisting of a
 PostgreSQL database, a NetconfAggregator instance and a Grafana instance
 running the NetconfAggregator datasource plugin. The NetconfAggregator
-gets the state of each NETCONF device using the YangCLI command ”xget
-/” which fetches the state of the device. The respone is then stored in
+gets the state of each NETCONF device using the yangcli command ”xget
+/” which fetches the state of the device. The response is then stored in
 the database. When the NetconfAggregator receives a query from the datasource plugin it applies the specified XPATH to the relevant data-range in
 the database and returns the result to the datasource plugin.
 
-22
+24
 
-Figure 7: Querying the memory free data on a raspberry pi using XPATH
+Figure 8: Querying the memory free data on a raspberry pi using XPATH
 and the NetconfAggregator plugin.
 
-23
+25
 
-Figure 8: NetconfAggregator architecture.
+Figure 9: NetconfAggregator architecture.
 
-24
+26
 
 We quickly discovered that processing XPATHS is processor intensive.
 Especially when the data set is large. Grafana also has a tendency to send
@@ -704,12 +745,12 @@ Future identical queries are delayed until the processing of the first query is
 completed. A delay is added to each request that the server receives. This
 delay is based on the number of queries that are currently being processed,
 and thus makes sure that no two identical queries are processed at the same
-time. An illustration of how requests are processed can be seen in Figure 9.
+time. An illustration of how requests are processed can be seen in Figure 10.
 
-25
+27
 
-26
-Figure 9: XPATH query processing.
+28
+Figure 10: XPATH query processing.
 
 5.5
 
@@ -717,7 +758,7 @@ Decentralized monitoring
 
 We believe that the power of NETCONF lies in its ability to be used in a
 decentralized manner. This means that multiple aggregators can be used to
-manage the same NETCONF devices. The exampel in Figure 10 shows two
+manage the same NETCONF devices. The example in Figure 11 shows two
 servers each containing a node-red instance, a NetconfAggregator instance
 and a Grafana instance. The node-red instance and the NetconfAggregator
 functions completely independently of each other. Thus making the monitoring system completely separate from the management system. The example
@@ -725,18 +766,91 @@ consists of a normal networking setup consisting of three NETCONF enabled switch
 enabled alarm. This architecture allows for arbitrary control and monitoring
 of the NETCONF devices using the NetconfAggregator and Node-RED.
 
-27
+29
 
-Figure 10: Decentralized monitoring of NETCONF devices using Grafana,
+Figure 11: Decentralized monitoring of NETCONF devices using Grafana,
 NetconfAggregator and Node-RED.
 
 6
 
 NETCONF Security
 
-28
+The security of Remote Procedure Calls (RPC) is an important part of any
+NETCONF setup. NETCONF is developed in a manner that allows it to
+function over any transport layer, where the most commonly used is secure
+shell (SSH). By utilizing SSH the protocol is able to outsource the security of the transport layer allowing the protocol to focus on the management of network devices instead of the security of the transport layer. This
+type of compartmentalization is common when it comes to IETF standards.
+Other notable examples of this are the Internet Protocol Security (IPsec)
 
-References
+30
+
+[RFC4301] and the Transport Layer Security (TLS) [RFC5246] protocols.
+6.1
+
+SSH hardening
+
+A secure shell (SSH) is only as good as the configuration of the SSH server.
+The process of securing an SSH server is called ”hardening”. There are many
+ways to harden an SSH server. The following are some of the more common
+practices. Asymmetric encryption is one of the most common ways of securing an SSH server. This involves every user generating a public/private key
+pair, the public key is then passed to the server and the private key is kept
+on the client. The server can then use the public key to encrypt messages
+that can only be decrypted by the private key. A central step in initializing an SSH connection is the key exchange (KEX) between the client and
+server. This is done through the Elliptic-curve Diffie-Hellman (ECDH) KEX
+protocol. As seen in Figure 12 the exchange starts by the two parties in the
+key exchange selecting a large common prime, in this case p = 7, after this
+a generator g of g(p) is selected this generator must also be shared between
+both parties. The generator is a primitive root modulo of p. A number g is
+a primitive root modulo of p if:
+p−1
+X
+k=1
+
+p−1
+ X
+(p − 1)p
+g (mod p) =
+n=
+2
+n=1
+k
+
+This means that the sum of the generator raised to the power of 1-p modulus
+p will always be the same as the sum of all integers from 1 to 1-p. Therefor
+the expression can also be written as:
+{g 1 (mod p), g 2 (mod p), g 3 (mod p), . . . , g p−1 (mod p)} = {1, 2, 3, . . . , p−1}.
+After the generator has been selected each client generates a secret number.
+Each party calculates a public key pubk that is to be shared using their secret.
+pubk = {g secret (mod p)}
+The shared secret s can then be calculated by using the other parties public
+key, the clients secret and the large common prime p.
+s = {pubk secret (mod p) (mod p)}
+
+31
+
+Figure 12: An illustration of the Diffie-Hellman key exchange protocol.
+*The generator number is a primitive root modulo of p.
+
+32
+
+Now assuming that the bad actor as can be seen in Figure 12 has intercepted all traffic it will be to mathematically complex for the bad actor to
+calculate the shared secret based just on the large common prime p. Assuming the bad actor is trying the General Number Field Sieve (GNFS) we can
+calculate the computation approximate complexity using the following big O
+expression where n is the current complexity of p. If p = 127 then n = 28
+O(n) = exp((log n)2/3).
+Assuming that p is a 1024-bit number there is then the computation complexity of solving the shared secret will be
+O(21024 ) = exp((log 21024 )2/3).
+While this is much better than the complexity of a brute force attempt
+O(21024 ) = exp(21024 ) it is still computationally impossible for a conventional
+computer. An illustration of the running complexity can be seen in Figure
+13
+
+33
+
+Figure 13: A plot of the running complexity of GNFS versus A brute force
+attempt on a logarithmic scale.
+
+References
 [1] @lightside-Instruments/Red-Netconf.
 http://flows.nodered.org/node/@lightside-instruments/red-netconf.
 (Visited on 04/21/2025).
@@ -752,7 +866,9 @@ for Comments RFC 7950. Internet Engineering Task Force, Aug.
 2016. doi: 10.17487/RFC7950. (Visited on 01/12/2025).
 [7] Jeff Brehm. AGILE TRANSFORMATION? FOR COMPLEX
 SYSTEMS? ...NO WAY!. Oct. 2025. (Visited on 04/27/2025).
-[8] “Continuous Delivery”. In: Wikipedia (Jan. 2025). (Visited on
+34
+
+[8] “Continuous Delivery”. In: Wikipedia (Jan. 2025). (Visited on
 04/27/2025).
 [9] Deloitte — Audit, Consulting, Financial, Risk Management, Tax
 Services. https://www.deloitte.com/global/en.html. (Visited on
@@ -768,9 +884,7 @@ June 2011. doi: 10.17487/RFC6241. (Visited on 01/12/2025).
 04/27/2025).
 [14] Framework. https://framework.scaledagile.com/. (Visited on
 04/27/2025).
-29
-
-[15] Google Scholar. https://scholar.google.com/. (Visited on
+[15] Google Scholar. https://scholar.google.com/. (Visited on
 03/28/2025).
 [16] Grafana: The Open and Composable Observability Platform.
 https://grafana.com/. (Visited on 01/20/2025).
@@ -783,45 +897,50 @@ on 03/28/2025).
 [20] “Kanban”. In: Wikipedia (Apr. 2025). (Visited on 04/27/2025).
 [21] “Kanban (Development)”. In: Wikipedia (Mar. 2025). (Visited on
 04/27/2025).
-[22] Lightside Instruments AS – YANG Model Network Managed
+[22] Libuv Documentation. https://docs.libuv.org/en/v1.x/. (Visited on
+05/13/2025).
+[23] Lightside Instruments AS – YANG Model Network Managed
 Instruments. (Visited on 01/20/2025).
-[23] Low-Code Programming for Event-Driven Applications : Node-RED.
-https://nodered.org/. (Visited on 03/29/2025).
-[24] Manifesto for Agile Software Development.
-http://agilemanifesto.org/. (Visited on 06/02/2024).
-[25] Node-Yuma123. https://www.npmjs.com/package/node-yuma123.
-Apr. 2025. (Visited on 04/22/2025).
-[26] Node.Js — Run JavaScript Everywhere. https://nodejs.org/en.
-(Visited on 03/29/2025).
-[27] Organisations-. https://www.peoplecert.org/Organisations. (Visited
-on 03/28/2025).
-[28] “Pair Programming”. In: Wikipedia (Nov. 2024). (Visited on
-04/27/2025).
-[29] Phased Project Planning Guidelines. Aug. 1968. (Visited on
-04/27/2025).
-[30] PRISMA Statement. https://www.prisma-statement.org. (Visited on
-03/28/2025).
-[31] “Scrum (Rugby Union)”. In: Wikipedia (Apr. 2025). (Visited on
-04/27/2025).
-30
+35
 
-[32] Scrum Alliance - Find Courses for Scrum and Agile Certifications.
-https://www.scrumalliance.org. (Visited on 03/28/2025).
-[33] “The New New Product Development Game”. In: Harvard Business
-Review (). issn: 0017-8012. (Visited on 04/27/2025).
-[34] Vladimir Vassilev. Vlvassilev/Yuma123. Mar. 2025. (Visited on
+[24] Low-Code Programming for Event-Driven Applications : Node-RED.
+https://nodered.org/. (Visited on 03/29/2025).
+[25] Manifesto for Agile Software Development.
+http://agilemanifesto.org/. (Visited on 06/02/2024).
+[26] Node-Yuma123. https://www.npmjs.com/package/node-yuma123.
+Apr. 2025. (Visited on 04/22/2025).
+[27] Node.Js — Run JavaScript Everywhere. https://nodejs.org/en.
+(Visited on 03/29/2025).
+[28] Organisations-. https://www.peoplecert.org/Organisations. (Visited
+on 03/28/2025).
+[29] “Pair Programming”. In: Wikipedia (Nov. 2024). (Visited on
 04/27/2025).
-[35] Christiaan Verwijs and Daniel Russo. “A Theory of Scrum Team
+[30] Phased Project Planning Guidelines. Aug. 1968. (Visited on
+04/27/2025).
+[31] PRISMA Statement. https://www.prisma-statement.org. (Visited on
+03/28/2025).
+[32] “Scrum (Rugby Union)”. In: Wikipedia (Apr. 2025). (Visited on
+04/27/2025).
+[33] Scrum Alliance - Find Courses for Scrum and Agile Certifications.
+https://www.scrumalliance.org. (Visited on 03/28/2025).
+[34] “The New New Product Development Game”. In: Harvard Business
+Review (). issn: 0017-8012. (Visited on 04/27/2025).
+[35] Vladimir Vassilev. Vlvassilev/Yuma123. Mar. 2025. (Visited on
+04/27/2025).
+[36] Christiaan Verwijs and Daniel Russo. “A Theory of Scrum Team
 Effectiveness”. In: ACM Transactions on Software Engineering and
 Methodology 32.3 (July 2023), pp. 1–51. issn: 1049-331X, 1557-7392.
 doi: 10.1145/3571849. (Visited on 04/27/2025).
-[36] “Waterfall Model”. In: Wikipedia (Feb. 2025). (Visited on
+[37] “Waterfall Model”. In: Wikipedia (Feb. 2025). (Visited on
 04/27/2025).
-[37] XML Path Language (XPath) 3.1.
+[38] XML Path Language (XPath) 3.1.
 https://www.w3.org/TR/xpath-31/. (Visited on 05/07/2025).
-© 2025 Joar Heimonen, Christian Vu, Naly Keli
+
+36
+
+© 2025 Joar Heimonen, Christian Vu, Naly Keli
 This work is licensed under a Creative Commons Attribution-Sharealike 4.0 International License.
 
-31
+37
 
 

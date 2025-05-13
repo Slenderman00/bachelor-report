@@ -242,7 +242,7 @@ The search will be done using the following search string:
 \end{adjustwidth}
 
 \subsubsection{Exclusion Criteria}
-The systematic review will include articles meeting the following criteria:
+The scoping review will include articles meeting the following criteria:
 \begin{itemize}
   \item Published after January 1, 2020
   \item Published in English
@@ -261,10 +261,10 @@ The systematic review will include articles meeting the following criteria:
 \end{itemize}
 
 \subsubsection{Result}
-After applying the exclusion criteria to a set of 60 articles, we discovered that 4 of them were duplicates.
-The 56 remaining articles were screened by title and abstract, resulting in 12 articles being excluded.
-The 44 remaining articles were assessed for eligibility, resulting in 33 articles being excluded.
-The 11 remaining articles were included in the review.
+After applying the exclusion criteria to a set of 60 articles, we discovered that 5 of them were duplicates.
+The 55 remaining articles were screened by title and abstract, resulting in 12 articles being excluded.
+The 43 remaining articles were assessed for eligibility, resulting in 42 articles being excluded.
+Only one article was assessed to be eligible for this review.
 
 \subsubsubsection{PRISMA flow diagram}
 \textit{Figure \ref{fig:prisma}} shows the PRISMA \cite{PRISMAStatement} flow diagram for the scoping review.
@@ -317,7 +317,7 @@ The PRISMA flow diagram is a standardized way of reporting the results of a scop
    - Insufficient empirical evidence\\
    - Theoretical papers without implementation\\
    - Industry bias\\
-   (n = 39)};
+   (n = 42)};
   
   % Included box
   \node[box, below=of eligibility] (included)
@@ -326,7 +326,7 @@ The PRISMA flow diagram is a standardized way of reporting the results of a scop
    (n = 4)\\[0.3cm]
   \begin{tabular}{ll}
    Scrum & (n = 1)\\
-   DevOps & (n = 3)\\
+   DevOps & (n = 0)\\
    Kanban & (n = 0)\\
    Waterfall & (n = 0)\\
    XP & (n = 0)
@@ -396,8 +396,9 @@ of all the different frameworks and methods used for project management. See the
 
 \subsubsection{Evidentiary foundation}
 With only one article "A Theory of Scrum Team Effectiveness" by Verwijs and Russo \cite{verwijsTheoryScrumTeam2023} we can conclude that there
-is no empirical evidence that Scrum increases worker productivity or efficiency. Whilst the findings of the article seems promising, and the article is thorough, there simply is not 
-enough research on the topic to comment on the evidentiary foundation of Scrum, this is something taken in too account by the authors of the article. 
+is no empirical evidence that Scrum increases worker productivity or efficiency. Whilst the findings of the article seems promising, and the article is thorough, 
+there simply is not enough research on the topic to comment on the evidentiary foundation of Scrum, this is something taken in too account by the authors of 
+the article. 
 Only a handful of other articles have been published on the topic, but most of them fall outside the exclusion criteria of the scoping review as they
 have been published before 2020.
 
@@ -438,6 +439,7 @@ the use of automated continues integration and continues deployment (CI/CD) \cit
 of the deployment falls on the developers. This methodology fosters early error detection and correction.
 
 \subsubsection{Evidentiary foundation}
+We did not manage to find any articles that assess the effectiveness of DevOps versus other paradigmes, but.
 DevOps and Research Assessment (DORA) \cite{DORAGetBetter} is a research department at Google that focuses on 
 researching assessment methods for DevOps. They publish a yearly report on the state of DevOps. Other than DORA independent research
 into the topic is scarce and whilst research is being done there is currently not a strong enough evidentiary foundation to make 
@@ -463,6 +465,34 @@ Whilst there is no empirical evidence or any research suggesting that our work m
 we have found it to be a good fit for our needs. And we feel that it adheres close the principles set forth by the agile manifesto 
 \cite{ManifestoAgileSoftware}.
 
+\subsection{Observations And Outcomes of our Work Methodology}
+During the past six months working on this project we experienced several cases of hardware failure.
+When a case of hardware failure were severe enough to warrant action on our part we called this a "side quest".
+When a side quest was initiated, the team would temporarily shift focus to address the issue. 
+These side quests often involved debugging hardware, replacing faulty components, 
+or reconfiguring systems to ensure proper functionality. 
+While these tasks were not part of the original project scope, 
+they provided valuable insights into the robustness of our designs and workflows. 
+For example, during one side quest, we discovered that the Wi-Fi chipset on one of 
+our Raspberry Pi zero 2w's had failed. Due to our decision to solder this Raspberry 
+directly onto our ethernet4pizero-poe card we decided to try and de-solder the broken Wi-Fi chipset
+instead of re-building the whole prototype. 
+These side quests proved to be an invaluable way of keeping 
+productivity up without shifting focus to unrelated tasks. 
+These tasks, while not directly contributing to the project's progress.
+\\
+\\
+Taking on side quests would not have been possible without the flexibility 
+of our work methodology. These are issues that in some cases would have gone 
+unsolved if we had weekly targets to meet or a rigidly designed development plan.
+During the duration of the project there were plenty of times when side quests led 
+to changes in the project plan and even new projects in itself. A great example of this 
+was the development of easyNetconf after having developed the initial version of Node-Yuma123
+we discovered that it quickly became cumbersome to work with due to the object-oriented nature 
+JavaScript and the functional nature of C. 
+
+
+
 \section{NETCONF and YANG sensor management}
 
 Hardware management is an essential part of administrating a larger network. 
@@ -477,14 +507,14 @@ a tool for quick management of NETCONF devices.
 The following sections will describe the project and how each of the components are implemented.
 An illustration of the architecture of the project can be seen in \textit{Figure \ref{fig:architecture}}.
 
+\newpage
+
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{refimparch2.drawio.png}
   \caption{Architecture of the NETCONF and YANG sensor management system.}
   \label{fig:architecture}
 \end{figure}
-
-\newpage
 
 \subsection{NETCONF}
 NETCONF \cite{ennsNetworkConfigurationProtocol2011} is a mode based Network Configuration Protocol
@@ -496,6 +526,15 @@ The Internet Engineering Task Force (IETF) has developed a set of standard YANG 
 For the purposes of this project we will not be using the standard YANG models,
 but instead we will be using a custom YANG model developed by Lightside Instruments AS that only 
 describes the state of thermometers. See \textit{Figure \ref{fig:yang}} for the YANG model.
+\\
+\\
+The YANG model consists of a container "thermometers" that can contain multiple 
+this container, contains a list of thermometers where each thermometer 
+contains two leafs one containing the thermometer name and one containing the temperature in the form 
+of a 32-bit integer that is limited from -27315 degrees Celsius, the field does not support floats and the value must
+therefor be divided by one hundred after being read. The max value in the model represents the max value of a 32-bit integer where the most
+significant bit is used as the sign bit.
+
 \begin{figure}
   \begin{verbatim}
     module lsi-thermometers {
@@ -544,11 +583,15 @@ between different systems and protocols. The low code nature of Node-RED makes a
 integration accessible even for the lay person.
 
 \subsubsection{Red-Netconf}
-Red-Netconf \cite{LightsideinstrumentsRednetconf} is a Node-RED plugin that implements the following two 
+The development of Red-Netconf \cite{LightsideinstrumentsRednetconf} arose from the need for an orchestrator to manage interactions between multiple devices. 
+Node-RED was chosen as the orchestrator due to its extensive plugin repository, which supports a wide range of protocols and software. 
+This flexibility makes Node-RED an ideal choice for integrating NETCONF devices with any system.
+Enabling arbitrary interactions between any device.
+Red-Netconf \cite{LightsideinstrumentsRednetconf} implements the following two 
 nodes:
 \begin{itemize}
   \item \textbf{Netconf Session}: This node is used to create a NETCONF session with a NETCONF device.
-  \item \textbf{Netconf Yangcli}: This node is used to send NETCONF commands to a NETCONF device using yangcli commands.
+  \item \textbf{Netconf Yangcli}: This node is used to send NETCONF Remote Procedure Call (RPC) to a NETCONF device using yangcli commands.
 \end{itemize}
 Using these two nodes we are able to create Node-RED flows that can manage NETCONF devices.
 
@@ -567,13 +610,42 @@ when the temperature is above 25 degrees Celsius, this can be seen in \textit{Fi
   \label{fig:red-netconf}
 \end{figure}
 
+Yangcli \cite{YumaYangcliManual} implements a set of commands for interacting with any NETCONF server over ssh. 
+Using yangcli commands in the nodes makes them extremely versatile allowing for a node to perform any Remote Procedure Call. 
+The yangcli commands are translated into Remote Procedure Calls and send to the specified server. An example 
+of a configured node can be seen in \textit{Figure \ref{fig:yangcli-node}}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{yangcli-node-settings.png}
+  \caption{The properties of a Red-Netconf Yangcli node}
+  \label{fig:yangcli-node}
+\end{figure}
+
+\newpage
+
+The node also supports Node-RED's mustache style templates, using these templates we are able to access data passed into the node
+inside our yangcli commands. \textit{Figure \ref{fig:yangcli-node-template}} shows how we dynamically can fetch 
+sensor data from a device containing multiple temperature sensors using the following 
+yangcli command \textit{xget /thermometers/thermometer[name='\{\{sensor\}\}']} note that instead of using a 
+static name as seen in \textit{figure \ref{fig:yangcli-node}} we are using the mustache style template 
+\textit{\{\{sensor\}\}}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{yangcli-node-settings-wildcard.png}
+  \caption{A yangcli-node with a mustache style template for the sensor name}
+  \label{fig:yangcli-node-template}
+\end{figure}
+
+\newpage
 
 \subsubsection{Node-Yuma123}
 Yuma123 is an implementation of the NETCONF standard that is written in C.
 It consists of a NETCONF server written in C, an RPC (Remote Procedure Call) client 
-and a YANGCLI interpreter. The YANGCLI interpreter is a command line tool that can be used to
-interact with NETCONF devices using YANG models and YANGCLI commands. YANGCLI
-translates the YANGCLI commands into NETCONF RPC calls and sends them to the NETCONF device.
+and a yangcli interpreter. The yangcli interpreter is a command line tool that can be used to
+interact with NETCONF devices using YANG models and yangcli commands. yangcli
+translates the yangcli commands into NETCONF RPC calls and sends them to the NETCONF device.
 Yuma123 also presents an API that can be used to interact with the NETCONF server called 
 libyuma-dev.
 \\
@@ -582,7 +654,7 @@ Node-Yuma123 is a set of NodeJS bindings for the Yuma123 API. It is written in C
 to resemble the original C API as closely as possible. Node-Yuma123 also implements some 
 new functions like asynchronous connections. Implementing this was quite a challenge as the 
 libyuma-dev API is not thread safe. Instead of running each connection in a new thread we
-stack the instructions using libuv \cite{libuv} and run them in the main thread. This 
+stack the instructions using libuv \cite{LibuvDocumentation} and run them in the main thread. This 
 resolves most of our threading issues, but some issues still remain. 
 These issues are related to how libyuma-dev allocates memory.
 
@@ -612,7 +684,7 @@ on a raspberry pi trough the NetconfAggregator datasource plugin in Grafana.
 \\
 Figure \ref{fig:netconf-aggregator} shows the architecture of the NetconfAggregator, consisting
 of a PostgreSQL database, a NetconfAggregator instance and a Grafana instance running the NetconfAggregator datasource plugin.
-The NetconfAggregator gets the state of each NETCONF device using the YangCLI command \textit{"xget /"} which
+The NetconfAggregator gets the state of each NETCONF device using the yangcli command \textit{"xget /"} which
 fetches the state of the device. The response is then stored in the database.
 When the NetconfAggregator receives a query from the datasource plugin it applies the specified XPATH to 
 the relevant data-range in the database and returns the result to the datasource plugin.
@@ -646,14 +718,12 @@ on the number of queries that are currently being processed, and thus makes
 sure that no two identical queries are processed at the same time.
 An illustration of how requests are processed can be seen in \textit{Figure \ref{fig:xpath-query}}.
 
-
 \begin{figure}
   \centering
   \includegraphics{xpathquery.drawio.png}
   \caption{XPATH query processing.}
   \label{fig:xpath-query}
 \end{figure}
-
 
 \newpage
 
@@ -691,8 +761,10 @@ and the Transport Layer Security (TLS) \cite{RFC5246} protocols.
 A secure shell (SSH) is only as good as the configuration of the SSH server.
 The process of securing an SSH server is called "hardening".
 There are many ways to harden an SSH server. The following are some of the 
-more common practices. Asymmetric encryption is one of the most common ways of 
-securing an SSH server.
+more common practices. 
+
+\subsubsection{Diffie-Hellman}
+Asymmetric encryption is one of the most common ways of securing an SSH server.
 This involves every user generating a public/private key pair, the
 public key is then passed to the server and the private key is kept on the client.
 The server can then use the public key to encrypt messages that can only be decrypted
@@ -723,6 +795,16 @@ the clients secret and the large common prime \textit{p}.
 \[
 s = \{pubk^{secret} \Mod{p} \Mod{p}\}
 \]
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{diffiehellman.drawio.png}
+  \caption{An illustration of the Diffie-Hellman Key Exchange Protocol. \\**The generator number is a primitive root modulo of \textit{p}.}
+  \label{fig:diffie-hellman}
+\end{figure}
+
+\newpage
+
 Now assuming that the bad actor as can be seen in \textit{Figure \ref{fig:diffie-hellman}} has intercepted
 all traffic it will be to mathematically complex for the bad actor to calculate the shared secret 
 based just on the large common prime \textit{p}. Assuming the bad actor is trying the 
@@ -738,17 +820,47 @@ O(2^{1024})=\exp((\log 2^{1024}){2/3}).
 \]
 While this is much better than the complexity of a brute force attempt $O(2^{1024})=exp(2^{1024})$
 it is still computationally impossible for a conventional computer.
+An illustration of the running computational complexity can be seen in \textit{Figure \ref{fig:running-complexity}}
 
-
-\writersnote{Include a graph of the running computational complexity of a bruteforce attack ie. $2^1 ... 2^n$}
+\newpage
 
 \begin{figure}
   \centering
-  \includegraphics[width=\textwidth]{diffiehellman.drawio.png}
-  \caption{An illustration of the Diffie-Hellman key exchange protocol. \\**The generator number is a primitive root modulo of p.}
-  \label{fig:diffie-hellman}
+  \includegraphics[width=\textwidth]{graph.png}
+  \caption{A plot of the running computational complexity of GNFS versus A brute force attempt on a logarithmic scale.}
+  \label{fig:running-complexity}
 \end{figure}
 
+\subsubsection{Private Public Key Authentication}
+One might wonder if SSH uses the Diffie-Hellman Key Exchange protocol to create a shared secret 
+used for encryption then, what are the Public and Private keys used for?
+After the Diffie-Hellman Key Exchange Protocol has finished the SSH server sends the SSH client a challenge.
+This is called challenge-response authentication \cite{ChallengeResponseAuthentication2024}, the 
+server send the client a unique string. The client creates a hash of this unqiue string. The hash 
+is then encrypted using the clients private key and sent back to the server, this functions as 
+a signature for the unique string. The server can then use its public key to decrypt the signature and check if 
+the hash matches the unique string.
+\\
+\\
+Why is not just all data encrypted using two pairs of private keys and two pairs of public keys in a form 
+of dual-key encryption as seen in \textit{figure \ref{fig:dual-key}}.
+Notice that the bad actor is storing all the data sent between Alice and Bob.
+This might remind you of the recent store now and decrypt later craze that has come about due 
+to recent advances in quantum computing and cryptography. But, it is not. 
+If Alice's system were to be compromised by the bad actor they could simply use 
+Alice's private key to decrypt Alice's part of the communication.
+Whilst if they were only using the key pair for authentication and using the 
+Diffie-Hellman Key Exchange protocol for encryption this would not present an issue.
+The issue is not the key pairs in itself but the fact that the keys are static, 
+the more data that is encrypted using the same key, the greater the potential damage if 
+the key is ever compromised.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{dual-key.png}
+  \caption{Dual-key encrypted communication between Bob and Alice}
+  \label{fig:dual-key}
+\end{figure}
 
 
 
