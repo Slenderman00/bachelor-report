@@ -113,7 +113,9 @@ PLC (programmable Logic Controllers), IoT devices and SCADA (Supervisory Control
 manage and monitor their sensors. For commercial use 
 some of these alternatives are more popular than others. There are also a large amount of different higher level protocols
 like MQTT, HTTP and SNMP that can be used to manage and monitor sensors. We propose using the NETCONF protocol 
-with YANG sensor models for management. This work will be done in collaboration with Lightside Instruments AS.
+with YANG sensor models for management. We believe that the low level nature of NETCONF and the openness of the protocol combined with 
+its ability to function over any transport layer makes it the perfect candidate for securely transporting sensor data.
+This work will be done in collaboration with Lightside Instruments AS.
 \\
 \\
 This document will cover the following three topics:
@@ -132,6 +134,12 @@ They design their instruments with YANG (RFC7950) \cite{bjorklundYANG11Data2016}
 The instruments are based on IETF standards and drafts, 
 and are implemented with software tools available in Debian, programmable 
 logic and open hardware \cite{LightsideInstrumentsYANG}.
+\\
+\\
+Lightside Instruments operates on the cutting edge of Internet Engineering Task Force (IETF) defined protocols. Innovating with both NETCONF, YANG and
+our very own Internet Engineering Task Force (IETF) draft for a standardized way of testing network perfomance. Trough this work 
+the company aims to create the future of robust network protocols and open standards.
+
 
 \section{Technical background}
 The following are terms and technologies that are essential to understanding this article.
@@ -189,13 +197,16 @@ Extreme Programming takes the best practices of software development and takes t
 
 \section{Work Methodology}
 
-\subsection{Research Question}
+\subsection{Scoping Review}
+A Scoping Review is a type of literature search with the goal of scoping out a topic of research.
+Scoping Reviews are often initiated at the beginning of research projects as a way of finding existing 
+research on the topic on interest.
+
+\subsubsection{Question}
 This review examines the claims that Scrum, Kanban, Waterfall, Extreme Programming and DevOps 
 increases worker productivity substantiated by empirical evidence.
 
-\subsection{Scoping Review}
-
-\subsubsection{Search strategy}
+\subsubsection{Search Strategy}
 The following is our search strategy for the scoping review.
 We will be searching for quantitative studies on the efficiency of the following work methodologies:
 \begin{itemize}
@@ -251,7 +262,7 @@ The scoping review will include articles meeting the following criteria:
 \begin{itemize}
   \item Published after January 1, 2020
   \item Published in English
-  \item Relevant to the research question
+  \item Relevant to the scoping review question
   \item Empirical evidence
   \item Quantitative studies
   \item 20 first results from each database
@@ -347,7 +358,7 @@ The PRISMA flow diagram is a standardized way of reporting the results of a scop
   \draw[line] (eligibility) -- (excluded2);
   \end{tikzpicture}
   \end{adjustwidth}
-  \caption{PRISMA flow diagram for scoping review of software development methodologies}
+  \caption{PRISMA flow diagram for scoping review of software development methodologies.}
   \label{fig:prisma}
 \end{figure}
   
@@ -470,7 +481,7 @@ Whilst there is no empirical evidence or any research suggesting that our work m
 we have found it to be a good fit for our needs. And we feel that it adheres close the principles set forth by the agile manifesto 
 \cite{ManifestoAgileSoftware}.
 
-\subsection{Observations And Outcomes of our Work Methodology}
+\subsection{Observations and Outcomes of our Work Methodology}
 During the past six months working on this project we experienced several cases of hardware failure.
 When a case of hardware failure were severe enough to warrant action on our part we called this a "side quest".
 When a side quest was initiated, the team would temporarily shift focus to address the issue. 
@@ -572,11 +583,37 @@ significant bit is used as the sign bit.
       }
     }
   \end{verbatim}
-  \caption{YANG model for thermometer management}
+  \caption{YANG model for thermometer management.}
   \label{fig:yang}
 \end{figure}
 
 \newpage
+
+\subsection{Node-Yuma123}
+Yuma123 is an implementation of the NETCONF standard that is written in C.
+It consists of a NETCONF server written in C, an RPC (Remote Procedure Call) client 
+and a yangcli interpreter. The yangcli interpreter is a command line tool that can be used to
+interact with NETCONF devices using YANG models and yangcli commands. yangcli
+translates the yangcli commands into NETCONF RPC calls and sends them to the NETCONF device.
+Yuma123 also presents an API that can be used to interact with the NETCONF server called 
+libyuma-dev.
+\\
+\\
+Node-Yuma123 is a set of NodeJS bindings for the Yuma123 API. It is written in C++ and created
+to resemble the original C API as closely as possible. Node-Yuma123 also implements some 
+new functions like asynchronous connections. Implementing this was quite a challenge as the 
+libyuma-dev API is not thread safe. Instead of running each connection in a new thread we
+stack the instructions using libuv \cite{LibuvDocumentation} and run them in the main thread. This 
+resolves most of our threading issues, but some issues still remain. 
+These issues are related to how libyuma-dev allocates memory.
+
+
+\subsubsection{easyNetconf}
+C is a low level functional programming language, there are many implementations of the C compiler.
+All of these implementations follow the C standard set forth by the American National Standards Institute 
+(ANSI) in the ANSI C standard. Due to JavaScipts object-oriented nature we decided to create 
+a wrapper around the node-Yuma123 library. This wrapper allows us to use the node-Yuma123
+library in an object-oriented way.
 
 \subsection{Node-RED}
 Node-RED is a low code programming tool for event driven applications.
@@ -626,7 +663,6 @@ by a Raspberry Pi zero. It presents a NETCONF interface that it can be controlle
 
 \newpage
 
-
 Yangcli \cite{YumaYangcliManual} implements a set of commands for interacting with any NETCONF server over ssh. 
 Using yangcli commands in the nodes makes them extremely versatile allowing for a node to perform any Remote Procedure Call. 
 The yangcli commands are translated into Remote Procedure Calls and send to the specified server. An example 
@@ -635,7 +671,7 @@ of a configured node can be seen in \textit{Figure \ref{fig:yangcli-node}}.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{yangcli-node-settings.png}
-  \caption{The properties of a Red-Netconf Yangcli node}
+  \caption{The properties of a Red-Netconf Yangcli node.}
   \label{fig:yangcli-node}
 \end{figure}
 
@@ -645,46 +681,20 @@ The node also supports Node-RED's mustache style templates, using these template
 inside our yangcli commands. \textit{Figure \ref{fig:yangcli-node-template}} shows how we dynamically can fetch 
 sensor data from a device containing multiple temperature sensors using the following 
 yangcli command \textit{xget /thermometers/thermometer[name='\{\{sensor\}\}']} note that instead of using a 
-static name as seen in \textit{figure \ref{fig:yangcli-node}} we are using the mustache style template 
+static name as seen in \textit{Figure \ref{fig:yangcli-node}} we are using the mustache style template 
 \textit{\{\{sensor\}\}}
 
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{yangcli-node-settings-wildcard.png}
-  \caption{A yangcli-node with a mustache style template for the sensor name}
+  \caption{A yangcli-node with a mustache style template for the sensor name.}
   \label{fig:yangcli-node-template}
 \end{figure}
 
 \newpage
 
-\subsubsection{Node-Yuma123}
-Yuma123 is an implementation of the NETCONF standard that is written in C.
-It consists of a NETCONF server written in C, an RPC (Remote Procedure Call) client 
-and a yangcli interpreter. The yangcli interpreter is a command line tool that can be used to
-interact with NETCONF devices using YANG models and yangcli commands. yangcli
-translates the yangcli commands into NETCONF RPC calls and sends them to the NETCONF device.
-Yuma123 also presents an API that can be used to interact with the NETCONF server called 
-libyuma-dev.
-\\
-\\
-Node-Yuma123 is a set of NodeJS bindings for the Yuma123 API. It is written in C++ and created
-to resemble the original C API as closely as possible. Node-Yuma123 also implements some 
-new functions like asynchronous connections. Implementing this was quite a challenge as the 
-libyuma-dev API is not thread safe. Instead of running each connection in a new thread we
-stack the instructions using libuv \cite{LibuvDocumentation} and run them in the main thread. This 
-resolves most of our threading issues, but some issues still remain. 
-These issues are related to how libyuma-dev allocates memory.
-
-
-\subsubsubsection{easyNetconf}
-C is a low level functional programming language, there are many implementations of the C compiler.
-All of these implementations follow the C standard set forth by the American National Standards Institute 
-(ANSI) in the ANSI C standard. Due to JavaScipts object-oriented nature we decided to create 
-a wrapper around the node-Yuma123 library. This wrapper allows us to use the node-Yuma123
-library in an object-oriented way.
-
 \subsection{Grafana}
-Grafana is an open source data visualization tool. Since its inception ins 2014 it has become the industry standard
+Grafana is an open source data visualization tool \cite{GrafanaOpenComposable}. Since its inception ins 2014 it has become the industry standard
 for data visualization. It is used to visualize arbitrary data from different data sources.
 We have developed a solution for fetching and visualizing arbitrary NETCONF data using Grafana.
 We call this solution NetconfAggregator.
@@ -762,7 +772,7 @@ This architecture allows for arbitrary control and monitoring of the NETCONF dev
   \label{fig:decentralized-monitoring}
 \end{figure}
 
-An example of this kind of decentralized architecture can be seen in \textit{figure \ref{fig:decentralized-monitoring}}.
+An example of this kind of decentralized architecture can be seen in \textit{Figure \ref{fig:decentralized-monitoring}}.
 This example consists of two servers running both a NetconfAggregator and a Node-RED instance. Due to the way NETCONF works 
 both of these data aggregators and orchestrators can operate on the same devices simultaneously,
 note that there are a few situations where node-red might create some race conditions but, these are complex 
@@ -776,7 +786,7 @@ After developing our tools and hardware prototypes we decided to create a refere
 The goal of the implementation was not only to test the stability of our tools but also function as 
 a product demonstration, as most of our tools are quite low-lever it can be hard to demonstrate the 
 functionality of these tools without multiple devices interacting together as can be seen in 
-\textit{figure \ref{ref:reference-implementation}}.
+\textit{Figure \ref{ref:reference-implementation}}.
 
 \begin{figure}
   \centering
@@ -792,7 +802,7 @@ power over Ethernet to the Raspberry Pi zero creating a cheap and portable solut
 for NETCONF hardware development. This shield was purpously created in the hope that 
 we would be able to build a temperature probe on top of it. It has been in development by 
 Vassilev and Heimonen since the summer of 2024. An image of our first thermometer can be seen in 
-\textit{figure \ref{ref:temp-one}}.
+\textit{Figure \ref{ref:temp-one}}.
 
 \begin{figure}
   \centering
@@ -811,8 +821,8 @@ make Network Interface Cards (NIC) easily replacable and the swithces easily con
 An SFP port features two Serializer Deserializers (SerDes) lanes and most importantly for our purposes 
 an Inter Chip Connect (I2C) lane. Using this I2C lane one can in theory create an SFP sensor probe. 
 This allows for the utilization of empty SFP ports for the monitoring of temperature, humidity etc. 
-We created such a module as can be seen in \textit{figure \ref{ref:temp-sfp}} an example of how the SFP is used 
-can be seen in \textit{figure \ref{ref:temp-sfp-spark}}.
+We created such a module as can be seen in \textit{Figure \ref{ref:temp-sfp}} an example of how the SFP is used 
+can be seen in \textit{Figure \ref{ref:temp-sfp-spark}}.
 
 \begin{figure}
   \centering
@@ -837,7 +847,8 @@ to standardize network monitoring and management. Like NETCONF and YANG SNMP is 
 Whilst a NETCONF server serves its own YANG models to the client upon request, SNMP requires the system administrators to acquire their own Object IDentifier (OID).
 An Object Identifier much like a YANG model is a data structure that defines data types and locations. The Object Identifiers consists of strings of numbers.
 Each number represents the section in a leaf. ie: \textit{'1.2.3.4'} would mean that \textit{.2} is a child of \textit{.1} but, \textit{.2} is the second child of \textit{.1} and \textit{.3} 
-is the third child of \textit{.2} and so on.
+is the third child of \textit{.2} and so on. The Contents section of this document is an excellent analogy for this kind of hierarchy as it functions in the 
+exact same way.
 This type of hierarchical data model is quite standard and is found in almost all data modeling languages like JSON and XML. The difference is the fact that the data model 
 is transported separately from the data itself and in the case of SNMP the data models is something that must be acquired manually.
 
@@ -962,7 +973,7 @@ the hash matches the unique string.
 \\
 \\
 Why is not just all data encrypted using two pairs of private keys and two pairs of public keys in a form 
-of dual-key encryption as seen in \textit{figure \ref{fig:dual-key}}?
+of dual-key encryption as seen in \textit{Figure \ref{fig:dual-key}}?
 Notice that the bad actor is storing all the data sent between Alice and Bob.
 This might remind you of the recent store now and decrypt later craze that has come about due 
 to recent advances in quantum computing and cryptography. But, it is not. 
@@ -977,7 +988,7 @@ the key is ever compromised.
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{dual-key.png}
-  \caption{Dual-key encrypted communication between Bob and Alice}
+  \caption{Dual-key encrypted communication between Bob and Alice.}
   \label{fig:dual-key}
 \end{figure}
 
@@ -1018,5 +1029,6 @@ administration. We hope that people will adapt the use of NETCONF trough both No
 \addcontentsline{toc}{section}{References}
 \printbibliography
 \listoffigures
+\addcontentsline{toc}{section}{List of Figures}
 \license
 \end{document}
