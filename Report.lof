@@ -1,21 +1,21 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces PRISMA flow diagram for scoping review of software development methodologies}}{11}{figure.caption.2}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Excerpt from the presentation "AGILE TRANSFORMATION? FOR COMPLEX SYSTEMS? ...NO WAY!" by Brehm \blx@tocontentsinit {0}\cite {brehmAGILETRANSFORMATIONCOMPLEX2025} showing the Autoscrum framework.}}{13}{figure.caption.3}%
-\contentsline {figure}{\numberline {3}{\ignorespaces The Scaled Agile Framework (SAFe) \blx@tocontentsinit {0}\cite {Framework}.}}{14}{figure.caption.4}%
-\contentsline {figure}{\numberline {4}{\ignorespaces The Agile Landscape v3 \blx@tocontentsinit {0}\cite {DeloitteAuditConsulting} showing the different frameworks and methods used for project management.}}{15}{figure.caption.5}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Architecture of the NETCONF and YANG sensor management system.}}{20}{figure.caption.6}%
-\contentsline {figure}{\numberline {6}{\ignorespaces YANG model for thermometer management}}{22}{figure.caption.7}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Node-RED flow using Red-Netconf nodes that monitors a temperature sensor and switches on an LED when the temperature is above 25 degrees Celsius.}}{24}{figure.caption.8}%
-\contentsline {figure}{\numberline {8}{\ignorespaces A flow for controlling our NETCONF rover.}}{25}{figure.caption.9}%
-\contentsline {figure}{\numberline {9}{\ignorespaces The properties of a Red-Netconf Yangcli node}}{26}{figure.caption.10}%
-\contentsline {figure}{\numberline {10}{\ignorespaces A yangcli-node with a mustache style template for the sensor name}}{27}{figure.caption.11}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Querying the memory free data on a raspberry pi using XPATH and the NetconfAggregator plugin.}}{30}{figure.caption.12}%
-\contentsline {figure}{\numberline {12}{\ignorespaces NetconfAggregator architecture.}}{31}{figure.caption.13}%
-\contentsline {figure}{\numberline {13}{\ignorespaces XPATH query processing.}}{33}{figure.caption.14}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Decentralized monitoring of NETCONF devices using Grafana, NetconfAggregator and Node-RED.}}{35}{figure.caption.15}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Our reference implementation consisting of two thermometers a NETCONF controllable Led strip, a Node-RED instance, a Grafana instance and a NetconfAggregator instance.}}{36}{figure.caption.16}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Temperature sensor one, consisting of a Raspberry Pi zero and an Ethernet4pizero-poe shield. \textit {Note: the shield does not contain a transformer, and therefore it is not galvanically isolated, this limits the potential use cases of the shield as there might be large differences in voltage potentials between ground and the devices ground.}}}{37}{figure.caption.17}%
-\contentsline {figure}{\numberline {17}{\ignorespaces A Small form Factor Pluggable temperature sensor.}}{38}{figure.caption.18}%
-\contentsline {figure}{\numberline {18}{\ignorespaces A Small form Factor Pluggable temperature sensor plugged into the SPARK network tester.}}{39}{figure.caption.19}%
-\contentsline {figure}{\numberline {19}{\ignorespaces An illustration of the Diffie-Hellman Key Exchange Protocol. **The generator number is a primitive root modulo of \textit {p}.}}{42}{figure.caption.20}%
-\contentsline {figure}{\numberline {20}{\ignorespaces A plot of the running computational complexity of GNFS versus A brute force attempt on a logarithmic scale.}}{44}{figure.caption.21}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Dual-key encrypted communication between Bob and Alice}}{45}{figure.caption.22}%
+\contentsline {figure}{\numberline {1}{\ignorespaces PRISMA flow diagram for scoping review of software development methodologies}}{10}{figure.caption.2}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Excerpt from the presentation "AGILE TRANSFORMATION? FOR COMPLEX SYSTEMS? ...NO WAY!" by Brehm \blx@tocontentsinit {0}\cite {brehmAGILETRANSFORMATIONCOMPLEX2025} showing the Autoscrum framework.}}{12}{figure.caption.3}%
+\contentsline {figure}{\numberline {3}{\ignorespaces The Scaled Agile Framework (SAFe) \blx@tocontentsinit {0}\cite {Framework}.}}{13}{figure.caption.4}%
+\contentsline {figure}{\numberline {4}{\ignorespaces The Agile Landscape v3 \blx@tocontentsinit {0}\cite {DeloitteAuditConsulting} showing the different frameworks and methods used for project management.}}{14}{figure.caption.5}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Architecture of the NETCONF and YANG sensor management system.}}{19}{figure.caption.6}%
+\contentsline {figure}{\numberline {6}{\ignorespaces YANG model for thermometer management}}{21}{figure.caption.7}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Node-RED flow using Red-Netconf nodes that monitors a temperature sensor and switches on an LED when the temperature is above 25 degrees Celsius.}}{23}{figure.caption.8}%
+\contentsline {figure}{\numberline {8}{\ignorespaces A flow for controlling our NETCONF rover.}}{24}{figure.caption.9}%
+\contentsline {figure}{\numberline {9}{\ignorespaces The properties of a Red-Netconf Yangcli node}}{25}{figure.caption.10}%
+\contentsline {figure}{\numberline {10}{\ignorespaces A yangcli-node with a mustache style template for the sensor name}}{26}{figure.caption.11}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Querying the memory free data on a raspberry pi using XPATH and the NetconfAggregator plugin.}}{29}{figure.caption.12}%
+\contentsline {figure}{\numberline {12}{\ignorespaces NetconfAggregator architecture.}}{30}{figure.caption.13}%
+\contentsline {figure}{\numberline {13}{\ignorespaces XPATH query processing.}}{32}{figure.caption.14}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Decentralized monitoring of NETCONF devices using Grafana, NetconfAggregator and Node-RED.}}{34}{figure.caption.15}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Our reference implementation consisting of two thermometers a NETCONF controllable Led strip, a Node-RED instance, a Grafana instance and a NetconfAggregator instance.}}{35}{figure.caption.16}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Temperature sensor one, consisting of a Raspberry Pi zero and an Ethernet4pizero-poe shield. \textit {Note: the shield does not contain a transformer, and therefore it is not galvanically isolated, this limits the potential use cases of the shield as there might be large differences in voltage potentials between ground and the devices ground.}}}{36}{figure.caption.17}%
+\contentsline {figure}{\numberline {17}{\ignorespaces A Small form Factor Pluggable temperature sensor.}}{37}{figure.caption.18}%
+\contentsline {figure}{\numberline {18}{\ignorespaces A Small form Factor Pluggable temperature sensor plugged into the SPARK network tester.}}{38}{figure.caption.19}%
+\contentsline {figure}{\numberline {19}{\ignorespaces An illustration of the Diffie-Hellman Key Exchange Protocol. **The generator number is a primitive root modulo of \textit {p}.}}{41}{figure.caption.20}%
+\contentsline {figure}{\numberline {20}{\ignorespaces A plot of the running computational complexity of GNFS versus A brute force attempt on a logarithmic scale.}}{43}{figure.caption.21}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Dual-key encrypted communication between Bob and Alice}}{44}{figure.caption.22}%
