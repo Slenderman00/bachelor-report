@@ -1,15 +1,15 @@
-[0] Config.pm:308> INFO - This is Biber 2.20
-[0] Config.pm:311> INFO - Logfile is 'Report.blg'
-[29] biber:340> INFO - === Wed May 14, 2025, 19:53:56
-[36] Biber.pm:420> INFO - Reading 'Report.bcf'
-[67] Biber.pm:994> INFO - Found 49 citekeys in bib section 0
-[74] Biber.pm:4463> INFO - Processing section 0
-[78] Biber.pm:4654> INFO - Looking for bibtex file 'Library.bib' for section 0
-[82] bibtex.pm:1713> INFO - LaTeX decoding ...
-[132] bibtex.pm:1519> INFO - Found BibTeX data source 'Library.bib'
-[195] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[195] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[195] Biber.pm:4283> INFO - Sorting list 'nty/global//global/global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[195] Biber.pm:4289> INFO - No sort tailoring available for locale 'en-US'
-[206] bbl.pm:676> INFO - Writing 'Report.bbl' with encoding 'UTF-8'
-[211] bbl.pm:779> INFO - Output to Report.bbl
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'Report.blg'
+[83] biber:340> INFO - === Wed May 14, 2025, 21:00:49
+[103] Biber.pm:419> INFO - Reading 'Report.bcf'
+[169] Biber.pm:979> INFO - Found 49 citekeys in bib section 0
+[180] Biber.pm:4419> INFO - Processing section 0
+[191] Biber.pm:4610> INFO - Looking for bibtex file 'Library.bib' for section 0
+[200] bibtex.pm:1713> INFO - LaTeX decoding ...
+[327] bibtex.pm:1519> INFO - Found BibTeX data source 'Library.bib'
+[483] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[483] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[483] Biber.pm:4239> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[483] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[511] bbl.pm:660> INFO - Writing 'Report.bbl' with encoding 'UTF-8'
+[527] bbl.pm:763> INFO - Output to Report.bbl
