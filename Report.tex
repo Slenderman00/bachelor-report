@@ -79,8 +79,7 @@
 
 % Title configuration
 \title{
-  \textbf{Preliminary Title}\\
-  \large{Preliminary Description}
+  \textbf{The Future of Model Based Sensor Management}\\
 }
 \date{\today}
 
@@ -93,7 +92,12 @@
 \maketitle
 
 \begin{abstract}
-  Preliminary Abstract
+  This document explores the future of model-based sensor management, focusing on the NETCONF protocol and YANG data models. We introduce Red-Netconf,
+  a plugin for the event-driven visual programming language Node-RED, which implements NETCONF support. Alongside this, we present the NetconfAggregator 
+  plugin for Grafana, demonstrating how NETCONF can enable flexible, lightweight, and fault-tolerant sensor management solutions that are easy to configure.
+  To validate these tools, we develop a reference implementation comprising two NETCONF-enabled thermometers, a NETCONF-enabled LED strip, and a server 
+  running Node-RED, Grafana, and the NetconfAggregator. Additionally, we analyze the security of NETCONF when used over the SSH protocol, 
+  highlighting its robustness and potential for secure network management.
 \end{abstract}
 
 \pagebreak
@@ -130,10 +134,11 @@ and are implemented with software tools available in Debian, programmable
 logic and open hardware \cite{LightsideInstrumentsYANG}.
 
 \section{Technical background}
+The following are terms and technologies that are essential to understanding this article.
 
 \subsection{NETCONF and YANG}
 NETCONF \cite{ennsNetworkConfigurationProtocol2011} is a model based Network Configuration Protocol.
-Each NETCONF device presents the aquiring device with a YANG \cite{bjorklundYANG11Data2016} data model
+Each NETCONF device presents the acquiring device with a YANG \cite{bjorklundYANG11Data2016} data model
 consisting of the device state and parameters. 
 Each data model has a set of constraints making them error correcting.
 
@@ -241,7 +246,7 @@ The search will be done using the following search string:
 \end{verbatim}
 \end{adjustwidth}
 
-\subsubsection{Exclusion Criteria}
+\subsubsection{Inclusion Criteria}
 The scoping review will include articles meeting the following criteria:
 \begin{itemize}
   \item Published after January 1, 2020
@@ -261,7 +266,7 @@ The scoping review will include articles meeting the following criteria:
 \end{itemize}
 
 \subsubsection{Result}
-After applying the exclusion criteria to a set of 60 articles, we discovered that 5 of them were duplicates.
+After applying the inclusion criteria to a set of 60 articles, we discovered that 5 of them were duplicates.
 The 55 remaining articles were screened by title and abstract, resulting in 12 articles being excluded.
 The 43 remaining articles were assessed for eligibility, resulting in 42 articles being excluded.
 Only one article was assessed to be eligible for this review.
@@ -479,7 +484,6 @@ directly onto our ethernet4pizero-poe card we decided to try and de-solder the b
 instead of re-building the whole prototype. 
 These side quests proved to be an invaluable way of keeping 
 productivity up without shifting focus to unrelated tasks. 
-These tasks, while not directly contributing to the project's progress.
 \\
 \\
 Taking on side quests would not have been possible without the flexibility 
@@ -490,8 +494,6 @@ to changes in the project plan and even new projects in itself. A great example 
 was the development of easyNetconf after having developed the initial version of Node-Yuma123
 we discovered that it quickly became cumbersome to work with due to the object-oriented nature 
 JavaScript and the functional nature of C. 
-
-
 
 \section{NETCONF and YANG sensor management}
 
@@ -609,6 +611,21 @@ when the temperature is above 25 degrees Celsius, this can be seen in \textit{Fi
   switches on an LED when the temperature is above 25 degrees Celsius.}
   \label{fig:red-netconf}
 \end{figure}
+
+\subsubsubsection{Rover control}
+Another example is the control system for our rover. The rover is a Roomba vacuum cleaner controlled over rs232
+by a Raspberry Pi zero. It presents a NETCONF interface that it can be controlled with this flow can be seen in 
+\textit{figure \ref{fig:rover}}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{rover.png}
+  \caption{A flow for controlling our NETCONF rover.}
+  \label{fig:rover}
+\end{figure}
+
+\newpage
+
 
 Yangcli \cite{YumaYangcliManual} implements a set of commands for interacting with any NETCONF server over ssh. 
 Using yangcli commands in the nodes makes them extremely versatile allowing for a node to perform any Remote Procedure Call. 
@@ -814,6 +831,17 @@ can be seen in \textit{figure \ref{ref:temp-sfp-spark}}.
 
 \newpage
 
+\subsection{NETCONF Versus SNMP}
+Simple Network Management Protocl (SNMP) \cite{schonwalderSimpleNetworkManagement2006} is a protocol proposed in 2006 that aimed 
+to standardize network monitoring and management. Like NETCONF and YANG SNMP is also model based, the difference comes in how the models are acquiered.
+Whilst a NETCONF server serves its own YANG models to the client upon request, SNMP requires the system administrators to acquire their own Object IDentifier (OID).
+An Object Identifier much like a YANG model is a data structure that defines data types and locations. The Object Identifiers consists of strings of numbers.
+Each number represents the section in a leaf. ie: \textit{'1.2.3.4'} would mean that \textit{.2} is a child of \textit{.1} but, \textit{.2} is the second child of \textit{.1} and \textit{.3} 
+is the third child of \textit{.2} and so on.
+This type of hierarchical data model is quite standard and is found in almost all data modeling languages like JSON and XML. The difference is the fact that the data model 
+is transported separately from the data itself and in the case of SNMP the data models is something that must be acquired manually.
+
+
 \subsection{Open Source Hardware and Software Development}
 All software developed by Lightside Instruments is open source, published under 
 the Internet Software Consortium (ISC) license \cite{consortiumISCOpenSource2024} while 
@@ -934,7 +962,7 @@ the hash matches the unique string.
 \\
 \\
 Why is not just all data encrypted using two pairs of private keys and two pairs of public keys in a form 
-of dual-key encryption as seen in \textit{figure \ref{fig:dual-key}}.
+of dual-key encryption as seen in \textit{figure \ref{fig:dual-key}}?
 Notice that the bad actor is storing all the data sent between Alice and Bob.
 This might remind you of the recent store now and decrypt later craze that has come about due 
 to recent advances in quantum computing and cryptography. But, it is not. 
@@ -963,6 +991,28 @@ was discovered, this vulnerability allowed a bad actor to perform a denial of se
 a race condition in the OpenSSH servers authentication handling. This is a vulnerability that while not 
 totally mitigated by fail2ban the risk of this happening would be greatly reduced.
 
+\subsection{Node-RED}
+The security of NETCONF becomes mute if the rest of the system is not secured. Therefore it is of the upmost 
+importance to secure the Node-RED instance as per the Node-RED documentation \cite{SecuringNodeREDNodeRED}.
+Node-RED has support for both HTTPS and a user authentication system with tunable permissions out of the box.
+This means that different users can have different permissions, some might only have permission to read flows while others
+can both create and read flows. It is also worth mentioning that Node-RED can be configured to encrypt the \textit{flows.json} file using 
+the systems key store if one is available. The \textit{flows.json} file is important to secure as it will contain the NETCONF authentication credentials
+if the connection is not using private public key authentication. 
+
+\section{Conclusion}
+We set out to bring support for NETCONF to both Grafana and Node-RED, this involved creating 
+custom tools and libraries that would allow for seamless integration of NETCONF devices into these platforms. 
+Through the development of Node-Yuma123, easyNetconf, Red-Netconf, and NetconfAggregator, we have successfully achieved this goal. 
+Our tools have been tested in various scenarios, demonstrating their versatility and reliability.
+The reference implementation provided a practical demonstration of the capabilities of our tools. By integrating NETCONF-enabled thermometers, 
+a data aggregator, and Grafana as a visualization tool, we showcased how NETCONF can be used effectively for sensor management. 
+The implementation also highlighted the flexibility of our tools in adapting to different use cases, such as the rover control flow.
+While the tools and implementations have proven to be effective, there are areas for improvement. For instance, the caching mechanism in NetconfAggregator 
+could be further optimized to handle high query loads more efficiently. Additionally, we could have worked out an IEEE standard for our SFP thermometer
+thus making the proposal a bit less experimental.
+Overall, we hope that the work we have done will contribute to the popularizing of NETCONF as a protocol for network monitoring and 
+administration. We hope that people will adapt the use of NETCONF trough both Node-RED using Red-Netconf and Grafana using the NetconfAggregator.
 
 \pagebreak
 \addcontentsline{toc}{section}{References}

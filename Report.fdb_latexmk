@@ -1,13 +1,13 @@
 # Fdb version 4
-["biber Report"] 1747162936.55744 "Report.bcf" "Report.bbl" "Report" 1747166899.33203 0
-  "Library.bib" 1747162936.36053 81516 073c15ef36812857390187a0e413f48c ""
-  "Report.bcf" 1747166899.27289 113555 693e8931fe54d717da0405d0c2402bd8 "pdflatex"
+["biber Report"] 1747239173.59374 "Report.bcf" "Report.bbl" "Report" 1747243686.61198 0
+  "Library.bib" 1747238632.55481 82451 4149a3415c4bfb3b8e45fc8eabb34f6b ""
+  "Report.bcf" 1747243686.54635 113727 c83fae4eb4f019961ccb75c1fcfeb3b1 "pdflatex"
   (generated)
   "Report.bbl"
   "Report.blg"
   (rewritten before read)
-["pdflatex"] 1747166897.68393 "/home/joar/Documents/bachelor-report/Report.tex" "Report.pdf" "Report" 1747166899.33228 0
-  "/home/joar/Documents/bachelor-report/Report.tex" 1747166897.48794 47663 628073c924ba7cfb9adbb72a0fa08c4c ""
+["pdflatex"] 1747243684.86994 "/home/joar/Documents/bachelor-report/Report.tex" "Report.pdf" "Report" 1747243686.61219 0
+  "/home/joar/Documents/bachelor-report/Report.tex" 1747243684.68922 52460 225a355a1e8dba637a26722e37a46e06 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1742685315 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1742685315 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1742685315 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -208,13 +208,13 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1742685315 42087 b0f9697c952c8f5a8eede4134282cb0d ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1742835918 5311557 9da84c45f5b388655502706482323571 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1742835894 2008245 b95e68c0b5c57e4860af6b4c6c572a03 ""
-  "Report.aux" 1747166899.2677 24148 cb4511295045b40faeda7670efcff253 "pdflatex"
-  "Report.bbl" 1747162937.06729 51819 2a025d45897fe10a480178e853ebf201 "biber Report"
-  "Report.lof" 1747166899.27409 3624 815bcafff619316315dc16a919a6000b "pdflatex"
-  "Report.out" 1747166899.2717 7443 82d34b4512a662683c66330094d96512 "pdflatex"
-  "Report.run.xml" 1747166899.27409 2316 8d7d9411c1fbade0916415c590e8f121 "pdflatex"
-  "Report.tex" 1747166897.48794 47663 628073c924ba7cfb9adbb72a0fa08c4c ""
-  "Report.toc" 1747166899.27409 4447 a47d06a986d23b94fcfed268666da2da "pdflatex"
+  "Report.aux" 1747243686.5403 25267 5c36d90708c494073bcf372705eb6ad2 "pdflatex"
+  "Report.bbl" 1747239174.12783 54253 5153040419160f79075859917be6de73 "biber Report"
+  "Report.lof" 1747243686.54779 3746 eabc2781ac7ddc73e0ada6db6cffd6b3 "pdflatex"
+  "Report.out" 1747243686.5453 7923 6fa1e9d38e746ab2df4c880f66bf27e6 "pdflatex"
+  "Report.run.xml" 1747243686.54779 2316 8d7d9411c1fbade0916415c590e8f121 "pdflatex"
+  "Report.tex" 1747243684.68922 52460 225a355a1e8dba637a26722e37a46e06 ""
+  "Report.toc" 1747243686.54779 4751 e5fcdf9259995dafc6d5704ae37b4af0 "pdflatex"
   "images/NetconfAggregator.png" 1746631062.19786 28318 3ff1001c093811828557228fef8606d7 ""
   "images/architecture1.png" 1745798139.14196 37637 8dc669f8bde03e4c0de02ad5c19cb049 ""
   "images/autoscrum.png" 1745764237.95291 550051 3238d721d794c7902f50bd38e9212902 ""
@@ -224,6 +224,7 @@
   "images/memfree.png" 1746635400.90287 83244 4a1ce215d29dce417a1b24dde52a6131 ""
   "images/red-netconf.png" 1745312679.82148 40304 ad2feb73f365636c1ec66bf463e2ea4c ""
   "images/refimparch2.drawio.png" 1747140482.6097 15984 b292d874a28588a04309cedd1b37d0e8 ""
+  "images/rover.png" 1747236761.23586 85340 6d395ce0d1a5be788d837dffb9347513 ""
   "images/sAFE.png" 1745765413.01544 390642 dc20950cb4df233f6220cd3d708cfdcf ""
   "images/setup.jpg" 1746630693.63608 1059728 7e4e5166cc8dff77a12312d607fd0d8c ""
   "images/sfp.JPG" 1747160733.09826 3121991 8cb262cd053c9a2a7a55351b7e400e44 ""

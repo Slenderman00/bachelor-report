@@ -245,6 +245,20 @@
       \verb /home/joar/Zotero/storage/YW3N6D2M/Continuous_delivery.html
       \endverb
     \endentry
+    \entry{CVERecordCVE20246387}{misc}{}{}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://www.cve.org/CVERecord?id=CVE-2024-6387}
+      \field{title}{{{CVE Record}}: {{CVE-2024-6387}}}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb /home/joar/Zotero/storage/B747A9SG/CVERecord.html
+      \endverb
+    \endentry
     \entry{DeloitteAuditConsulting}{misc}{}{}
       \field{sortinit}{D}
       \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
@@ -364,6 +378,21 @@
       \verb{file}
       \verb /home/joar/Zotero/storage/T63BV9X7/Extreme_programming.html
       \endverb
+    \endentry
+    \entry{Fail2banFail2ban2025}{misc}{}{}
+      \field{sortinit}{F}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Daemon to ban hosts that cause multiple authentication errors}
+      \field{howpublished}{Fail2Ban}
+      \field{month}{5}
+      \field{title}{Fail2ban/Fail2ban}
+      \field{urlday}{13}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{urldateera}{ce}
+      \keyw{anti-bot,attack-prevention,ban-hosts,ban-management,bsd,fail2ban,gplv2,hids,ids,intrusion-detection,intrusion-prevention,ips,linux,loganalyzer,macos,monitoring,python,security,security-tools}
     \endentry
     \entry{Framework}{misc}{}{}
       \field{sortinit}{F}
@@ -713,6 +742,51 @@
       \verb /home/joar/Zotero/storage/8MYB3DAW/Rescorla and Dierks - 2008 - The Transport Layer Security (TLS) Protocol Versio.pdf
       \endverb
     \endentry
+    \entry{schonwalderSimpleNetworkManagement2006}{report}{}{}
+      \name{author}{2}{}{%
+        {{hash=bad6a638af87ad83706ef8ae8b7a1947}{%
+           family={Schönwälder},
+           familyi={S\bibinitperiod},
+           given={Jürgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=bf02b26168f27c2c1e33ac8e162d6a1a}{%
+           family={Jeffree},
+           familyi={J\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{a4e410e3f79789b933373ebc18b7daf5}
+      \strng{fullhash}{a4e410e3f79789b933373ebc18b7daf5}
+      \strng{fullhashraw}{a4e410e3f79789b933373ebc18b7daf5}
+      \strng{bibnamehash}{a4e410e3f79789b933373ebc18b7daf5}
+      \strng{authorbibnamehash}{a4e410e3f79789b933373ebc18b7daf5}
+      \strng{authornamehash}{a4e410e3f79789b933373ebc18b7daf5}
+      \strng{authorfullhash}{a4e410e3f79789b933373ebc18b7daf5}
+      \strng{authorfullhashraw}{a4e410e3f79789b933373ebc18b7daf5}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This document specifies how Simple Network Management Protocol (SNMP) messages can be transmitted directly over IEEE 802 networks. This document obsoletes RFC 1089. [STANDARDS-TRACK]}
+      \field{month}{11}
+      \field{number}{RFC 4789}
+      \field{title}{Simple {{Network Management Protocol}} ({{SNMP}}) over {{IEEE}} 802 {{Networks}}}
+      \field{type}{Request for {{Comments}}}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC4789
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/EXDBIKJZ/Schönwälder and Jeffree - 2006 - Simple Network Management Protocol (SNMP) over IEE.pdf
+      \endverb
+    \endentry
     \entry{ScrumRugbyUnion2025}{article}{}{}
       \field{sortinit}{S}
       \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
@@ -747,6 +821,17 @@
       \verb{file}
       \verb /home/joar/Zotero/storage/6FD7YJBM/www.scrumalliance.org.html
       \endverb
+    \endentry
+    \entry{SecuringNodeREDNodeRED}{misc}{}{}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://nodered.org/docs/user-guide/runtime/securing-node-red}
+      \field{title}{Securing {{Node-RED}} : {{Node-RED}}}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
     \endentry
     \entry{seoSecurityArchitectureInternet2005}{report}{}{}
       \name{author}{2}{}{%
