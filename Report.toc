@@ -55,3 +55,4 @@
 \contentsline {subsection}{\numberline {6.2}Node-RED}{45}{subsection.6.2}%
 \contentsline {section}{\numberline {7}Conclusion}{45}{section.7}%
 \contentsline {section}{References}{46}{section.7}%
+\contentsline {section}{List of Figures}{50}{section*.24}%
