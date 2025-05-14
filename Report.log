@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.24)  14 MAY 2025 21:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2024.10.24)  14 MAY 2025 21:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -941,118 +941,117 @@ Overfull \hbox (17.5502pt too wide) in paragraph at lines 585--585
 []              \OT1/cmtt/m/n/12 "Temperature in degrees Celsius multiplied by 100.";[] 
  []
 
-[20] [21] [22]
-<./images/red-netconf.png, id=529, 1053.9375pt x 407.5225pt>
+[20] [21]
+Underfull \hbox (badness 10000) in paragraph at lines 593--609
+
+ []
+
+[22] [23]
+<./images/red-netconf.png, id=535, 1053.9375pt x 407.5225pt>
 File: ./images/red-netconf.png Graphic file (type png)
 <use ./images/red-netconf.png>
-Package pdftex.def Info: ./images/red-netconf.png  used on input line 620.
+Package pdftex.def Info: ./images/red-netconf.png  used on input line 646.
 (pdftex.def)             Requested size: 390.0pt x 150.7996pt.
-<./images/rover.png, id=531, 1351.0475pt x 961.5925pt>
+<./images/rover.png, id=537, 1351.0475pt x 961.5925pt>
 File: ./images/rover.png Graphic file (type png)
 <use ./images/rover.png>
-Package pdftex.def Info: ./images/rover.png  used on input line 633.
+Package pdftex.def Info: ./images/rover.png  used on input line 659.
 (pdftex.def)             Requested size: 390.0pt x 277.57816pt.
- [23 <./images/red-netconf.png>] [24 <./images/rover.png (PNG copy)>]
-<./images/yangcli-node-settings.png, id=544, 503.8825pt x 239.89626pt>
+ [24 <./images/red-netconf.png>] [25 <./images/rover.png (PNG copy)>]
+<./images/yangcli-node-settings.png, id=551, 503.8825pt x 239.89626pt>
 File: ./images/yangcli-node-settings.png Graphic file (type png)
 <use ./images/yangcli-node-settings.png>
-Package pdftex.def Info: ./images/yangcli-node-settings.png  used on input line 648.
+Package pdftex.def Info: ./images/yangcli-node-settings.png  used on input line 673.
 (pdftex.def)             Requested size: 390.0pt x 185.67607pt.
- [25 <./images/yangcli-node-settings.png (PNG copy)>]
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 658.
+ [26 <./images/yangcli-node-settings.png (PNG copy)>]
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 683.
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 658.
-<./images/yangcli-node-settings-wildcard.png, id=554, 506.89375pt x 272.01625pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 683.
+<./images/yangcli-node-settings-wildcard.png, id=560, 506.89375pt x 272.01625pt>
 File: ./images/yangcli-node-settings-wildcard.png Graphic file (type png)
 <use ./images/yangcli-node-settings-wildcard.png>
-Package pdftex.def Info: ./images/yangcli-node-settings-wildcard.png  used on input line 664.
+Package pdftex.def Info: ./images/yangcli-node-settings-wildcard.png  used on input line 689.
 (pdftex.def)             Requested size: 390.0pt x 209.29128pt.
- [26 <./images/yangcli-node-settings-wildcard.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 672--688
+ [27 <./images/yangcli-node-settings-wildcard.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 703--718
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 704--719
-
- []
-
-[27]
 <./images/memfree.png, id=570, 1136.245pt x 936.49875pt>
 File: ./images/memfree.png Graphic file (type png)
 <use ./images/memfree.png>
-Package pdftex.def Info: ./images/memfree.png  used on input line 722.
+Package pdftex.def Info: ./images/memfree.png  used on input line 721.
 (pdftex.def)             Requested size: 390.0pt x 321.4348pt.
 <./images/NetconfAggregator.png, id=571, 492.84125pt x 342.27875pt>
 File: ./images/NetconfAggregator.png Graphic file (type png)
 <use ./images/NetconfAggregator.png>
-Package pdftex.def Info: ./images/NetconfAggregator.png  used on input line 729.
+Package pdftex.def Info: ./images/NetconfAggregator.png  used on input line 728.
 (pdftex.def)             Requested size: 390.0pt x 270.86728pt.
- [28] [29 <./images/memfree.png (PNG copy)>] [30 <./images/NetconfAggregator.png>]
+[28] [29 <./images/memfree.png (PNG copy)>] [30 <./images/NetconfAggregator.png>]
 <./images/xpathquery.drawio.png, id=589, 342.27875pt x 586.19pt>
 File: ./images/xpathquery.drawio.png Graphic file (type png)
 <use ./images/xpathquery.drawio.png>
-Package pdftex.def Info: ./images/xpathquery.drawio.png  used on input line 751.
+Package pdftex.def Info: ./images/xpathquery.drawio.png  used on input line 750.
 (pdftex.def)             Requested size: 342.2779pt x 586.18857pt.
 
 
-LaTeX Warning: Float too large for page by 62.18855pt on input line 754.
+LaTeX Warning: Float too large for page by 62.18855pt on input line 753.
 
 [31] [32 <./images/xpathquery.drawio.png>] [33]
 <./images/architecture1.png, id=608, 523.9575pt x 453.695pt>
 File: ./images/architecture1.png Graphic file (type png)
 <use ./images/architecture1.png>
-Package pdftex.def Info: ./images/architecture1.png  used on input line 771.
+Package pdftex.def Info: ./images/architecture1.png  used on input line 770.
 (pdftex.def)             Requested size: 390.0pt x 337.70897pt.
  [34 <./images/architecture1.png>]
 <./images/setup.jpg, id=616, 770.88pt x 578.16pt>
 File: ./images/setup.jpg Graphic file (type jpg)
 <use ./images/setup.jpg>
-Package pdftex.def Info: ./images/setup.jpg  used on input line 794.
+Package pdftex.def Info: ./images/setup.jpg  used on input line 793.
 (pdftex.def)             Requested size: 390.0pt x 292.4934pt.
  [35 <./images/setup.jpg>]
 <./images/temp-sensor-one.JPG, id=623, 1110.0672pt x 740.0448pt>
 File: ./images/temp-sensor-one.JPG Graphic file (type jpg)
 <use ./images/temp-sensor-one.JPG>
-Package pdftex.def Info: ./images/temp-sensor-one.JPG  used on input line 810.
+Package pdftex.def Info: ./images/temp-sensor-one.JPG  used on input line 809.
 (pdftex.def)             Requested size: 390.0pt x 259.99069pt.
  [36 <./images/temp-sensor-one.JPG>]
 <./images/sfp.JPG, id=631, 1110.0672pt x 740.0448pt>
 File: ./images/sfp.JPG Graphic file (type jpg)
 <use ./images/sfp.JPG>
-Package pdftex.def Info: ./images/sfp.JPG  used on input line 830.
+Package pdftex.def Info: ./images/sfp.JPG  used on input line 829.
 (pdftex.def)             Requested size: 390.0pt x 259.99069pt.
 <./images/spark.JPG, id=632, 864.1083pt x 514.8033pt>
 File: ./images/spark.JPG Graphic file (type jpg)
 <use ./images/spark.JPG>
-Package pdftex.def Info: ./images/spark.JPG  used on input line 838.
+Package pdftex.def Info: ./images/spark.JPG  used on input line 837.
 (pdftex.def)             Requested size: 390.0pt x 232.3506pt.
  [37 <./images/sfp.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 858--875
+Underfull \hbox (badness 10000) in paragraph at lines 857--874
 
  []
 
 [38 <./images/spark.JPG>] [39]
-Overfull \hbox (4.05891pt too wide) detected at line 918
+Overfull \hbox (4.05891pt too wide) detected at line 917
 \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 g[] \OT1/cmr/m/n/12 ([] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  g[] \OT1/cmr/m/n/12 ([] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  g[] \OT1/cmr/m/n/12 ([] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 ;  [] ;  g[] \OT1/cmr/m/n/12 ([] \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 g \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; \OT1/cmr/m/n/12 3\OML/cmm/m/it/12 ; [] ; p \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 1\OMS/cmsy/m/n/12 g\OML/cmm/m/it/12 :
  []
 
 <./images/diffiehellman.drawio.png, id=661, 593.21625pt x 502.87875pt>
 File: ./images/diffiehellman.drawio.png Graphic file (type png)
 <use ./images/diffiehellman.drawio.png>
-Package pdftex.def Info: ./images/diffiehellman.drawio.png  used on input line 932.
+Package pdftex.def Info: ./images/diffiehellman.drawio.png  used on input line 931.
 (pdftex.def)             Requested size: 390.0pt x 330.61955pt.
 [40] [41 <./images/diffiehellman.drawio.png>] [42]
 <./images/graph.png, id=684, 2366.8425pt x 1313.90875pt>
 File: ./images/graph.png Graphic file (type png)
 <use ./images/graph.png>
-Package pdftex.def Info: ./images/graph.png  used on input line 960.
+Package pdftex.def Info: ./images/graph.png  used on input line 959.
 (pdftex.def)             Requested size: 390.0pt x 216.48486pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 966--988
+Underfull \hbox (badness 10000) in paragraph at lines 965--987
 
  []
 
@@ -1060,7 +1059,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 966--988
 <./images/dual-key.png, id=695, 563.10374pt x 261.97874pt>
 File: ./images/dual-key.png Graphic file (type png)
 <use ./images/dual-key.png>
-Package pdftex.def Info: ./images/dual-key.png  used on input line 991.
+Package pdftex.def Info: ./images/dual-key.png  used on input line 990.
 (pdftex.def)             Requested size: 390.0pt x 181.4451pt.
  [44 <./images/dual-key.png>] [45] [46] [47] [48] (./Report.lof
 Overfull \hbox (5.5475pt too wide) in paragraph at lines 2--2
@@ -1092,21 +1091,21 @@ LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 Package rerunfilecheck Info: File `Report.out' has not changed.
-(rerunfilecheck)             Checksum: F88A60697A5972AFC2843A948D91C678;7884.
+(rerunfilecheck)             Checksum: 0D8D623F045AF472BEE877260E0AC08C;7871.
 Package logreq Info: Writing requests to 'Report.run.xml'.
 \openout1 = `Report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  33540 strings out of 474222
- 667385 string characters out of 5748732
+ 667379 string characters out of 5748732
  1937975 words of memory out of 5000000
  55134 multiletter control sequences out of 15000+600000
  566941 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,12n,93p,2280b,1514s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1095.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on Report.pdf (50 pages, 11971925 bytes).
+Output written on Report.pdf (50 pages, 11971891 bytes).
 PDF statistics:
  896 PDF objects out of 1000 (max. 8388607)
  760 compressed objects within 8 object streams

@@ -4,10 +4,10 @@
 \contentsline {figure}{\numberline {4}{\ignorespaces The Agile Landscape v3 \blx@tocontentsinit {0}\cite {DeloitteAuditConsulting} showing the different frameworks and methods used for project management.}}{14}{figure.caption.5}%
 \contentsline {figure}{\numberline {5}{\ignorespaces Architecture of the NETCONF and YANG sensor management system.}}{19}{figure.caption.6}%
 \contentsline {figure}{\numberline {6}{\ignorespaces YANG model for thermometer management.}}{21}{figure.caption.7}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Node-RED flow using Red-Netconf nodes that monitors a temperature sensor and switches on an LED when the temperature is above 25 degrees Celsius.}}{23}{figure.caption.8}%
-\contentsline {figure}{\numberline {8}{\ignorespaces A flow for controlling our NETCONF rover.}}{24}{figure.caption.9}%
-\contentsline {figure}{\numberline {9}{\ignorespaces The properties of a Red-Netconf Yangcli node.}}{25}{figure.caption.10}%
-\contentsline {figure}{\numberline {10}{\ignorespaces A yangcli-node with a mustache style template for the sensor name.}}{26}{figure.caption.11}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Node-RED flow using Red-Netconf nodes that monitors a temperature sensor and switches on an LED when the temperature is above 25 degrees Celsius.}}{24}{figure.caption.8}%
+\contentsline {figure}{\numberline {8}{\ignorespaces A flow for controlling our NETCONF rover.}}{25}{figure.caption.9}%
+\contentsline {figure}{\numberline {9}{\ignorespaces The properties of a Red-Netconf Yangcli node.}}{26}{figure.caption.10}%
+\contentsline {figure}{\numberline {10}{\ignorespaces A yangcli-node with a mustache style template for the sensor name.}}{27}{figure.caption.11}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Querying the memory free data on a raspberry pi using XPATH and the NetconfAggregator plugin.}}{29}{figure.caption.12}%
 \contentsline {figure}{\numberline {12}{\ignorespaces NetconfAggregator architecture.}}{30}{figure.caption.13}%
 \contentsline {figure}{\numberline {13}{\ignorespaces XPATH query processing.}}{32}{figure.caption.14}%
