@@ -567,6 +567,51 @@
       \verb /home/joar/Zotero/storage/IIVUNR6V/lightside-instruments.com.html
       \endverb
     \endentry
+    \entry{lonvickSecureShellSSH2006}{report}{}{}
+      \name{author}{2}{}{%
+        {{hash=608d5f68625d1e8121b1fb7ee14d5cd2}{%
+           family={Lonvick},
+           familyi={L\bibinitperiod},
+           given={Chris\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=69fc74699e6a87d09dfa2f6fb942b6e1}{%
+           family={Ylonen},
+           familyi={Y\bibinitperiod},
+           given={Tatu},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Internet Engineering Task Force}%
+      }
+      \strng{namehash}{792387f46d11ea62d13679518020b26d}
+      \strng{fullhash}{792387f46d11ea62d13679518020b26d}
+      \strng{fullhashraw}{792387f46d11ea62d13679518020b26d}
+      \strng{bibnamehash}{792387f46d11ea62d13679518020b26d}
+      \strng{authorbibnamehash}{792387f46d11ea62d13679518020b26d}
+      \strng{authornamehash}{792387f46d11ea62d13679518020b26d}
+      \strng{authorfullhash}{792387f46d11ea62d13679518020b26d}
+      \strng{authorfullhashraw}{792387f46d11ea62d13679518020b26d}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The Secure Shell (SSH) is a protocol for secure remote login and other secure network services over an insecure network. This document describes the SSH transport layer protocol, which typically runs on top of TCP/IP. The protocol can be used as a basis for a number of secure network services. It provides strong encryption, server authentication, and integrity protection. It may also provide compression. Key exchange method, public key algorithm, symmetric encryption algorithm, message authentication algorithm, and hash algorithm are all negotiated. This document also describes the Diffie-Hellman key exchange method and the minimal set of algorithms that are needed to implement the SSH transport layer protocol. [STANDARDS-TRACK]}
+      \field{month}{1}
+      \field{number}{RFC 4253}
+      \field{title}{The {{Secure Shell}} ({{SSH}}) {{Transport Layer Protocol}}}
+      \field{type}{Request for {{Comments}}}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{year}{2006}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.17487/RFC4253
+      \endverb
+      \verb{file}
+      \verb /home/joar/Zotero/storage/IPD6AA4F/Lonvick and Ylonen - 2006 - The Secure Shell (SSH) Transport Layer Protocol.pdf
+      \endverb
+    \endentry
     \entry{LowcodeProgrammingEventdriven}{misc}{}{}
       \field{sortinit}{L}
       \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
